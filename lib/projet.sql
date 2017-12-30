@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  Dim 24 déc. 2017 à 19:13
+-- Généré le :  sam. 30 déc. 2017 à 17:21
 -- Version du serveur :  5.7.19
 -- Version de PHP :  5.6.31
 
@@ -68,7 +68,7 @@ DROP TABLE IF EXISTS `ele_mod`;
 CREATE TABLE IF NOT EXISTS `ele_mod` (
   `cod_ele_mod` varchar(30) NOT NULL,
   `cod_mod` int(20) DEFAULT NULL,
-  `cod_fil` varchar(20) DEFAULT NULL,
+  `cod_fil` int(20) DEFAULT NULL,
   `cod_prof` varchar(50) DEFAULT NULL,
   `nom_ele_mod` varchar(50) DEFAULT NULL,
   `nbr_heu_cour` int(20) DEFAULT NULL,
@@ -79,6 +79,20 @@ CREATE TABLE IF NOT EXISTS `ele_mod` (
   KEY `cod_mod` (`cod_mod`),
   KEY `cod_prof` (`cod_prof`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `ele_mod`
+--
+
+INSERT INTO `ele_mod` (`cod_ele_mod`, `cod_mod`, `cod_fil`, `cod_prof`, `nom_ele_mod`, `nbr_heu_cour`, `nbr_heu_TD`, `nbr_heu_TP`) VALUES
+('Architecture et web', 2, 1, '001', 'Architecture et web', NULL, NULL, NULL),
+('BDD', 1, 1, '002', 'BDD', NULL, NULL, NULL),
+('C++', 4, 1, '003', 'C++', NULL, NULL, NULL),
+('Comm_eng', 6, 1, '008', 'Communication en englais', NULL, NULL, NULL),
+('Comm_fr', 6, 1, '007', 'Communication en francais', NULL, NULL, NULL),
+('Linux', 5, 1, '006', 'Linux', NULL, NULL, NULL),
+('Reseau', 3, 1, '004', 'Resau', NULL, NULL, NULL),
+('Scripting', 5, 1, '005', 'Scripting', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -111,11 +125,21 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 
 DROP TABLE IF EXISTS `filieres`;
 CREATE TABLE IF NOT EXISTS `filieres` (
-  `cod_fil` varchar(20) NOT NULL,
+  `cod_fil` int(20) NOT NULL AUTO_INCREMENT,
   `nom_fil` varchar(30) NOT NULL,
   `resp_fil` varchar(30) NOT NULL,
   PRIMARY KEY (`cod_fil`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `filieres`
+--
+
+INSERT INTO `filieres` (`cod_fil`, `nom_fil`, `resp_fil`) VALUES
+(1, 'License', 'Brak'),
+(2, 'Cycle', ''),
+(3, 'Master 1', 'Amrani'),
+(4, 'Master 2', '');
 
 -- --------------------------------------------------------
 
@@ -126,11 +150,19 @@ CREATE TABLE IF NOT EXISTS `filieres` (
 DROP TABLE IF EXISTS `groupes`;
 CREATE TABLE IF NOT EXISTS `groupes` (
   `cod_grp` int(50) NOT NULL,
-  `cod_fil` varchar(20) DEFAULT NULL,
+  `cod_fil` int(20) DEFAULT NULL,
   `nbr_etu_grp` int(20) DEFAULT NULL,
   PRIMARY KEY (`cod_grp`),
   KEY `cod_fil` (`cod_fil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `groupes`
+--
+
+INSERT INTO `groupes` (`cod_grp`, `cod_fil`, `nbr_etu_grp`) VALUES
+(1, 1, NULL),
+(2, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -141,12 +173,24 @@ CREATE TABLE IF NOT EXISTS `groupes` (
 DROP TABLE IF EXISTS `modules`;
 CREATE TABLE IF NOT EXISTS `modules` (
   `cod_mod` int(20) NOT NULL,
-  `cod_fil` varchar(20) NOT NULL,
+  `cod_fil` int(20) NOT NULL,
   `nom_mod` varchar(50) NOT NULL,
   `resp_mod` varchar(100) NOT NULL,
   PRIMARY KEY (`cod_mod`),
   KEY `cod_fil` (`cod_fil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `modules`
+--
+
+INSERT INTO `modules` (`cod_mod`, `cod_fil`, `nom_mod`, `resp_mod`) VALUES
+(1, 1, 'BDD', 'Ezziyani'),
+(2, 1, 'Architecture de Web', 'Baida'),
+(3, 1, 'Réseau', 'Brak'),
+(4, 1, 'C++', 'Niami'),
+(5, 1, 'Systeme d\'eploitaion et Linux', 'Ghadi'),
+(6, 1, 'T.EC', 'Rghili');
 
 -- --------------------------------------------------------
 
@@ -160,9 +204,23 @@ CREATE TABLE IF NOT EXISTS `professeurs` (
   `nom_prof` varchar(50) NOT NULL,
   `pre_prof` varchar(50) NOT NULL,
   `email_prof` varchar(100) NOT NULL,
-  `pwd_prof` int(50) NOT NULL,
+  `pwd_prof` varchar(500) NOT NULL,
   PRIMARY KEY (`cod_prof`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `professeurs`
+--
+
+INSERT INTO `professeurs` (`cod_prof`, `nom_prof`, `pre_prof`, `email_prof`, `pwd_prof`) VALUES
+('001', 'Baida', 'Wafae', '', 'wafae'),
+('002', 'Ezziyani', '', '', 'ezziyani'),
+('003', 'Niami', '', '', 'niami'),
+('004', 'Brak', '', '', 'brak'),
+('005', 'Amrani', '', '', 'amrani'),
+('006', 'Ghadi', '', '', 'ghadi'),
+('007', 'Rghili', '', '', 'rghili'),
+('008', 'Bakkali', '', '', 'bakkali');
 
 -- --------------------------------------------------------
 
@@ -189,7 +247,7 @@ CREATE TABLE IF NOT EXISTS `seances` (
   `num_crem` int(20) NOT NULL,
   `num_sal` int(20) NOT NULL,
   `cod_ele_mod` varchar(30) NOT NULL,
-  `cod_fil` varchar(20) NOT NULL,
+  `cod_fil` int(20) NOT NULL,
   `cod_grp` int(50) NOT NULL,
   PRIMARY KEY (`num_sem`),
   KEY `cod_ele_mod` (`cod_ele_mod`),
