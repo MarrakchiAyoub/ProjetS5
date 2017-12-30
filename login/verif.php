@@ -1,5 +1,4 @@
 <?php
-session_start();
 include '../lib/BDD.php';
 if(isset($_POST['sendetu'])){
     $mail =$_POST['mailetu'];
@@ -7,6 +6,7 @@ if(isset($_POST['sendetu'])){
     $sql = "SELECT * FROM etudiants where email_etu='$mail' and pwd_etu='$pwd'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)){
+        session_start();
         $Row=mysqli_fetch_assoc($result);
         $_SESSION['nom']=$Row['nom_etu'];
         $_SESSION['pre']=$Row['pre_etu'];
@@ -14,7 +14,8 @@ if(isset($_POST['sendetu'])){
         $_SESSION['fil']=$Row['cod_fil'];
         $_SESSION['type']="etudiant";
         echo"hello";}
-    else echo '<p align="center" class="r">Email ou mot de pass incorrecte</p>';
+    else { echo '<p align="center" class="r">Email ou mot de pass incorrecte</p>';
+    }
 }
 else if(isset($_POST['sendpro'])){
     $mail =$_POST['mailpro'];
@@ -22,6 +23,7 @@ else if(isset($_POST['sendpro'])){
     $sql = "SELECT * FROM professeurs where email_prof='$mail' and pwd_prof='$pwd'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)){
+        session_start();
         $Row=mysqli_fetch_assoc($result);
         $_SESSION['nom']=$Row['nom_prof'];
         $_SESSION['pre']=$Row['pre_prof'];
@@ -31,5 +33,4 @@ else if(isset($_POST['sendpro'])){
         echo"hello";}
     else echo '<p align="center" class="r">Email ou mot de pass incorrecte</p>';
 }
-else session_destroy();
 ?>
