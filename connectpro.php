@@ -79,22 +79,6 @@
 	
 	<!-- CALL TO ACTION 
 	================================================== -->
-	<div class="row space-bot">
-		<div class="c12">
-			<div class="wrapaction">
-				<div class="c9">
-					<h1 class="subtitles">Salique is incredibly awesome, with a refreshingly clean design</h1>
-					 We produce comprehensive mapping of consumers' relationships with communications across bought, owned & earned media based on bespoke insight. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis.
-				</div>
-				<div class="c3 text-center" style="margin-top:40px;">
-					<div class="actionbutton">
-						<i class=" icon-download-alt"></i> DOWNLOAD NOW
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div><!-- end grid -->
 
 <!-- FOOTER
 ================================================== -->
