@@ -2,10 +2,10 @@
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1:3306
--- Généré le :  sam. 30 déc. 2017 à 17:21
--- Version du serveur :  5.7.19
--- Version de PHP :  5.6.31
+-- Host: 127.0.0.1:3306
+-- Generation Time: Dec 31, 2017 at 12:15 AM
+-- Server version: 5.7.19
+-- PHP Version: 7.1.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `projet`
+-- Database: `projet`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `connexion`
+-- Table structure for table `connexion`
 --
 
 DROP TABLE IF EXISTS `connexion`;
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `connexion` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `depot_cou`
+-- Table structure for table `depot_cou`
 --
 
 DROP TABLE IF EXISTS `depot_cou`;
@@ -61,14 +61,14 @@ CREATE TABLE IF NOT EXISTS `depot_cou` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ele_mod`
+-- Table structure for table `ele_mod`
 --
 
 DROP TABLE IF EXISTS `ele_mod`;
 CREATE TABLE IF NOT EXISTS `ele_mod` (
   `cod_ele_mod` varchar(30) NOT NULL,
-  `cod_mod` int(20) DEFAULT NULL,
-  `cod_fil` int(20) DEFAULT NULL,
+  `cod_mod` varchar(20) DEFAULT NULL,
+  `cod_fil` varchar(20) DEFAULT NULL,
   `cod_prof` varchar(50) DEFAULT NULL,
   `nom_ele_mod` varchar(50) DEFAULT NULL,
   `nbr_heu_cour` int(20) DEFAULT NULL,
@@ -81,23 +81,23 @@ CREATE TABLE IF NOT EXISTS `ele_mod` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `ele_mod`
+-- Dumping data for table `ele_mod`
 --
 
 INSERT INTO `ele_mod` (`cod_ele_mod`, `cod_mod`, `cod_fil`, `cod_prof`, `nom_ele_mod`, `nbr_heu_cour`, `nbr_heu_TD`, `nbr_heu_TP`) VALUES
-('Architecture et web', 2, 1, '001', 'Architecture et web', NULL, NULL, NULL),
-('BDD', 1, 1, '002', 'BDD', NULL, NULL, NULL),
-('C++', 4, 1, '003', 'C++', NULL, NULL, NULL),
-('Comm_eng', 6, 1, '008', 'Communication en englais', NULL, NULL, NULL),
-('Comm_fr', 6, 1, '007', 'Communication en francais', NULL, NULL, NULL),
-('Linux', 5, 1, '006', 'Linux', NULL, NULL, NULL),
-('Reseau', 3, 1, '004', 'Resau', NULL, NULL, NULL),
-('Scripting', 5, 1, '005', 'Scripting', NULL, NULL, NULL);
+('GIACS', 'GIACS', 'GI', '6', 'Architecture C/S et Développement Web Dynamique', NULL, NULL, NULL),
+('GIANG', 'GITEA', 'GI', '10', 'Anglais', NULL, NULL, NULL),
+('GIBDD', 'GIBDD', 'GI', '5', 'Bases de Données  ', NULL, NULL, NULL),
+('GICPP', 'GICPP', 'GI', '7', 'Programmation Orientée Objet en C++', NULL, NULL, NULL),
+('GIIRI', 'GIIRI', 'GI', '1', 'Introduction aux Réseaux Informatiques', NULL, NULL, NULL),
+('GILNX', 'GISEL', 'GI', '2', 'System d\'exploitation Lunix', NULL, NULL, NULL),
+('GITEC', 'GITEA', 'GI', '8', 'T.E.C', NULL, NULL, NULL),
+('GIUNX', 'GISEL', 'GI', '9', 'Scrypting Unix', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `etudiants`
+-- Table structure for table `etudiants`
 --
 
 DROP TABLE IF EXISTS `etudiants`;
@@ -113,6 +113,7 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
   `num_grp` int(50) NOT NULL,
   `cod_fil` varchar(20) NOT NULL,
   PRIMARY KEY (`cod_etu`),
+  UNIQUE KEY `email_etu` (`email_etu`),
   KEY `num_grp` (`num_grp`),
   KEY `cod_fil` (`cod_fil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -120,82 +121,83 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `filieres`
+-- Table structure for table `filieres`
 --
 
 DROP TABLE IF EXISTS `filieres`;
 CREATE TABLE IF NOT EXISTS `filieres` (
-  `cod_fil` int(20) NOT NULL AUTO_INCREMENT,
-  `nom_fil` varchar(30) NOT NULL,
+  `cod_fil` varchar(20) NOT NULL,
+  `nom_fil` varchar(80) NOT NULL,
   `resp_fil` varchar(30) NOT NULL,
-  PRIMARY KEY (`cod_fil`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`cod_fil`),
+  KEY `resp_fil` (`resp_fil`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `filieres`
+-- Dumping data for table `filieres`
 --
 
 INSERT INTO `filieres` (`cod_fil`, `nom_fil`, `resp_fil`) VALUES
-(1, 'License', 'Brak'),
-(2, 'Cycle', ''),
-(3, 'Master 1', 'Amrani'),
-(4, 'Master 2', '');
+('GI', 'Génie informatique', '1'),
+('LSI', 'Logiciels et systèmes informatiques', '2'),
+('SIAD', 'Systèmes Informatiques et Aide à la décision', '3'),
+('SIR', 'Systèmes informatiques et réseaux', '4');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `groupes`
+-- Table structure for table `groupes`
 --
 
 DROP TABLE IF EXISTS `groupes`;
 CREATE TABLE IF NOT EXISTS `groupes` (
-  `cod_grp` int(50) NOT NULL,
-  `cod_fil` int(20) DEFAULT NULL,
+  `cod_grp` varchar(50) NOT NULL,
+  `cod_fil` varchar(20) DEFAULT NULL,
   `nbr_etu_grp` int(20) DEFAULT NULL,
   PRIMARY KEY (`cod_grp`),
   KEY `cod_fil` (`cod_fil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `groupes`
+-- Dumping data for table `groupes`
 --
 
 INSERT INTO `groupes` (`cod_grp`, `cod_fil`, `nbr_etu_grp`) VALUES
-(1, 1, NULL),
-(2, 1, NULL);
+('GI-1', 'GI', 63);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `modules`
+-- Table structure for table `modules`
 --
 
 DROP TABLE IF EXISTS `modules`;
 CREATE TABLE IF NOT EXISTS `modules` (
-  `cod_mod` int(20) NOT NULL,
-  `cod_fil` int(20) NOT NULL,
+  `cod_mod` varchar(20) NOT NULL,
+  `cod_fil` varchar(20) NOT NULL,
   `nom_mod` varchar(50) NOT NULL,
   `resp_mod` varchar(100) NOT NULL,
   PRIMARY KEY (`cod_mod`),
-  KEY `cod_fil` (`cod_fil`)
+  KEY `cod_fil` (`cod_fil`),
+  KEY `resp_mod` (`resp_mod`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `modules`
+-- Dumping data for table `modules`
 --
 
 INSERT INTO `modules` (`cod_mod`, `cod_fil`, `nom_mod`, `resp_mod`) VALUES
-(1, 1, 'BDD', 'Ezziyani'),
-(2, 1, 'Architecture de Web', 'Baida'),
-(3, 1, 'Réseau', 'Brak'),
-(4, 1, 'C++', 'Niami'),
-(5, 1, 'Systeme d\'eploitaion et Linux', 'Ghadi'),
-(6, 1, 'T.EC', 'Rghili');
+('GIACS', 'GI', 'Architecture C/S et Développement Web Dynamique', '6'),
+('GIBDD', 'GI', 'Bases de Données', '5'),
+('GICPP', 'GI', 'Programmation Orientée Objet en C++', '7'),
+('GIIRI', 'GI', 'Introduction aux Réseaux Informatiques', '1'),
+('GISEL', 'GI', 'Système d’exploitation UNIX/Linux', '2'),
+('GITEA', 'GI', 'TEC & Anglais', '8');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `professeurs`
+-- Table structure for table `professeurs`
 --
 
 DROP TABLE IF EXISTS `professeurs`;
@@ -203,102 +205,125 @@ CREATE TABLE IF NOT EXISTS `professeurs` (
   `cod_prof` varchar(50) NOT NULL,
   `nom_prof` varchar(50) NOT NULL,
   `pre_prof` varchar(50) NOT NULL,
-  `email_prof` varchar(100) NOT NULL,
-  `pwd_prof` varchar(500) NOT NULL,
-  PRIMARY KEY (`cod_prof`)
+  `email_prof` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `pwd_prof` int(50) NOT NULL,
+  PRIMARY KEY (`cod_prof`),
+  UNIQUE KEY `email_prof` (`email_prof`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Déchargement des données de la table `professeurs`
+-- Dumping data for table `professeurs`
 --
 
 INSERT INTO `professeurs` (`cod_prof`, `nom_prof`, `pre_prof`, `email_prof`, `pwd_prof`) VALUES
-('001', 'Baida', 'Wafae', '', 'wafae'),
-('002', 'Ezziyani', '', '', 'ezziyani'),
-('003', 'Niami', '', '', 'niami'),
-('004', 'Brak', '', '', 'brak'),
-('005', 'Amrani', '', '', 'amrani'),
-('006', 'Ghadi', '', '', 'ghadi'),
-('007', 'Rghili', '', '', 'rghili'),
-('008', 'Bakkali', '', '', 'bakkali');
+('1', 'EL BRAK', 'Mohamed ', 'elbrak.m@fstt.ac.ma', 123456),
+('10', 'Bakkali', '', 'bakkali@fstt.ac.ma', 123456),
+('2', 'Ghadi', 'Abderrahim', 'Ghadi.A@fstt.ac.ma', 123456),
+('3', 'AIT KBIR', 'M’hamed', 'aitkbir.m@fstt.ac.ma', 123456),
+('4', 'Bouhorma', 'Mohammed', 'Bouhomra.M@fstt.ac.ma', 123456),
+('5', 'Ezziyani', 'Moustafa', 'Ezziyani.m@fstt.ac.ma', 123456),
+('6', 'Baida', 'ouafae', 'Baida.o@fstt.ac.ma', 123456),
+('7', 'EN-Naimi', '', 'annaimi@fstt.ac.ma', 123456),
+('8', 'el guilli', '', 'elguilli@fstt.ac.ma', 123456),
+('9', 'El amrani', '', 'elamrani@fstt.ac.ma', 123456);
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `salles`
+-- Table structure for table `salles`
 --
 
 DROP TABLE IF EXISTS `salles`;
 CREATE TABLE IF NOT EXISTS `salles` (
-  `num_sal` int(20) NOT NULL AUTO_INCREMENT,
+  `num_sal` varchar(20) NOT NULL,
   `nbr_places` int(20) NOT NULL,
   PRIMARY KEY (`num_sal`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `salles`
+--
+
+INSERT INTO `salles` (`num_sal`, `nbr_places`) VALUES
+('e21', 50),
+('e22', 50),
+('e23', 70),
+('e24', 70),
+('e25', 50);
+
 -- --------------------------------------------------------
 
 --
--- Structure de la table `seances`
+-- Table structure for table `seances`
 --
 
 DROP TABLE IF EXISTS `seances`;
 CREATE TABLE IF NOT EXISTS `seances` (
   `num_sem` int(20) NOT NULL,
-  `num_crem` int(20) NOT NULL,
-  `num_sal` int(20) NOT NULL,
+  `num_cren` int(20) NOT NULL,
+  `num_sal` varchar(20) NOT NULL,
   `cod_ele_mod` varchar(30) NOT NULL,
-  `cod_fil` int(20) NOT NULL,
-  `cod_grp` int(50) NOT NULL,
-  PRIMARY KEY (`num_sem`),
+  `cod_fil` varchar(20) NOT NULL,
+  `cod_grp` varchar(50) NOT NULL,
+  PRIMARY KEY (`num_sem`,`num_cren`,`num_sal`) USING BTREE,
   KEY `cod_ele_mod` (`cod_ele_mod`),
   KEY `cod_fil` (`cod_fil`),
-  KEY `cod_grp` (`cod_grp`)
+  KEY `cod_grp` (`cod_grp`),
+  KEY `num_sal` (`num_sal`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Contraintes pour les tables déchargées
+-- Constraints for dumped tables
 --
 
 --
--- Contraintes pour la table `connexion`
+-- Constraints for table `connexion`
 --
 ALTER TABLE `connexion`
   ADD CONSTRAINT `connexion_ibfk_1` FOREIGN KEY (`cod_etu`) REFERENCES `etudiants` (`cod_etu`),
   ADD CONSTRAINT `connexion_ibfk_2` FOREIGN KEY (`cod_prof`) REFERENCES `professeurs` (`cod_prof`);
 
 --
--- Contraintes pour la table `depot_cou`
+-- Constraints for table `depot_cou`
 --
 ALTER TABLE `depot_cou`
   ADD CONSTRAINT `depot_cou_ibfk_1` FOREIGN KEY (`cod_porf`) REFERENCES `professeurs` (`cod_prof`);
 
 --
--- Contraintes pour la table `ele_mod`
+-- Constraints for table `ele_mod`
 --
 ALTER TABLE `ele_mod`
   ADD CONSTRAINT `ele_mod_ibfk_1` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`),
-  ADD CONSTRAINT `ele_mod_ibfk_2` FOREIGN KEY (`cod_mod`) REFERENCES `modules` (`cod_mod`),
-  ADD CONSTRAINT `ele_mod_ibfk_3` FOREIGN KEY (`cod_prof`) REFERENCES `professeurs` (`cod_prof`);
+  ADD CONSTRAINT `ele_mod_ibfk_3` FOREIGN KEY (`cod_prof`) REFERENCES `professeurs` (`cod_prof`),
+  ADD CONSTRAINT `ele_mod_ibfk_4` FOREIGN KEY (`cod_mod`) REFERENCES `modules` (`cod_mod`);
 
 --
--- Contraintes pour la table `groupes`
+-- Constraints for table `filieres`
+--
+ALTER TABLE `filieres`
+  ADD CONSTRAINT `filieres_ibfk_1` FOREIGN KEY (`resp_fil`) REFERENCES `professeurs` (`cod_prof`);
+
+--
+-- Constraints for table `groupes`
 --
 ALTER TABLE `groupes`
   ADD CONSTRAINT `groupes_ibfk_1` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`);
 
 --
--- Contraintes pour la table `modules`
+-- Constraints for table `modules`
 --
 ALTER TABLE `modules`
-  ADD CONSTRAINT `modules_ibfk_1` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`);
+  ADD CONSTRAINT `modules_ibfk_1` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`),
+  ADD CONSTRAINT `modules_ibfk_2` FOREIGN KEY (`resp_mod`) REFERENCES `professeurs` (`cod_prof`);
 
 --
--- Contraintes pour la table `seances`
+-- Constraints for table `seances`
 --
 ALTER TABLE `seances`
   ADD CONSTRAINT `seances_ibfk_1` FOREIGN KEY (`cod_ele_mod`) REFERENCES `ele_mod` (`cod_ele_mod`),
   ADD CONSTRAINT `seances_ibfk_2` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`),
-  ADD CONSTRAINT `seances_ibfk_3` FOREIGN KEY (`cod_grp`) REFERENCES `groupes` (`cod_grp`);
+  ADD CONSTRAINT `seances_ibfk_3` FOREIGN KEY (`cod_grp`) REFERENCES `groupes` (`cod_grp`),
+  ADD CONSTRAINT `seances_ibfk_4` FOREIGN KEY (`num_sal`) REFERENCES `salles` (`num_sal`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
