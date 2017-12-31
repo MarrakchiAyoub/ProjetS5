@@ -89,7 +89,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Licence Genie Informatique</h1>
+				<h1 class="titlehead">Compte Etudiant</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
