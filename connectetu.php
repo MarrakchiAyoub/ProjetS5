@@ -70,7 +70,7 @@
 					<li><a href="singleproject.html">Doctorat</a></li>
 				</ul>
 				</li>
-				<li class="last"><a href="contact.html">Se Connecter</a>
+				<li class="last"><a href="#">Se Connecter</a>
 					<ul>
 				    <li><a href="connectetu.php">Etudiant</a></li>
 					<li><a href="connectpro.php">Professeur</a></li>
@@ -98,34 +98,47 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-<div id="login"  style="margin-left:7%; margin-top: 45px; width: 30%; float: left">
+<div id="form"  style="margin-left:7%; margin-top: 45px; width: 30%; float: left">
+	<h3>Connexion</h3><br>
 <form method="POST">
-
 email:<input name="mailetu" type="email" required><br>
-
 mot de passe: <input name="passetu" type="password" required><br>
 <?php include 'verif.php'; ?>
-  <button type="submit" name="send" class="blue" name="sendetu"/>connexion</button>
-  <input type="reset" value="Annuler" id="button"><br>
+<button class="blue" type="submit" name="sendetu"/>connexion</button>
+  <input type="reset" value="Annuler"><br>
 </form>
 </div>
-<div id="subscribe" style="margin-left:50%; margin-top: 45px; width: 30%"> 
-CNE:<input class="i" name="login" type="text"><br>
-Nom:<input class="i" name="login" type="text"><br>
-Prénom: <input class="i" name="login" type="text"><br>
-Mot de passe: <input class="r" name="psw" type="password" style="margin-right: 40px"><br>
-Resaisir le mot de passe: <input class="r" name="n_psw" type="password"><br>
-E-mail: <input class="i" name="email" type="text" ><br>
-Date de naissance: <input class="i" name="date_naiss" type="date"><br>
-Niveau d'étude: <input class="i" name="login" type="text"><br>
-Filiére: <select name="cod_fil">
+
+<div id="form" style="margin-left:50%; margin-top: 58px; width: 30%"> 
+	<h3>Inscription</h3><br>
+<script>
+function validatepass() {
+    var x = document.forms["inscription"]["psw"].value;
+	var y = document.forms["inscription"]["n_psw"].value;
+    if (x != y) {
+		document.getElementById("pwd").innerHTML="Les mot de passes ne sont pas identiques";
+        return false;
+    }
+}
+</script>
+<form mothod="POST" name="inscription" onsubmit="return validatepass()">
+CNE:<input name="login" type="text" required><br>
+Nom:<input name="login" type="text" required><br>
+Prénom: <input name="login" type="text" required><br>
+Mot de passe: <input name="psw" type="password" style="margin-right: 40px" required><br>
+Resaisir le mot de passe: <input name="n_psw" type="password"><p id="pwd" class="err" required></p><br>
+E-mail: <input name="email" type="text" required><br>
+Date de naissance: <input name="date_naiss" type="date"><br>
+Niveau d'étude: <input name="login" type="text" required><br>
+Filiére: <select name="cod_fil" required>
     <option value="LGI">LGI</option>
     <option value="LSI">LSI</option>
     <option value="SIAD">SIAD</option>
     <option value="SIR">SIR</option>
   </select>
-  <button type="submit" name="valider" class="blue" name="sendetu"/>Valider</button>
-  <input type="reset" value="Annuler" id="button"><br>
+  <button type="submit" name="send" class="blue"/>Valider</button>
+  <input type="reset" value="Annuler"><br>
+  </form>
  </div>
 
 <!-- FOOTER

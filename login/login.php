@@ -43,7 +43,7 @@
             </div>
             
             <p class="forgot"><a href="#">Crée un nouveau compte.</a></p>
-            <?php include 'verif.php'; ?>
+            <?php include '../verif.php'; ?>
             <button class="button button-block" type="submit" name="sendetu"/>Log In</button>
             
             </form>
@@ -68,7 +68,7 @@
             </label>
             <input type="password"required name="passpro" autocomplete="off"/>
           </div>
-          <?php include 'verif.php'; ?>
+          <?php include '../verif.php'; ?>
           <button class="button button-block" type="submit" name="sendpro"/>Log In</button>
           
           </form>
