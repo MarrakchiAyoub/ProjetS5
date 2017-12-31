@@ -73,8 +73,44 @@
 	<div class="boxedshadow">
 	</div>
 	
-<!-- START content area
-================================================== -->
+
+<?php
+if (isset($_POST['send'])) {
+	if (empty($_POST['psw']) || empty($_POST['login']))
+		echo '<p align="center" class="r">veillez saisire vos informations</p>';
+	else {
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "projet";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {die("Connection failed: ". mysqli_connect_error());}
+$login = isset($_POST['login']) ? $_POST['login'] : NULL;
+$pwd = isset($_POST['psw']) ? $_POST['psw'] : NULL;
+$sql = "SELECT * FROM professeurs where email_prof='$login' and pwd_prof='$pwd'";
+$result = mysqli_query($conn, $sql);
+if(mysqli_num_rows($result)){
+	$time=7*20*3600;
+	setcookie("projet", $login, time()+$time, "/");
+                        $Row=mysqli_fetch_assoc($result);
+	$_SESSION['nom']=$Row['nom-prof'];
+                        $_SESSION['pre']=$Row['pre_prof'];
+	header("location: index.html");}
+	
+else echo '<p align="center" class="r">informations incorrect</p>';
+	}
+}
+?>
+
+Email:<input class="i" name="login" type="text"><br>
+
+mot de passe: <input class="r" name="psw" type="password"><br>
+
+<br>
+<input type="submit" name="send" value="connexion" id="button">
+<input type="reset" value="Annuler" id="button"><br>
+
+</div>
 
 	
 	<!-- CALL TO ACTION 
