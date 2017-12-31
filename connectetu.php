@@ -98,7 +98,7 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-<div id="login"  style="margin-left:7%; margin-top: 45px; width: 30%">
+<div id="login"  style="margin-left:7%; margin-top: 45px; width: 30%; float: left">
 <form method="POST">
 
 email:<input name="mailetu" type="email" required><br>
@@ -109,6 +109,25 @@ mot de passe: <input name="passetu" type="password" required><br>
   <input type="reset" value="Annuler" id="button"><br>
 </form>
 </div>
+<div id="subscribe" style="margin-left:50%; margin-top: 45px; width: 30%"> 
+CNE:<input class="i" name="login" type="text"><br><br>
+Nom:<input class="i" name="login" type="text"><br><br>
+Prenom<input class="i" name="login" type="text"><br><br>
+Mot de passe: <input class="r" name="psw" type="password" style="margin-right: 40px"><br><br>
+Resaisir le mot de passe: <input class="r" name="n_psw" type="password"><br><br>
+E-mail: <input class="i" name="email" type="text" ><br><br>
+Date de naissance: <input class="i" name="date_naiss" type="date"><br><br>
+Niveau d'étude: <input class="i" name="login" type="text"><br><br>
+Filiére/<select name="cod_fil">
+    <option value="LGI">LGI</option>
+    <option value="LSI">LSI</option>
+    <option value="SIAD">SIAD</option>
+    <option value="SIR">SIR</option>
+  </select>
+  <button type="submit" name="valider" class="blue" name="sendetu"/>Valider</button>
+  <input type="reset" value="Annuler" id="button"><br>
+ </div>
+
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">

@@ -108,7 +108,6 @@ if(isset($_POST['send'])) {
 	 }	 
 						 }else {echo "error";} 
 ?>
-<form method="POST" >
 
 CNE:<input class="i" name="login" type="text"><br><br>
 Nom:<input class="i" name="login" type="text"><br><br>
