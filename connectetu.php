@@ -1,12 +1,24 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<style>
+        table { border-collapse: collapse; }
+    tr {
+        height: 50px;
+        }
+    td {
+        border: solid 2px;
+        width: 180px;
+    }
+    .first {
+        width: 80px;
+    }
+    </style>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -22,7 +34,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.html">
-			<img src="images/ece.png" class="logo" alt="">
+				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
@@ -58,7 +70,7 @@
 					<li><a href="singleproject.html">Doctorat</a></li>
 				</ul>
 				</li>
-				<li class="last"><a href="#">Se Connecter</a>
+				<li class="last"><a href="contact.html">Se Connecter</a>
 					<ul>
 				    <li><a href="connectetu.php">Etudiant</a></li>
 					<li><a href="connectpro.php">Professeur</a></li>
@@ -69,52 +81,34 @@
 		</div>
 	</div>
 </div>
+<!-- HEADER
+================================================== -->
 <div class="undermenuarea">
 	<div class="boxedshadow">
 	</div>
-	
-
-<div>
-<?php
-if (isset($_POST['send'])) {
-	if (empty($_POST['psw']) || empty($_POST['login']))
-		echo '<p align="center" class="r">veillez saisire vos informations</p>';
-	else {
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "projet";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {die("Connection failed: ". mysqli_connect_error());}
-$login = isset($_POST['login']) ? $_POST['login'] : NULL;
-$pwd = isset($_POST['psw']) ? $_POST['psw'] : NULL;
-$sql = "SELECT * FROM etudiants where cod_etu='$login' and pwd_etu='$pwd'";
-$result = mysqli_query($conn, $sql);
-if(mysqli_num_rows($result)){
-	$time=7*20*3600;
-	setcookie("projet", $login, time()+$time, "/");
-                        $Row=mysqli_fetch_assoc($result);
-	$_SESSION['nom']=$Row['nom-etu'];
-                        $_SESSION['pre']=$Row['pre_etu'];
-	header("location: index.html");}
-	
-else echo '<p align="center" class="r">informations incorrect</p>';
-	}
-}
-?>
-
-CNE:<input class="i" name="login" type="text"><br>
-
-mot de passe: <input class="r" name="psw" type="password"><br>
-
-<br>
-<input type="submit" name="send" value="connexion" id="button">
-<input type="reset" value="Annuler" id="button"><br>
-
+	<div class="grid">
+		<div class="row">
+			<div class="c8">
+				<h1 class="titlehead">Licence Genie Informatique</h1>
+			</div>
+			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
-	
-	
+		</div>
+	</div>
+</div>
+<!-- CONTENT
+================================================== -->
+<div id="login"  style="margin-left:7%; margin-top: 45px; width: 30%">
+<form method="POST">
 
+email:<input name="mailetu" type="email" required><br>
+
+mot de passe: <input name="passetu" type="password" required><br>
+<?php include 'verif.php'; ?>
+  <button type="submit" name="send" class="blue" name="sendetu"/>connexion</button>
+  <input type="reset" value="Annuler" id="button"><br>
+</form>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -126,7 +120,7 @@ mot de passe: <input class="r" name="psw" type="password"><br>
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="images/ece.png" class="logo" alt="">
+				<img src="images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
@@ -202,54 +196,58 @@ mot de passe: <input class="r" name="psw" type="password"><br>
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- slider -->
-<script src="js/jquery.cslider.js"></script>
-
 <!-- cycle -->
 <script src="js/jquery.cycle.js"></script>
-
-<!-- carousel items -->
-<script src="js/jquery.carouFredSel-6.0.3-packed.js"></script>
 
 <!-- twitter -->
 <script src="js/jquery.tweet.js"></script>
 
-<!-- Call Showcase - change 4 from min:4 and max:4 to the number of items you want visible -->
-<script type="text/javascript">
-$(window).load(function(){			
-			$('#recent-projects').carouFredSel({
-				responsive: true,
-				width: '100%',
-				auto: true,
-				circular	: true,
-				infinite	: false,
-				prev : {
-					button		: "#car_prev",
-					key			: "left",
-						},
-				next : {
-					button		: "#car_next",
-					key			: "right",
-							},
-				swipe: {
-					onMouse: true,
-					onTouch: true
-					},
-				scroll : 2000,
-				items: {
-					visible: {
-						min: 4,
-						max: 4
-					}
-				}
-			});
-		});	
-</script>
+<!-- filtering -->
+<script src="js/jquery.isotope.min.js"></script>
 
-<!-- Call opacity on hover images from carousel-->
+<!-- CALL filtering & masonry-->
+<script>
+$(document).ready(function(){
+var $container = $('#content');
+  $container.imagesLoaded( function(){
+        $container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+});
+$('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+  });
+  return false;
+});
+$('#nav a').click(function (event) {
+    $('a.selected').removeClass('selected');
+    var $this = $(this);
+    $this.addClass('selected');
+    var selector = $this.attr('data-filter');
+    $container.isotope({
+         filter: selector
+    });
+    return false; // event.preventDefault()
+});
+});
+ </script>
+ 
+  <!-- Call opacity on hover images-->
 <script type="text/javascript">
 $(document).ready(function(){
-    $("img.imgOpa").hover(function() {
+    $(".boxcontainer img").hover(function() {
       $(this).stop().animate({opacity: "0.6"}, 'slow');
     },
     function() {

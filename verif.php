@@ -1,5 +1,5 @@
 <?php
-include '../lib/BDD.php';
+include 'lib/BDD.php';
 if(isset($_POST['sendetu'])){
     $mail =$_POST['mailetu'];
     $pwd =$_POST['passetu'];
