@@ -119,6 +119,13 @@ function validatepass() {
 		document.getElementById("pwd").innerHTML="Les mot de passes ne sont pas identiques";
         return false;
     }
+	var fil = document.forms["inscription"]["fil"].value;
+	var nve = document.forms["inscription"]["nve"].value;
+	if ((fil == 'GI' && nve != 'L1') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
+		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
+		 return false;
+	}
+
 }
 </script>
 <form mothod="POST" name="inscription" onsubmit="return validatepass()">
@@ -130,7 +137,7 @@ Mot de passe:* <input name="psw" type="password" required><br>
 Resaisir le mot de passe:* <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
 E-mail:* <input name="email" type="email" required><br>
 Date de naissance: <input name="ddn" type="date"><br>
-Filiére:* <select name="fil" required>
+filière:* <select name="fil" required>
     <option value="GI">Génie informatique</option>
     <option value="LSI">Logiciels et systèmes informatiques</option>
     <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
@@ -143,7 +150,7 @@ Niveau d'étude:* <select name="nve" required>
     <option value="C1">1ére année cycle</option>
     <option value="C2">2éme année cycle</option>
     <option value="C3">3éme année cycle</option>
-	</select>
+	</select><p id="nve" class="err"></p>
 	<br>
 <button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
   <input type="reset" value="Annuler"><br>
