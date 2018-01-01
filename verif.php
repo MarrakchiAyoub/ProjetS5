@@ -7,6 +7,7 @@ if(isset($_POST['sendetu'])){
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)){
         $Row=mysqli_fetch_assoc($result);
+        $_SESSION['cne']=$Row['cod_etu'];
         $_SESSION['nom']=$Row['nom_etu'];
         $_SESSION['pre']=$Row['pre_etu'];
         $_SESSION['email']=$Row['email_etu'];
