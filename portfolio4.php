@@ -21,51 +21,11 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
-		<div class="c8">
-			<nav id="topNav">
-			<ul id="responsivemenu">
-				<li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
-				<li><a href="#">DEPARTEMENT</a>
-				  <ul style="display: none;">
-				  <li><a href="about.html">A propos</a></li>
-				  <li><a href="services.html">Services</a></li>
-				  <li><a href="faq.html">F.A.Q.s</a></li>					
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="timeline.html">Timeline</a></li>
-					<li class="last"><a href="404.html">404 Page</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Elements</a>
-				<ul style="display: none;">					
-					<li><a href="team.html">Team</a></li>
-					<li><a href="pricing.html">Pricing Tables</a></li>
-					<li><a href="columns.html">Columns</a></li>
-					<li><a href="rightsidebar.html">Right Sidebar</a></li>
-					<li><a href="leftsidebar.html">Left Sidebar</a></li>					
-					
-				</ul>
-				</li>
-				<li><a href="#">Emplois du temps</a>
-				  <ul>
-				    <li><a href="emploi-LGI.html">Licence</a></li>
-					<li><a href="portfolio-masonry4.html">Master</a></li>
-					<li><a href="portfolio-masonry5.html">Cycle d'Ingenieur</a></li>					
-					<li><a href="singleproject.html">Doctorat</a></li>
-				</ul>
-				</li>
-				<li class="last"><a href="contact.html">Se Connecter</a>
-					<ul>
-				    <li><a href="connectetu.php">Etudiant</a></li>
-					<li><a href="connectpro.php">Professeur</a></li>
-					</ul>
-				</li>
-			</ul>
-			</nav>
-		</div>
+	<?php	include("menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -76,7 +36,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Photos & Vid Gallery</h1>
+				<h1 class="titlehead">Portfolio Four</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
@@ -86,156 +46,215 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
-		<div class="row">
-		<div class="c12">
-			<h1 class="maintitle space-top">
-			<span>Pretty Gallery</span>
-			</h1>
+		<div class="shadowundertop">
 		</div>
-		</div>
-		<!-- begin filter -->
+		<!-- begin categories -->
 		<div class="row space-bot">
 			<div class="c12">
+				<h1 class="maintitle space-top">
+				<span>EXPLORE OUR WORK</span>
+				</h1>
 				<div id="nav">
-					<ul>
-						<li><a href="" data-filter="*" class="selected">All Items</a></li>
-						<li><a href="" data-filter=".cat1">Classic</a></li>
-						<li><a href="" data-filter=".cat2">Elegant</a></li>
+					<ul class="option-set">
+						<li><a href="" data-filter="*" class="selected">Show All</a></li>
+						<li><a href="" data-filter=".cat1">Business</a></li>
+						<li><a href="" data-filter=".cat2">Light</a></li>
 						<li><a href="" data-filter=".cat3">Modern</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<!-- end filter -->		
+		<!-- end categories -->
 		<div class="row space-top">
 			<div id="content">
-				<!-- image 1 -->
+				<!-- box 1 -->
+				<div class="boxfourcolumns cat2">
+					<div class="boxcontainer">
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop blue">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Dalya Cream</a></h1>
+						<p>
+							 porta acean pulvinar
+						</p>
+					</div>
+				</div>
+				<!-- box 2 -->
+				<div class="boxfourcolumns cat1">
+					<div class="boxcontainer">
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop orange">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Office Look</a></h1>
+						<p>
+							 porta acean pulvinar
+						</p>
+					</div>
+				</div>
+				<!-- box 3 -->
 				<div class="boxfourcolumns cat1 cat3">
 					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="http://www.youtube.com/watch?v=QX2yt95Yu90"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Dalya</a></h1>
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop green">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Open Space</a></h1>
 						<p>
 							 porta acean pulvinar
 						</p>
 					</div>
 				</div>
-				<!-- image 2 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Veluria</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 3 -->
+				<!-- box 4 -->
 				<div class="boxfourcolumns cat2 cat3">
 					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Warm Living</a></h1>
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop orangered">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Stylish White</a></h1>
 						<p>
 							 porta acean pulvinar
 						</p>
 					</div>
 				</div>
-				<!-- image 4 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Classy Sofa</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 5 -->
+				<!-- box 5 -->
 				<div class="boxfourcolumns cat2">
 					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Corner Settee</a></h1>
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop green">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Classic Beauty</a></h1>
 						<p>
 							 porta acean pulvinar
 						</p>
 					</div>
 				</div>
-				<!-- image 6 -->
+				<!-- box 6 -->
+				<div class="boxfourcolumns cat2 cat3">
+					<div class="boxcontainer">
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop blue">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Warm Home</a></h1>
+						<p>
+							 porta acean pulvinar
+						</p>
+					</div>
+				</div>
+				<!-- box 7 -->
 				<div class="boxfourcolumns cat2">
 					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="http://www.youtube.com/watch?v=QX2yt95Yu90"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Nostalgic</a></h1>
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop blue">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Dalya Cream</a></h1>
 						<p>
 							 porta acean pulvinar
 						</p>
 					</div>
 				</div>
-				<!-- image 7 -->
-				<div class="boxfourcolumns cat2 cat3">
+				<!-- box 8 -->
+				<div class="boxfourcolumns cat2">
 					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Clean Style</a></h1>
+						<div class="mosaic-block cover mosaicover4col">
+							<div class="mosaic-overlay">
+								<img src="http://placehold.it/278x180" alt="">
+							</div>
+							<a href="singleproject.html" target="_blank" class="mosaic-backdrop blue">
+							<div class="details">
+								<b>Innovative Art & Dalya brings you Quality Furniture</b>
+								<p>
+									 via Salique
+								</p>
+								<i class="icon-link mosaiclink"></i>
+							</div>
+							</a>
+						</div>
+						<h1><a href="#">Dalya Cream</a></h1>
 						<p>
 							 porta acean pulvinar
 						</p>
 					</div>
 				</div>
-				<!-- image 8 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Simple & White</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 9 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Holiday Look</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 10 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Space Mov</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 11 etc -->
-				
+				<!-- box 9 etc -->
 			</div>
 		</div>
 </div><!-- end grid -->
-
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -322,34 +341,34 @@
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
+<!-- cycle -->
 <script src="js/jquery.cycle.js"></script>
 
-<!-- filterable -->
+<!-- twitter -->
+<script src="js/jquery.tweet.js"></script>
+
+<!-- filtering -->
 <script src="js/jquery.isotope.min.js"></script>
 
-<!-- gallery -->
-<script src="js/jquery.prettyPhoto.js"></script>
+<!-- hover effects -->
+<script type="text/javascript" src="js/mosaic.1.0.1.min.js"></script>
 
-<!-- CALL opacity on hover images -->
-<script type="text/javascript">
-$(document).ready(function(){
-    $("img.imgOpa").hover(function() {
-      $(this).stop().animate({opacity: "0.6"}, 'slow');
-    },
-    function() {
-      $(this).stop().animate({opacity: "1.0"}, 'slow');
-    });
-  });
+<!-- CALL hover effects -->
+<script type="text/javascript">  			
+			$(document).ready(function($){				
+				$('.cover').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'578'		//Horizontal position on hover
+				});		    
+		    });		    
 </script>
 
-<!-- CALL filtering -->
+<!-- CALL isotope filtering -->
 <script>
 $(document).ready(function(){
 var $container = $('#content');
   $container.imagesLoaded( function(){
-    $container.isotope({
+        $container.isotope({
 	filter: '*',
 	animationOptions: {
      duration: 750,
@@ -370,28 +389,17 @@ $('#nav a').click(function(){
   });
   return false;
 });
-
 $('#nav a').click(function (event) {
     $('a.selected').removeClass('selected');
     var $this = $(this);
     $this.addClass('selected');
     var selector = $this.attr('data-filter');
-
     $container.isotope({
          filter: selector
     });
     return false; // event.preventDefault()
 });
-
 });
  </script>
- 
-<!-- CALL lightbox prettyphoto -->
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools:'', animation_speed: 'normal' , theme: 'dark_rounded'});
-  });
-</script>
-
 </body>
 </html>

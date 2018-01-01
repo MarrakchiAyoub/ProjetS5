@@ -1,12 +1,24 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<style>
+        table { border-collapse: collapse; }
+    tr {
+        height: 50px;
+        }
+    td {
+        border: solid 2px;
+        width: 180px;
+    }
+    .first {
+        width: 80px;
+    }
+    </style>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -22,95 +34,39 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="">
+				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
-		<div class="c8">
-			<nav id="topNav">
-			<ul id="responsivemenu">
-				<li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
-				<li><a href="#">DEPARTEMENT</a>
-				  <ul style="display: none;">
-				  <li><a href="about.html">A propos</a></li>
-				  <li><a href="services.html">Services</a></li>
-				  <li><a href="faq.html">F.A.Q.s</a></li>					
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="timeline.html">Timeline</a></li>
-					<li class="last"><a href="404.html">404 Page</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Elements</a>
-				<ul style="display: none;">					
-					<li><a href="team.html">Team</a></li>
-					<li><a href="pricing.html">Pricing Tables</a></li>
-					<li><a href="columns.html">Columns</a></li>
-					<li><a href="rightsidebar.html">Right Sidebar</a></li>
-					<li><a href="leftsidebar.html">Left Sidebar</a></li>					
-					
-				</ul>
-				</li>
-				<li><a href="#">Emplois du temps</a>
-				  <ul>
-				    <li><a href="emploi-LGI.html">Licence</a></li>
-					<li><a href="portfolio-masonry4.html">Master</a></li>
-					<li><a href="portfolio-masonry5.html">Cycle d'Ingenieur</a></li>					
-					<li><a href="singleproject.html">Doctorat</a></li>
-				</ul>
-				</li>
-				<li class="last"><a href="#">Se Connecter</a>
-					<ul>
-				    <li><a href="connectetu.php">Etudiant</a></li>
-					<li><a href="connectpro.php">Professeur</a></li>
-					</ul>
-				</li>
-			</ul>
-			</nav>
-		</div>
+		<?php	include("menu.php"); ?>
 	</div>
 </div>
+<!-- HEADER
+================================================== -->
 <div class="undermenuarea">
 	<div class="boxedshadow">
 	</div>
-	
-
-    <?php
-if (isset($_POST['send'])) {
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "tp";
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn) {die("Connection failed: ". mysqli_connect_error());}
-$login =$_POST['login'];
-$pwd =$_POST['psw'];
-$email =$_POST['email'];
-$nom =$_POST['Nom'];
-$pre =$_POST['pre'];
-$sql = "SELECT login FROM users where login='$login'";
-$result = mysqli_query($conn, $sql);
-if(mysqli_num_rows($result)!=0){ echo 'ce login existe déja';
-echo '<a href="insert.html"> réesseyer avec un autre login</a>';
-}
-else {
-$sql = "insert into users (login, password, email, Nom, pre) values ('$login','$pwd','$email','$nom','$pre')";
-if (mysqli_query($conn, $sql)) {
-	echo 'compte crée avec succés <br>';
-	echo '<a href="index.php">me connecter immediatement</a>';
-}
-else{
-	echo "nous avon rencontré des problem en essayan d'ajouter votre compte";
-	echo '<a href="insert.php"> veillez réesseyer à nouveaux</a>';
-	}
-  }
-}
-?>
+	<div class="grid">
+		<div class="row">
+			<div class="c8">
+				<h1 class="titlehead">Licence Genie Informatique</h1>
+			</div>
+			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
-
-	
-	<!-- CALL TO ACTION 
-	================================================== -->
-
+		</div>
+	</div>
+</div>
+<!-- CONTENT
+================================================== -->
+<table class="emploi">
+		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
+		<tr><td class="first">Lundi</td><td>C1</td><td>C2</td><td>C3</td><td>C4</td></tr>
+		<tr><td class="first">Mardi</td><td>C5</td><td>C6</td><td>C7</td><td>C8</td></tr>
+		<tr><td class="first">Mercredi</td><td>C9</td><td>C10</td><td>C11</td><td>C12</td></tr>
+		<tr><td class="first">Jeudi</td><td>C13</td><td>C14</td><td>C15</td><td>C16</td></tr>
+		<tr><td class="first">Vendredi</td><td>C17</td><td>C18</td><td>C19</td><td>C20</td></tr>
+		<tr><td class="first">Samedi</td><td>C21</td><td>C22</td><td>C23</td><td>C24</td></tr>
+	</table>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -122,7 +78,7 @@ else{
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="images/ece.png" class="logo" alt="">
+				<img src="images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
@@ -198,54 +154,58 @@ else{
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- slider -->
-<script src="js/jquery.cslider.js"></script>
-
 <!-- cycle -->
 <script src="js/jquery.cycle.js"></script>
-
-<!-- carousel items -->
-<script src="js/jquery.carouFredSel-6.0.3-packed.js"></script>
 
 <!-- twitter -->
 <script src="js/jquery.tweet.js"></script>
 
-<!-- Call Showcase - change 4 from min:4 and max:4 to the number of items you want visible -->
-<script type="text/javascript">
-$(window).load(function(){			
-			$('#recent-projects').carouFredSel({
-				responsive: true,
-				width: '100%',
-				auto: true,
-				circular	: true,
-				infinite	: false,
-				prev : {
-					button		: "#car_prev",
-					key			: "left",
-						},
-				next : {
-					button		: "#car_next",
-					key			: "right",
-							},
-				swipe: {
-					onMouse: true,
-					onTouch: true
-					},
-				scroll : 2000,
-				items: {
-					visible: {
-						min: 4,
-						max: 4
-					}
-				}
-			});
-		});	
-</script>
+<!-- filtering -->
+<script src="js/jquery.isotope.min.js"></script>
 
-<!-- Call opacity on hover images from carousel-->
+<!-- CALL filtering & masonry-->
+<script>
+$(document).ready(function(){
+var $container = $('#content');
+  $container.imagesLoaded( function(){
+        $container.isotope({
+	filter: '*',
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+});
+});
+$('#nav a').click(function(){
+  var selector = $(this).attr('data-filter');
+    $container.isotope({ 
+	filter: selector,
+	animationOptions: {
+     duration: 750,
+     easing: 'linear',
+     queue: false,
+   }
+  });
+  return false;
+});
+$('#nav a').click(function (event) {
+    $('a.selected').removeClass('selected');
+    var $this = $(this);
+    $this.addClass('selected');
+    var selector = $this.attr('data-filter');
+    $container.isotope({
+         filter: selector
+    });
+    return false; // event.preventDefault()
+});
+});
+ </script>
+ 
+  <!-- Call opacity on hover images-->
 <script type="text/javascript">
 $(document).ready(function(){
-    $("img.imgOpa").hover(function() {
+    $(".boxcontainer img").hover(function() {
       $(this).stop().animate({opacity: "0.6"}, 'slow');
     },
     function() {

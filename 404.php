@@ -21,51 +21,11 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/ece.png" class="logo" alt="">
 			</a>
 		</div>
 		<!--Menu-->
-		<div class="c8">
-			<nav id="topNav">
-			<ul id="responsivemenu">
-				<li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
-				<li><a href="#">DEPARTEMENT</a>
-				  <ul style="display: none;">
-				  <li><a href="about.html">A propos</a></li>
-				  <li><a href="services.html">Services</a></li>
-				  <li><a href="faq.html">F.A.Q.s</a></li>					
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="timeline.html">Timeline</a></li>
-					<li class="last"><a href="404.html">404 Page</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Elements</a>
-				<ul style="display: none;">					
-					<li><a href="team.html">Team</a></li>
-					<li><a href="pricing.html">Pricing Tables</a></li>
-					<li><a href="columns.html">Columns</a></li>
-					<li><a href="rightsidebar.html">Right Sidebar</a></li>
-					<li><a href="leftsidebar.html">Left Sidebar</a></li>					
-					
-				</ul>
-				</li>
-				<li><a href="#">Emplois du temps</a>
-				  <ul>
-				    <li><a href="emploi-LGI.html">Licence</a></li>
-					<li><a href="portfolio-masonry4.html">Master</a></li>
-					<li><a href="portfolio-masonry5.html">Cycle d'Ingenieur</a></li>					
-					<li><a href="singleproject.html">Doctorat</a></li>
-				</ul>
-				</li>
-				<li class="last"><a href="contact.html">Se Connecter</a>
-					<ul>
-				    <li><a href="connectetu.php">Etudiant</a></li>
-					<li><a href="connectpro.php">Professeur</a></li>
-					</ul>
-				</li>
-			</ul>
-			</nav>
-		</div>
+		<?php	include("menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -76,7 +36,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Contact</h1>
+				<h1 class="titlehead">Oops...</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
@@ -87,62 +47,22 @@
 ================================================== -->
 <div class="grid">
 		<div class="shadowundertop"></div>
-		<div class="row space-bot">
-			<div class="c12">
-				<iframe class="gmap" src="https://www.google.com/maps/place/35%C2%B044'10.9%22N+5%C2%B053'38.8%22W/@35.7363653,-5.8962897,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0xd0b87d71f995045:0xc35a87c33b565280!2sFacult%C3%A9+des+sciences+et+techniques+de+Tanger,+Ziaten.+BP%D8%8C+Tanger,+Maroc!2m2!1d-5.8941633!2d35.7360692!3m5!1s0x0:0x0!7e2!8m2!3d35.7363607!4d-5.8941011">
-				</iframe>
+		<div class="row space-top space-bot">
+			<div class="c1">
 			</div>
-		</div>
-		<div class="row space-top">
-			<!-- CONTACT FORM -->
-			<div class="c8 space-top">
-				<h1 class="maintitle">
-				<span><i class="icon-envelope-alt"></i> Get in Touch</span>
-				</h1>
-				<div class="wrapcontact">
-					<div class="done">
-						<div class="alert-box success ctextarea">
-							 Your message has been sent. Thank you! <a href="" class="close">x</a>
-						</div>
-					</div>
-					<form method="post" action="contact.php" id="contactform">
-						<div class="form">
-							<div class="c6 noleftmargin">
-								<label>Name</label>
-								<input type="text" name="name">
-							</div>
-							<div class="c6 noleftmargin">
-								<label>E-mail address</label>
-								<input type="text" name="email">
-							</div>
-							<label>Message</label>
-							<textarea name="comment" class="ctextarea" rows="9"></textarea>
-							<input type="submit" id="submit" class="button" style="font-size:12px;" value="SUBMIT">
-						</div>
-					</form>
+			<div class="c10" style="text-align:center;margin-top:90px;margin-bottom:190px;">
+				<h1>SORRY, PAGE NOT FOUND</h1>
+				<div class="pageline">
+				</div>
+				<p>
+					 We've recently updated our site and the page you requested cannot be found. <br/>If you tried to load a previously bookmarked page, or followed a link from another web site, it is possible that the URL has been moved.
+				</p>
+				<br/>
+				<div class="actionbutton">
+					<a href="index.php"><i class=" icon-link"></i> VISIT OUR HOMEPAGE</a>
 				</div>
 			</div>
-			<div class="c4 space-top">
-				<h1 class="maintitle">
-				<span><i class="icon-map-marker"></i> Locations</span>
-				</h1>
-				<p>
-					<a class="link-2" href="more.html">The Company Name Inc.</a>
-				</p>
-				<dl>
-					<dt>2536 Zamora Road, Missisipi, 74C</dt>
-					<dd><span>Telephone:</span>+1 348 271 9483</dd>
-					<dd><span>FAX:</span>+1 243 794 5734</dd>
-					<dd>E-mail: <a href="more.html">mail@yourweb.com</a></dd>
-				</dl>
-				<br/>
-				<dl>
-					<dt>9863 - 9867 Mill Road, Cambridge, MG09 99HT</dt>
-					<dt>Zamora Road, Missisipi, 74C</dt>
-					<dd><span>Telephone:</span>+1 348 271 9483</dd>
-					<dd><span>FAX:</span>+1 243 794 5734</dd>
-					<dd>E-mail: <a href="more.html">mail@yourweb.com</a></dd>
-				</dl>
+			<div class="c1">
 			</div>
 		</div>
 </div><!-- end grid -->
@@ -233,14 +153,11 @@
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- cycle -->
-<script src="js/jquery.cycle.js"></script>
-
 <!-- twitter -->
 <script src="js/jquery.tweet.js"></script>
 
-<!-- contact form -->
-<script src="js/contact.js"></script>
+<!-- cycle -->
+<script src="js/jquery.cycle.js"></script>
 
 </body>
 </html>

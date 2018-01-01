@@ -54,7 +54,7 @@ $(document).ready(function() {
 		//start the ajax
 		$.ajax({
 			//this is the php file that processes the data and sends email
-			url: "contact.php",	
+			url: "mail.php",	
 			
 			//GET method is used
 			type: "GET",
@@ -67,7 +67,7 @@ $(document).ready(function() {
 			
 			//success
 			success: function (html) {				
-				//if contact.php returned 1/true (send mail success)
+				//if mail.php returned 1/true (send mail success)
 				if (html==1) {
 				
 					//show the success message
@@ -75,7 +75,7 @@ $(document).ready(function() {
 					
 					$(".form").find('input[type=text], textarea').val("");
 					
-				//if contact.php returned 0/false (send mail failed)
+				//if mail.php returned 0/false (send mail failed)
 				} else alert('Sorry, unexpected error. Please try again later.');				
 			}		
 		});

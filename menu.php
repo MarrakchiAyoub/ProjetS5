@@ -4,20 +4,19 @@
     <li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
-      <li><a href="about.html">A propos</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="faq.html">F.A.Q.s</a></li>					
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li class="last"><a href="404.html">404 Page</a></li>
+      <li><a href="about.php">A propos</a></li>
+      <li><a href="services.php">Services</a></li>
+      <li><a href="faq.php">F.A.Q.s</a></li>					
+        <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="timeline.php">Timeline</a></li>
+        <li class="last"><a href="404.php">404 Page</a></li>
     </ul>
     </li>
     <li><a href="#">Emplois du temps</a>
       <ul>
-        <li><a href="emploi-LGI.html">Licence</a></li>
-        <li><a href="portfolio-masonry4.html">Master</a></li>
-        <li><a href="portfolio-masonry5.html">'.$cycle.'</a></li>					
-        <li><a href="singleproject.html">Doctorat</a></li>
+        <li><a href="emploi-LGI.php">Licence</a></li>
+        <li><a href="portfolio-masonry4.php">Master</a></li>
+        <li><a href="portfolio-masonry5.php">Cycle d'ingenieur</a></li>
     </ul>
     </li>
     <?php if(!isset($_SESSION['type']))

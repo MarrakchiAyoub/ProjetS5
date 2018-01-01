@@ -25,47 +25,7 @@
 			</a>
 		</div>
 		<!--Menu-->
-		<div class="c8">
-			<nav id="topNav">
-			<ul id="responsivemenu">
-				<li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
-				<li><a href="#">DEPARTEMENT</a>
-				  <ul style="display: none;">
-				  <li><a href="about.html">A propos</a></li>
-				  <li><a href="services.html">Services</a></li>
-				  <li><a href="faq.html">F.A.Q.s</a></li>					
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="timeline.html">Timeline</a></li>
-					<li class="last"><a href="404.html">404 Page</a></li>
-				</ul>
-				</li>
-				<li><a href="#">Elements</a>
-				<ul style="display: none;">					
-					<li><a href="team.html">Team</a></li>
-					<li><a href="pricing.html">Pricing Tables</a></li>
-					<li><a href="columns.html">Columns</a></li>
-					<li><a href="rightsidebar.html">Right Sidebar</a></li>
-					<li><a href="leftsidebar.html">Left Sidebar</a></li>					
-					
-				</ul>
-				</li>
-				<li><a href="#">Emplois du temps</a>
-				  <ul>
-				    <li><a href="emploi-LGI.html">Licence</a></li>
-					<li><a href="portfolio-masonry4.html">Master</a></li>
-					<li><a href="portfolio-masonry5.html">Cycle d'Ingenieur</a></li>					
-					<li><a href="singleproject.html">Doctorat</a></li>
-				</ul>
-				</li>
-				<li class="last"><a href="contact.html">Se Connecter</a>
-					<ul>
-				    <li><a href="connectetu.php">Etudiant</a></li>
-					<li><a href="connectpro.php">Professeur</a></li>
-					</ul>
-				</li>
-			</ul>
-			</nav>
-		</div>
+	<?php	include("menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -76,7 +36,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Masonry Five</h1>
+				<h1 class="titlehead">Masonry Four</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
@@ -108,7 +68,7 @@
 	<div class="row space-top">
 		<div id="content">
 			<!-- box 1 -->
-			<div class="boxfivecolumns cat1 cat3">
+			<div class="boxfourcolumns cat1 cat3">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -118,7 +78,7 @@
 				</div>
 			</div>
 			<!-- box 2 -->
-			<div class="boxfivecolumns cat1">
+			<div class="boxfourcolumns cat1">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -128,7 +88,7 @@
 				</div>
 			</div>
 			<!-- box 3 -->
-			<div class="boxfivecolumns cat2 cat3">
+			<div class="boxfourcolumns cat2 cat3">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -138,7 +98,7 @@
 				</div>
 			</div>
 			<!-- box 4 -->
-			<div class="boxfivecolumns cat1">
+			<div class="boxfourcolumns cat1">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -148,7 +108,7 @@
 				</div>
 			</div>
 			<!-- box 5 -->
-			<div class="boxfivecolumns cat2">
+			<div class="boxfourcolumns cat2">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -158,7 +118,7 @@
 				</div>
 			</div>
 			<!-- box 6 -->
-			<div class="boxfivecolumns cat2">
+			<div class="boxfourcolumns cat2">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -168,7 +128,7 @@
 				</div>
 			</div>
 			<!-- box 7 -->
-			<div class="boxfivecolumns cat2 cat3">
+			<div class="boxfourcolumns cat2 cat3">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -178,7 +138,7 @@
 				</div>
 			</div>
 			<!-- box 8 -->
-			<div class="boxfivecolumns cat1">
+			<div class="boxfourcolumns cat1">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
@@ -188,7 +148,7 @@
 				</div>
 			</div>
 			<!-- box 9 -->
-			<div class="boxfivecolumns cat2 cat3">
+			<div class="boxfourcolumns cat2 cat3">
 				<div class="boxcontainer">
 					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
 					<h1><a href="#">Salique Beauty</a></h1>
