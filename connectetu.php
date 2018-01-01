@@ -122,21 +122,22 @@ function validatepass() {
 }
 </script>
 <form mothod="POST" name="inscription" onsubmit="return validatepass()">
-CNE:<input name="login" type="text" required><br>
-Nom:<input name="login" type="text" required><br>
-Prénom: <input name="login" type="text" required><br>
-Mot de passe: <input name="psw" type="password" style="margin-right: 40px" required><br>
-Resaisir le mot de passe: <input name="n_psw" type="password"><p id="pwd" class="err" required></p><br>
-E-mail: <input name="email" type="text" required><br>
-Date de naissance: <input name="date_naiss" type="date"><br>
-Niveau d'étude: <input name="login" type="text" required><br>
-Filiére: <select name="cod_fil" required>
-    <option value="LGI">LGI</option>
-    <option value="LSI">LSI</option>
-    <option value="SIAD">SIAD</option>
-    <option value="SIR">SIR</option>
+<?php include 'inscription.php'; ?>
+CNE:*<input name="cne" type="text" required><br>
+Nom:*<input name="nom" type="text" required><br>
+Prénom:* <input name="pre" type="text" required><br>
+Mot de passe:* <input name="psw" type="password" required><br>
+Resaisir le mot de passe:* <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
+E-mail:* <input name="email" type="email" required><br>
+Date de naissance: <input name="ddn" type="date"><br>
+Filiére:* <select name="fil" required>
+    <option value="GI">Génie informatique</option>
+    <option value="LSI">Logiciels et systèmes informatiques</option>
+    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
+    <option value="SIR">Systèmes informatiques et réseaux</option>
   </select>
-  <button type="submit" name="send" class="blue"/>Valider</button>
+Niveau d'étude:* <input name="nve" type="text" required><br>
+<button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
   <input type="reset" value="Annuler"><br>
   </form>
  </div>
