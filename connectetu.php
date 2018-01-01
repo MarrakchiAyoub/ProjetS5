@@ -136,7 +136,15 @@ Filiére:* <select name="fil" required>
     <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
     <option value="SIR">Systèmes informatiques et réseaux</option>
   </select>
-Niveau d'étude:* <input name="nve" type="text" required><br>
+Niveau d'étude:* <select name="nve" required>
+    <option value="L3">3éme année licence</option>
+    <option value="M1">1ére année Master</option>
+    <option value="M2">2éme année Master</option>
+    <option value="C1">1ére année cycle</option>
+    <option value="C2">2éme année cycle</option>
+    <option value="C3">3éme année cycle</option>
+	</select>
+	<br>
 <button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
   <input type="reset" value="Annuler"><br>
   </form>

@@ -9,7 +9,7 @@ $mail=$_POST['email'];
 $ddn=$_POST['ddn'];
 $fil=$_POST['fil'];
 $nve=$_POST['nve'];
-if ($fil=='GI') { $grp='GI-1'; $nve='L3'; }
+$grp=$fil.'-1';
 	$sql="SELECT email_etu FROM etudiants where email_etu='$mail'";
 	$result=mysqli_query($conn, $sql);
 	if(mysqli_num_rows($result)!=0)
@@ -29,5 +29,4 @@ if ($fil=='GI') { $grp='GI-1'; $nve='L3'; }
 			 }
 	 }	 
 }
-else echo 'err';
 ?>
