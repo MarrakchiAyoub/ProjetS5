@@ -1,7 +1,7 @@
 <div class="c8">
 <nav id="topNav">
 <ul id="responsivemenu">
-    <li class="active"><a href="index.html"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
+    <li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="about.html">A propos</a></li>
@@ -30,11 +30,11 @@
      </li>';
      }
      else {if($_SESSION['type']=='etudiant') {  
-         echo '<li class="last"><a href="#">Se Connecter</a>
+         echo '<li class="last"><a href="#">Espace Etudiant</a>
         <ul>
-        <li><a href="connectetu.php">Télécharger des cours</a></li>
-        <li><a href="connectpro.php">Gestion de compte</a></li>
-       <li><a href="connectetu.php"></a>Deconnexion</li>
+        <li><a href="#">Télécharger des cours</a></li>
+        <li><a href="#">Gestion de compte</a></li>
+       <li><a href="#">Deconnexion</a></li>
         </ul>
      </li>';}
      else if($_SESSION['type']=='prof') {  
@@ -42,7 +42,7 @@
        <ul>
        <li><a href="connectetu.php"></a>Joindre des cours</li>
        <li><a href="connectpro.php">Gestion de compte</a></li>
-       <li><a href="connectetu.php"></a>Deconnexion</li>
+       <li><a href="connectetu.php">Deconnexion</a></li>
        </ul>
     </li>';}
      }

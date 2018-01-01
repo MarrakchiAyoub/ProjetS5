@@ -74,7 +74,7 @@ p.alert { background-color: #fff6aa; border-color: #ffc814; padding: 15px 10px 1
 p.alert, p.alert * { color: #454545; text-shadow: 0 1px 0 rgba(255,255,255,0.6) !important; }
 p.alert.success { background-color: #d7e87c; border-color: #97ae1e; }
 p.alert.error { background-color: #edb39b; border-color: #ed6127; }
-p.err { color: #e9464b }
+p.err { color: #d30007 }
 p.alert.info { background-color: #d9edf0; border-color: #b8e7f5; }
 em, i { font-style: italic; line-height: inherit; }
 strong, b { font-weight: bold; line-height: inherit; }

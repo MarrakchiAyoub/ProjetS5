@@ -12,7 +12,9 @@ if(isset($_POST['sendetu'])){
         $_SESSION['pre']=$Row['pre_etu'];
         $_SESSION['email']=$Row['email_etu'];
         $_SESSION['fil']=$Row['cod_fil'];
-        $_SESSION['type']="etudiant"; echo "1";}
+        $_SESSION['type']="etudiant";
+    header("location: index.php");
+}
     else { echo '<p align="center" class="err">Email ou mot de pass incorrecte</p>';
     }
 }
@@ -28,7 +30,9 @@ else if(isset($_POST['sendpro'])){
         $_SESSION['pre']=$Row['pre_prof'];
         $_SESSION['email']=$Row['email_prof'];
         $_SESSION['code']=$Row['cod_prof'];
-        $_SESSION['type']="prof";}
+        $_SESSION['type']="prof";
+        header("location: index.php");
+}
     else echo '<p align="center" class="err">Email ou mot de pass incorrecte</p>';
 }
 ?>
