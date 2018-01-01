@@ -34,15 +34,15 @@
         <ul>
         <li><a href="#">Télécharger des cours</a></li>
         <li><a href="#">Gestion de compte</a></li>
-       <li><a href="#">Deconnexion</a></li>
+       <li><a href="dec.php">Deconnexion</a></li>
         </ul>
      </li>';}
      else if($_SESSION['type']=='prof') {  
         echo '<li class="last"><a href="#">Espace Professeurs</a>
        <ul>
-       <li><a href="connectetu.php"></a>Joindre des cours</li>
+       <li><a href="connectetu.php">Joindre des cours</a></li>
        <li><a href="connectpro.php">Gestion de compte</a></li>
-       <li><a href="connectetu.php">Deconnexion</a></li>
+       <li><a href="dec.php">Deconnexion</a></li>
        </ul>
     </li>';}
      }
