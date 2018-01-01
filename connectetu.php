@@ -121,7 +121,7 @@ function validatepass() {
     }
 	var fil = document.forms["inscription"]["fil"].value;
 	var nve = document.forms["inscription"]["nve"].value;
-	if ((fil == 'GI' && nve != 'L1') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
+	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
 		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
 		 return false;
 	}

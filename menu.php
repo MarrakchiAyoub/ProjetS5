@@ -1,6 +1,4 @@
-<?php
-$cycle="Cycle d'Ingenieur";
-echo '<div class="c8">
+<div class="c8">
 <nav id="topNav">
 <ul id="responsivemenu">
     <li class="active"><a href="index.html"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
@@ -14,16 +12,6 @@ echo '<div class="c8">
         <li class="last"><a href="404.html">404 Page</a></li>
     </ul>
     </li>
-    <li><a href="#">Elements</a>
-    <ul style="display: none;">					
-        <li><a href="team.html">Team</a></li>
-        <li><a href="pricing.html">Pricing Tables</a></li>
-        <li><a href="columns.html">Columns</a></li>
-        <li><a href="rightsidebar.html">Right Sidebar</a></li>
-        <li><a href="leftsidebar.html">Left Sidebar</a></li>					
-        
-    </ul>
-    </li>
     <li><a href="#">Emplois du temps</a>
       <ul>
         <li><a href="emploi-LGI.html">Licence</a></li>
@@ -32,13 +20,33 @@ echo '<div class="c8">
         <li><a href="singleproject.html">Doctorat</a></li>
     </ul>
     </li>
-    <li class="last"><a href="#">Se Connecter</a>
+    <?php if(!isset($_SESSION['type']))
+    {
+   echo '<li class="last"><a href="#">Se Connecter</a>
         <ul>
         <li><a href="connectetu.php">Etudiant</a></li>
         <li><a href="connectpro.php">Professeur</a></li>
         </ul>
-    </li>
+     </li>';
+     }
+     else {if($_SESSION['type']=='etudiant') {  
+         echo '<li class="last"><a href="#">Se Connecter</a>
+        <ul>
+        <li><a href="connectetu.php">Télécharger des cours</a></li>
+        <li><a href="connectpro.php">Gestion de compte</a></li>
+       <li><a href="connectetu.php"></a>Deconnexion</li>
+        </ul>
+     </li>';}
+     else if($_SESSION['type']=='prof') {  
+        echo '<li class="last"><a href="#">Espace Professeurs</a>
+       <ul>
+       <li><a href="connectetu.php"></a>Joindre des cours</li>
+       <li><a href="connectpro.php">Gestion de compte</a></li>
+       <li><a href="connectetu.php"></a>Deconnexion</li>
+       </ul>
+    </li>';}
+     }
+     ?>
 </ul>
 </nav>
-</div>';
-?>
+</div>
