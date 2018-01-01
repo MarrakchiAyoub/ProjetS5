@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 31, 2017 at 12:15 AM
+-- Generation Time: Jan 01, 2018 at 02:26 AM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -116,6 +116,13 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
   KEY `num_grp` (`num_grp`),
   KEY `cod_fil` (`cod_fil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `etudiants`
+--
+
+INSERT INTO `etudiants` (`cod_etu`, `nom_etu`, `pre_etu`, `email_etu`, `pwd_etu`, `date_nai`, `niv_etu`, `num_grp`, `cod_fil`) VALUES
+('1210718413', 'Marrakchi', 'Ayoub', 'Marrakchi.Ay@gmail.com', '123456', '1995-03-08', 'L3', 'GI-1', 'GI');
 
 -- --------------------------------------------------------
 
@@ -295,6 +302,13 @@ ALTER TABLE `ele_mod`
   ADD CONSTRAINT `ele_mod_ibfk_1` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`),
   ADD CONSTRAINT `ele_mod_ibfk_3` FOREIGN KEY (`cod_prof`) REFERENCES `professeurs` (`cod_prof`),
   ADD CONSTRAINT `ele_mod_ibfk_4` FOREIGN KEY (`cod_mod`) REFERENCES `modules` (`cod_mod`);
+
+--
+-- Constraints for table `etudiants`
+--
+ALTER TABLE `etudiants`
+  ADD CONSTRAINT `etudiants_ibfk_1` FOREIGN KEY (`num_grp`) REFERENCES `groupes` (`cod_grp`),
+  ADD CONSTRAINT `etudiants_ibfk_2` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`);
 
 --
 -- Constraints for table `filieres`
