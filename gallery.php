@@ -51,7 +51,7 @@
 		<div class="row">
 		<div class="c12">
 			<h1 class="maintitle space-top">
-			<span>Choisisez votre fillières</span>
+			<span>Choisisez votre fillieres</span>
 			</h1>
 		</div>
 		</div>
