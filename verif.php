@@ -8,12 +8,15 @@ if(isset($_POST['sendetu'])){
     if(mysqli_num_rows($result)){
         $Row=mysqli_fetch_assoc($result);
         $_SESSION['cne']=$Row['cod_etu'];
+        $cne=$Row['cod_etu'];
         $_SESSION['nom']=$Row['nom_etu'];
         $_SESSION['pre']=$Row['pre_etu'];
         $_SESSION['email']=$Row['email_etu'];
         $_SESSION['fil']=$Row['cod_fil'];
         $_SESSION['type']="etudiant";
-    header("location: index.php");
+        $sql_co="INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES (NULL, '$cne', NULL, CURRENT_DATE());";
+        mysqli_query($conn, $sql_co);
+        header("location: index.php");
 }
     else { echo '<p align="center" class="err">Email ou mot de pass incorrecte</p>';
     }
@@ -29,7 +32,10 @@ else if(isset($_POST['sendpro'])){
         $_SESSION['pre']=$Row['pre_prof'];
         $_SESSION['email']=$Row['email_prof'];
         $_SESSION['code']=$Row['cod_prof'];
+        $code=$Row['cod_prof'];
         $_SESSION['type']="prof";
+        $sql_co="INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES (NULL, NULL, '$code', CURRENT_DATE());";
+        mysqli_query($conn, $sql_co);
         header("location: index.php");
 }
     else echo '<p align="center" class="err">Email ou mot de pass incorrecte</p>';
