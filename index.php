@@ -38,33 +38,33 @@
 	<div id="da-slider" class="da-slider">
 		<!--Slide 1-->
 		<div class="da-slide">
-			<h2> Elegant Design </h2>
+			<h2> Bienvenue </h2>
 			<p>
-				With the right, great looking responsive website template, you will be able to attract visitors and increase your sales. This is an elegant theme designed for multi-purpose use.
+			Ce si est le site departement Genie informatique de la fst.
 			</p>
-			<a href="#" class="da-link" style="width:202px;">Multi-Purpose</a>
+			<a href="#" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
 				<img class="imgslide" src="./images/160.jpg" alt="">
 			</div>
 		</div>
 		<!--Slide 2-->
 		<div class="da-slide">
-			<h2>Responsive</h2>
+			<h2>Emplois</h2>
 			<p>
-				 We produce comprehensive mapping of consumers' relationships with communications across bought, owned & earned media based on bespoke insight.
+				 Vous pouvez consulter votre emplois et chaque professeur peut reporter se séance .
 			</p>
-			<a href="#" class="da-link" style="width:192px;">MEDIA DEVICES</a>
+			<a href="#" class="da-link" style="width:192px;">Clickez-ici!</a>
 			<div class="da-img">
 				<img class="imgslide" src="./images/286.jpg" alt="">
 			</div>
 		</div>
 		<!--Slide 3-->
 		<div class="da-slide">
-			<h2> Easy to modify </h2>
+			<h2> Cours </h2>
 			<p>
-				 We design, create and manage fully integrated social media platforms, online PR strategy and campaigns for our clients, ability to analyse, monitor and optimise brand presence.
+				vous pouvez consulter et télécharger les cours . 
 			</p>
-			<a href="#" class="da-link" style="width:224px;">fully supported</a>
+			<a href="#" class="da-link" style="width:224px;">Clickez-ici!</a>
 			<div class="da-img">
 				<img class="imgslide" src="./images/923.jpg" alt="">
 			</div>
