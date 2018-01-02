@@ -40,7 +40,7 @@
 		<div class="da-slide">
 			<h2> Bienvenue </h2>
 			<p>
-			Ce si est le site departement Genie informatique de la fst.
+			Ce si est le site departement Genie informatique de la FST-T.
 			</p>
 			<a href="#" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
@@ -51,7 +51,7 @@
 		<div class="da-slide">
 			<h2>Emplois</h2>
 			<p>
-				 Vous pouvez consulter votre emplois et chaque professeur peut reporter se séance .
+				 Vous pouvez consulter votre emplois et chaque professeur peut reporter sa seance .
 			</p>
 			<a href="gallery.php" class="da-link" style="width:192px;">Clickez-ici!</a>
 			<div class="da-img">
@@ -62,7 +62,7 @@
 		<div class="da-slide">
 			<h2> Cours </h2>
 			<p>
-				vous pouvez consulter et télécharger les cours . 
+				vous pouvez consulter et telecharger les cours . 
 			</p>
 			<a href="#" class="da-link" style="width:224px;">Clickez-ici!</a>
 			<div class="da-img">
