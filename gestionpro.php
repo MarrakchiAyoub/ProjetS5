@@ -61,13 +61,42 @@
 ================================================== -->
 <div id="form"  style="margin-left:7%; margin-top: 45px; width: 30%; float: left">
 	<h3>Email</h3><br>
-<form method="POST">
-Ancien email:<input name="mailetu" type="email" required><br>
-Nouveau email:<input name="mailetu" type="email" required><br>
-Resaisir le nouveau email:<input name="mailetu" type="email" required><br>
+	<script>
+function validatemail() {
+    var x = document.forms["up_mail"]["mail"].value;
+	var y = document.forms["up_mail"]["n_mail"].value;
+    if (x != y) {
+		document.getElementById("vmail").innerHTML="Les emails ne sont pas identiques";
+        return false;
+    }
 
-<?php include 'verif.php'; ?>
-<button class="blue" type="submit" name="sendetu"/>connexion</button>
+}
+</script>
+<form name="up_mail" method="POST" onsubmit="return validatemail()">
+Nouveau email:<?php $mail=$_SESSION['email']; echo '<input name="mail" type="email" placeholder="votre email actuelle: ',$mail,'" required><br>'; ?>
+Resaisir le nouveau email:<input name="n_mail" type="email" required><p id="vmail" class="err"></p><br>
+mot de pass:<input name="psw" type="password" required><br>
+<?php
+$cod=$_SESSION['code'];
+if(isset($_POST['m_send'])){
+	$n_mail=$_POST['mail'];
+	$pwd=$_POST['psw'];
+	$sql = "SELECT * FROM professeurs where cod_prof='$cod' and pwd_prof='$pwd'";
+	$result = mysqli_query($conn, $sql);
+	if(!mysqli_num_rows($result)) echo '<p align="center" class="err">mot de pass incorrecte</p>';
+	else {
+		$sql="UPDATE `professeurs` SET `email_prof` ='$n_mail' WHERE `professeurs`.`cod_prof` = '$cod' ";
+		if(mysqli_query($conn, $sql))
+			 {
+			 echo '<p align="center" class="info">email à été met à jour avec succés<p>';
+			 }
+		 else{
+			 echo '<p align="center" class="err">Cette email existe déja</p>';
+			 }
+	}
+}
+?>
+<button class="blue" type="submit" name="m_send"/>Valider</button>
   <input type="reset" value="Annuler"><br>
 </form>
 </div>
@@ -76,31 +105,44 @@ Resaisir le nouveau email:<input name="mailetu" type="email" required><br>
 	<h3>Mot de passe</h3><br>
 <script>
 function validatepass() {
-    var x = document.forms["inscription"]["psw"].value;
-	var y = document.forms["inscription"]["n_psw"].value;
+    var x = document.forms["up_pass"]["psw"].value;
+	var y = document.forms["up_pass"]["n_psw"].value;
     if (x != y) {
 		document.getElementById("pwd").innerHTML="Les mot de passes ne sont pas identiques";
         return false;
     }
-	var fil = document.forms["inscription"]["fil"].value;
-	var nve = document.forms["inscription"]["nve"].value;
-	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
-		 return false;
-	}
 
 }
 </script>
-<form mothod="POST" name="inscription" onsubmit="return validatepass()">
-<?php include 'inscription.php'; ?>
-Ancien mot de passe: <input name="psw" type="password" required><br>
+<form mothod="POST" name="up_pass" onsubmit="return validatepass()">
+Ancien mot de passe: <input name="o_psw" type="password" required><br>
 Nouveau mot de passe: <input name="psw" type="password" required><br>
 Resaisir le nouveau mot de passe: <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
-<button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
+<?php 
+$cod=$_SESSION['code'];
+if(isset($_POST['p_send'])){
+	$n_pwd=$_POST['psw'];
+	$pwd=$_POST['o_psw'];
+	$sql = "SELECT * FROM professeurs where cod_prof='$cod' and pwd_prof='$pwd'";
+	$result = mysqli_query($conn, $sql);
+	if(!mysqli_num_rows($result)) echo '<p align="center" class="err">mot de pass incorrecte</p>';
+	else {
+		$sql="UPDATE `professeurs` SET `pwd_prof` ='$n_pwd' WHERE `professeurs`.`cod_prof` = '$cod' ";
+		if(mysqli_query($conn, $sql))
+			 {
+			 echo '<p align="center" class="info">mot de pass à été met à jour avec succés<p>';
+			 }
+		 else{
+			 $n="n'a";
+			 echo '<p align="center" class="err">le mot de pass '.$n.' pas pu être mis à jour</p>';
+			 }
+	}
+}
+ ?>
+<button class="blue" type="submit" formmethod="post" name="p_send"/>Valider</button>
   <input type="reset" value="Annuler"><br>
   </form>
  </div>
-
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
