@@ -53,7 +53,7 @@
 			<p>
 				 Vous pouvez consulter votre emplois et chaque professeur peut reporter se séance .
 			</p>
-			<a href="#" class="da-link" style="width:192px;">Clickez-ici!</a>
+			<a href="gallery.php" class="da-link" style="width:192px;">Clickez-ici!</a>
 			<div class="da-img">
 				<img class="imgslide" src="./images/286.jpg" alt="">
 			</div>

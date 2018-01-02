@@ -31,7 +31,7 @@
      else {if($_SESSION['type']=='etudiant') {  
          echo '<li class="last"><a href="#">Espace Etudiant</a>
         <ul>
-        <li><a href="#">Télécharger des cours</a></li>
+        <li><a href="gallery.php">Télécharger des cours</a></li>
         <li><a href="gestionetu.php">Gestion de compte</a></li>
        <li><a href="dec.php">Deconnexion</a></li>
         </ul>
