@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
 --
 
 INSERT INTO `etudiants` (`cod_etu`, `nom_etu`, `pre_etu`, `email_etu`, `pwd_etu`, `date_nai`, `niv_etu`, `num_grp`, `cod_fil`) VALUES
-('1210718413', 'Marrakchi', 'Ayoub', 'Marrakchi.Ay@gmail.com', '123456', '1995-03-08', 'L3', 'GI-1', 'GI');
+('1210718413', 'Marrakchi', 'Ayoub', 'Marrakchi.Ay@gmail.com', '123456', '1995-03-08', 'L3', 'GI-L3-1', 'GI');
 
 -- --------------------------------------------------------
 
@@ -169,7 +169,14 @@ CREATE TABLE IF NOT EXISTS `groupes` (
 --
 
 INSERT INTO `groupes` (`cod_grp`, `cod_fil`, `nbr_etu_grp`) VALUES
-('GI-1', 'GI', 63);
+('GI-L3-1', 'GI', 63),
+('LSI-C1-1', 'LSI', 30),
+('LSI-C2-1', 'LSI', 30),
+('LSI-C3-1', 'LSI', 30),
+('SIAD-M1-1', 'SIAD', 25),
+('SIAD-M2-1', 'SIAD', 25),
+('SIR-M1-1', 'SIR', 25),
+('SIR-M2-1', 'SIR', 25);
 
 -- --------------------------------------------------------
 
