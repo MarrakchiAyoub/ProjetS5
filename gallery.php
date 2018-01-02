@@ -37,7 +37,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Photos & Vid Gallery</h1>
+				<h1 class="titlehead">Les cours</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
@@ -51,7 +51,7 @@
 		<div class="row">
 		<div class="c12">
 			<h1 class="maintitle space-top">
-			<span>Pretty Gallery</span>
+			<span>Choisisez votre fillières</span>
 			</h1>
 		</div>
 		</div>
@@ -60,10 +60,10 @@
 			<div class="c12">
 				<div id="nav">
 					<ul>
-						<li><a href="" data-filter="*" class="selected">All Items</a></li>
-						<li><a href="" data-filter=".cat1">Classic</a></li>
-						<li><a href="" data-filter=".cat2">Elegant</a></li>
-						<li><a href="" data-filter=".cat3">Modern</a></li>
+						<li><a href="" data-filter="*" class="selected">tous les cours</a></li>
+						<li><a href="" data-filter=".cat1">Lisence</a></li>
+						<li><a href="" data-filter=".cat2">Master</a></li>
+						<li><a href="" data-filter=".cat3">cycle</a></li>
 					</ul>
 				</div>
 			</div>
