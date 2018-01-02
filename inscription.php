@@ -23,7 +23,6 @@ $grp=$fil.'-'.$nve.'-1';
 			 echo '<p align="center" class="info">compte crée avec succés<p>';
 			 }
 		 else{
-			 echo $ddn;
 			 $p="d'ajouter";
 			 echo '<p align="center" class="err">nous avon rencontré des problem en essayant ', $p, ' votre compte</p>';
 			 }
