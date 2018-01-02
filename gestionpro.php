@@ -73,9 +73,9 @@ function validatemail() {
 }
 </script>
 <form name="up_mail" method="POST" onsubmit="return validatemail()">
-Nouveau email:<?php $mail=$_SESSION['email']; echo '<input name="mail" type="email" placeholder="votre email actuelle: ',$mail,'" required><br>'; ?>
-Resaisir le nouveau email:<input name="n_mail" type="email" required><p id="vmail" class="err"></p><br>
-mot de pass:<input name="psw" type="password" required><br>
+Nouveau email:<?php $mail=$_SESSION['email']; echo '<input name="mail" type="email" autocomplete="off" placeholder="votre email actuelle: ',$mail,'" required><br>'; ?>
+Resaisir le nouveau email:<input name="n_mail" type="email" autocomplete="off" required><p id="vmail" class="err"></p><br>
+mot de pass:<input name="psw" type="password" autocomplete="off" required><br>
 <?php
 $cod=$_SESSION['code'];
 if(isset($_POST['m_send'])){
@@ -115,9 +115,9 @@ function validatepass() {
 }
 </script>
 <form mothod="POST" name="up_pass" onsubmit="return validatepass()">
-Ancien mot de passe: <input name="o_psw" type="password" required><br>
-Nouveau mot de passe: <input name="psw" type="password" required><br>
-Resaisir le nouveau mot de passe: <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
+Ancien mot de passe: <input name="o_psw" type="password" autocomplete="off" required><br>
+Nouveau mot de passe: <input name="psw" type="password" autocomplete="off" required><br>
+Resaisir le nouveau mot de passe: <input name="n_psw" type="password" autocomplete="off" required><p id="pwd" class="err"></p><br>
 <?php 
 $cod=$_SESSION['code'];
 if(isset($_POST['p_send'])){
