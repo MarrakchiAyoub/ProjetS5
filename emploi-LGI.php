@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+$nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL;
+$pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -17,7 +20,9 @@
         width: 180px;
     }
     .first {
-        width: 80px;
+		width: 80px;
+		padding-top: 1px;
+		padding-bottom: 20px;
     }
     </style>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -52,21 +57,38 @@
 			<div class="c8">
 				<h1 class="titlehead">Licence Genie Informatique</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
+			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-user"></i><?php echo " ".$nom." ".$pre ?></h1>
 </div>
 		</div>
 	</div>
 </div>
 <!-- CONTENT
 ================================================== -->
+<?php include 'lib/timetable.php';
+$timestamp= strtotime("today");
+$week=idate('W', $timestamp);
+$grp="GI-L3-1";
+$month=date('n');
+if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;}
+else if ($month>=1 && $month<=2) {$year1=date('Y')-1; $year2=date('Y');}
+if (isset($_GET['send'])){
+	$date=strtotime($_GET['date']);
+	$week=idate('W', $date);
+}
+?>
+<form method="GET">
+<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
+<input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
+<input name="send" value="valider" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 6%;padding: 0;" type="submit">
+</form>
 <table class="emploi">
 		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
-		<tr><td class="first">Lundi</td><td>C1</td><td>C2</td><td>C3</td><td>C4</td></tr>
-		<tr><td class="first">Mardi</td><td>C5</td><td>C6</td><td>C7</td><td>C8</td></tr>
-		<tr><td class="first">Mercredi</td><td>C9</td><td>C10</td><td>C11</td><td>C12</td></tr>
-		<tr><td class="first">Jeudi</td><td>C13</td><td>C14</td><td>C15</td><td>C16</td></tr>
-		<tr><td class="first">Vendredi</td><td>C17</td><td>C18</td><td>C19</td><td>C20</td></tr>
-		<tr><td class="first">Samedi</td><td>C21</td><td>C22</td><td>C23</td><td>C24</td></tr>
+		<tr><td class="first">Lundi</td><td><?php timetable($week, 1, $grp) ?></td><td><?php timetable($week, 2, $grp) ?></td><td><?php timetable($week, 3, $grp) ?></td><td><?php timetable($week, 4, $grp) ?></td></tr>
+		<tr><td class="first">Mardi</td><td><?php timetable($week, 5, $grp) ?></td><td><?php timetable($week, 6, $grp) ?></td><td><?php timetable($week, 7, $grp) ?></td><td><?php timetable($week, 8, $grp) ?></td></tr>
+		<tr><td class="first">Mercredi</td><td><?php timetable($week, 9, $grp) ?></td><td><?php timetable($week, 10, $grp) ?></td><td><?php timetable($week, 11, $grp) ?></td><td><?php timetable($week, 12, $grp) ?></td></tr>
+		<tr><td class="first">Jeudi</td><td><?php timetable($week, 13, $grp) ?></td><td><?php timetable($week, 14, $grp) ?></td><td><?php timetable($week, 15, $grp) ?></td><td><?php timetable($week, 16, $grp) ?></td></tr>
+		<tr><td class="first">Vendredi</td><td><?php timetable($week, 17, $grp) ?></td><td><?php timetable($week, 18, $grp) ?></td><td><?php timetable($week, 19, $grp) ?></td><td><?php timetable($week, 20, $grp) ?></td></tr>
+		<tr><td class="first">Samedi</td><td><?php timetable($week, 21, $grp) ?></td><td><?php timetable($week, 22, $grp) ?></td><td><?php timetable($week, 23, $grp) ?></td><td><?php timetable($week, 24, $grp) ?></td></tr>
 	</table>
 <!-- FOOTER
 ================================================== -->

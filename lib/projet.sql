@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 01, 2018 at 02:26 AM
+-- Generation Time: Jan 04, 2018 at 10:36 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -38,7 +38,18 @@ CREATE TABLE IF NOT EXISTS `connexion` (
   UNIQUE KEY `Num_cnx` (`num_cnx`),
   KEY `cod_etu` (`cod_etu`),
   KEY `cod_prof` (`cod_prof`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `connexion`
+--
+
+INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES
+(1, '1210718413', NULL, '2018-01-02 00:00:00.000000'),
+(2, '1210718413', NULL, '2018-01-04 00:00:00.000000'),
+(3, NULL, '10', '2018-01-04 00:00:00.000000'),
+(4, '1210718413', NULL, '2018-01-04 00:00:00.000000'),
+(5, '1210718413', NULL, '2018-01-04 00:00:00.000000');
 
 -- --------------------------------------------------------
 
@@ -56,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `depot_cou` (
   PRIMARY KEY (`num_dep`),
   KEY `cod_porf` (`cod_porf`),
   KEY `cod_ele_mod` (`cod_ele_mod`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -78,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `ele_mod` (
   KEY `cod_fil` (`cod_fil`),
   KEY `cod_mod` (`cod_mod`),
   KEY `cod_prof` (`cod_prof`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `ele_mod`
@@ -115,14 +126,14 @@ CREATE TABLE IF NOT EXISTS `etudiants` (
   UNIQUE KEY `email_etu` (`email_etu`),
   KEY `num_grp` (`num_grp`),
   KEY `cod_fil` (`cod_fil`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `etudiants`
 --
 
 INSERT INTO `etudiants` (`cod_etu`, `nom_etu`, `pre_etu`, `email_etu`, `pwd_etu`, `date_nai`, `niv_etu`, `num_grp`, `cod_fil`) VALUES
-('1210718413', 'Marrakchi', 'Ayoub', 'Marrakchi.Ay@gmail.com', '123456', '1995-03-08', 'L3', 'GI-L3-1', 'GI');
+('1210718413', 'Marrakchi', 'Ayoub', 'Marrakchi.Ay@gmail.com', '159753', '1995-03-08', 'L3', 'GI-L3-1', 'GI');
 
 -- --------------------------------------------------------
 
@@ -137,7 +148,7 @@ CREATE TABLE IF NOT EXISTS `filieres` (
   `resp_fil` varchar(30) NOT NULL,
   PRIMARY KEY (`cod_fil`),
   KEY `resp_fil` (`resp_fil`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `filieres`
@@ -162,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `groupes` (
   `nbr_etu_grp` int(20) DEFAULT NULL,
   PRIMARY KEY (`cod_grp`),
   KEY `cod_fil` (`cod_fil`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `groupes`
@@ -193,18 +204,18 @@ CREATE TABLE IF NOT EXISTS `modules` (
   PRIMARY KEY (`cod_mod`),
   KEY `cod_fil` (`cod_fil`),
   KEY `resp_mod` (`resp_mod`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `modules`
 --
 
 INSERT INTO `modules` (`cod_mod`, `cod_fil`, `nom_mod`, `resp_mod`) VALUES
-('GIACS', 'GI', 'Architecture C/S et Développement Web Dynamique', '6'),
-('GIBDD', 'GI', 'Bases de Données', '5'),
-('GICPP', 'GI', 'Programmation Orientée Objet en C++', '7'),
-('GIIRI', 'GI', 'Introduction aux Réseaux Informatiques', '1'),
-('GISEL', 'GI', 'Système d’exploitation UNIX/Linux', '2'),
+('GIACS', 'GI', 'Architecture C/S et Developpement Web Dynamique', '6'),
+('GIBDD', 'GI', 'Bases de Donnees', '5'),
+('GICPP', 'GI', 'Programmation Orientee Objet en C++', '7'),
+('GIIRI', 'GI', 'Introduction aux Reseaux Informatiques', '1'),
+('GISEL', 'GI', 'Systeme d\'exploitation UNIX/Linux', '2'),
 ('GITEA', 'GI', 'TEC & Anglais', '8');
 
 -- --------------------------------------------------------
@@ -222,7 +233,7 @@ CREATE TABLE IF NOT EXISTS `professeurs` (
   `pwd_prof` int(50) NOT NULL,
   PRIMARY KEY (`cod_prof`),
   UNIQUE KEY `email_prof` (`email_prof`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `professeurs`
@@ -251,18 +262,18 @@ CREATE TABLE IF NOT EXISTS `salles` (
   `num_sal` varchar(20) NOT NULL,
   `nbr_places` int(20) NOT NULL,
   PRIMARY KEY (`num_sal`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `salles`
 --
 
 INSERT INTO `salles` (`num_sal`, `nbr_places`) VALUES
-('e21', 50),
-('e22', 50),
-('e23', 70),
-('e24', 70),
-('e25', 50);
+('E21', 50),
+('E22', 50),
+('E23', 70),
+('E24', 70),
+('E25', 50);
 
 -- --------------------------------------------------------
 
@@ -275,15 +286,249 @@ CREATE TABLE IF NOT EXISTS `seances` (
   `num_sem` int(20) NOT NULL,
   `num_cren` int(20) NOT NULL,
   `num_sal` varchar(20) NOT NULL,
-  `cod_ele_mod` varchar(30) NOT NULL,
+  `cod_mod` varchar(30) NOT NULL,
   `cod_fil` varchar(20) NOT NULL,
   `cod_grp` varchar(50) NOT NULL,
   PRIMARY KEY (`num_sem`,`num_cren`,`num_sal`) USING BTREE,
-  KEY `cod_ele_mod` (`cod_ele_mod`),
+  KEY `cod_ele_mod` (`cod_mod`),
   KEY `cod_fil` (`cod_fil`),
   KEY `cod_grp` (`cod_grp`),
-  KEY `num_sal` (`num_sal`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `seances_ibfk_4` (`num_sal`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `seances`
+--
+
+INSERT INTO `seances` (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES
+(1, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(1, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(1, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(1, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(1, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(1, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(1, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(1, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(1, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(1, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(1, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(1, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(2, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(2, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(2, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(2, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(2, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(2, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(2, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(2, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(2, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(2, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(2, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(2, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(3, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(3, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(3, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(3, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(3, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(3, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(3, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(3, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(3, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(3, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(3, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(3, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(37, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(37, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(37, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(37, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(37, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(37, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(37, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(37, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(37, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(37, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(37, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(37, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(38, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(38, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(38, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(38, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(38, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(38, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(38, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(38, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(38, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(38, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(38, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(38, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(39, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(39, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(39, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(39, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(39, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(39, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(39, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(39, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(39, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(39, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(39, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(39, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(40, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(40, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(40, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(40, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(40, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(40, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(40, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(40, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(40, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(40, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(40, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(40, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(41, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(41, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(41, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(41, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(41, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(41, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(41, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(41, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(41, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(41, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(41, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(41, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(42, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(42, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(42, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(42, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(42, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(42, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(42, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(42, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(42, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(42, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(42, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(42, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(43, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(43, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(43, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(43, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(43, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(43, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(43, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(43, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(43, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(43, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(43, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(43, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(44, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(44, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(44, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(44, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(44, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(44, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(44, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(44, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(44, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(44, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(44, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(44, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(45, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(45, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(45, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(45, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(45, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(45, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(45, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(45, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(45, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(45, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(45, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(45, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(46, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(46, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(46, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(46, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(46, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(46, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(46, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(46, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(46, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(46, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(46, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(46, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(47, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(47, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(47, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(47, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(47, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(47, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(47, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(47, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(47, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(47, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(47, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(47, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(48, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(48, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(48, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(48, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(48, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(48, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(48, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(48, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(48, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(48, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(48, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(48, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(49, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(49, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(49, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(49, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(49, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(49, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(49, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(49, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(49, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(49, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(49, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(49, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(50, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(50, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(50, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(50, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(50, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(50, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(50, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(50, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(50, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(50, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(50, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(50, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(51, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(51, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(51, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(51, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(51, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(51, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(51, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(51, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(51, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(51, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(51, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(51, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(52, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(52, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(52, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(52, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
+(52, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(52, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
+(52, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(52, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
+(52, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(52, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
+(52, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(52, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1');
 
 --
 -- Constraints for dumped tables
@@ -314,7 +559,7 @@ ALTER TABLE `ele_mod`
 -- Constraints for table `etudiants`
 --
 ALTER TABLE `etudiants`
-  ADD CONSTRAINT `etudiants_ibfk_1` FOREIGN KEY (`num_grp`) REFERENCES `groupes` (`cod_grp`),
+  ADD CONSTRAINT `etudiants_ibfk_1` FOREIGN KEY (`num_grp`) REFERENCES `groupes` (`cod_grp`) ON UPDATE CASCADE,
   ADD CONSTRAINT `etudiants_ibfk_2` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`);
 
 --
@@ -340,10 +585,10 @@ ALTER TABLE `modules`
 -- Constraints for table `seances`
 --
 ALTER TABLE `seances`
-  ADD CONSTRAINT `seances_ibfk_1` FOREIGN KEY (`cod_ele_mod`) REFERENCES `ele_mod` (`cod_ele_mod`),
   ADD CONSTRAINT `seances_ibfk_2` FOREIGN KEY (`cod_fil`) REFERENCES `filieres` (`cod_fil`),
   ADD CONSTRAINT `seances_ibfk_3` FOREIGN KEY (`cod_grp`) REFERENCES `groupes` (`cod_grp`),
-  ADD CONSTRAINT `seances_ibfk_4` FOREIGN KEY (`num_sal`) REFERENCES `salles` (`num_sal`);
+  ADD CONSTRAINT `seances_ibfk_4` FOREIGN KEY (`num_sal`) REFERENCES `salles` (`num_sal`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `seances_ibfk_5` FOREIGN KEY (`cod_mod`) REFERENCES `modules` (`cod_mod`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

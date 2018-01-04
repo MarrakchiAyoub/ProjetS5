@@ -14,7 +14,7 @@ if(isset($_POST['sendetu'])){
         $_SESSION['email']=$Row['email_etu'];
         $_SESSION['fil']=$Row['cod_fil'];
         $_SESSION['type']="etudiant";
-        $sql_co="INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES (NULL, '$cne', NULL, CURRENT_DATE());";
+        $sql_co="INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES (NULL, '$cne', NULL, CURRENT_TIME());";
         mysqli_query($conn, $sql_co);
         header("location: index.php");
 }
