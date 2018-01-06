@@ -95,10 +95,10 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 			</div>
 			<!-- box 1 -->
 			<div class="c3" style="text-align:center;">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="./images/cpp.png" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<h1>Pr. Mohamed ADDOU </h1>
-					<span class="hirefor">Doyen de la FSTT</span>
+					<h1>C++ </h1>
+					<span class="hirefor">Programmation Orientée Objet en C++</span>
 				</div>
 			</div>
 			<!-- box 2 -->
