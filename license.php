@@ -112,7 +112,7 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 			<div class="c3">
 				<img src="./images/bdd.png" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<span class="hirefor">Bases de Données</span>
+					<span class="hirefor">Bases de Donnees</span>
 				</div>
 			</div>
 			<!-- box 4 -->
