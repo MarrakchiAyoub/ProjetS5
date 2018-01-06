@@ -132,7 +132,7 @@
 					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
 				</p>
 				<p class="bottomlink">
-					<a href="#" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="license.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>
@@ -145,7 +145,7 @@
 					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
 				</p>
 				<p class="bottomlink">
-					<a href="#" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="master.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>
@@ -158,7 +158,7 @@
 					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
 				</p>
 				<p class="bottomlink">
-					<a href="#" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="cycle.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>
