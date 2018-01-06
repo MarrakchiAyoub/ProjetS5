@@ -90,7 +90,7 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 		<div class="row space-top space-bot">
 			<div class="c12">
 				<h1 class="maintitle text-center">
-				<span>Administration</span>
+				<span>Contenu</span>
 				</h1>
 			</div>
 			<!-- box 1 -->
