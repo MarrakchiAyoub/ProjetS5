@@ -95,34 +95,31 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 			</div>
 			<!-- box 1 -->
 			<div class="c3" style="text-align:center;">
-				<img src="./images/cpp.png" class="imgOpa teamimage" alt="">
+				<img src="./images/cpp.jpg" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<h1>C++ </h1>
 					<span class="hirefor">Programmation Orientée Objet en C++</span>
 				</div>
 			</div>
 			<!-- box 2 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="./images/css.jpg" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<h1>PR. MOHAMMED BAKKALI </h1>
-					<span class="hirefor">Vice Doyen Chargé de la Recherche Scientifique et de la Coopération</span>
+					
+					<span class="hirefor">Architecture C/S et Développement Web Dynamique</span>
 				</div>
 			</div>
 			<!-- box 3 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="./images/bdd.png" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<h1>Pr. Mustapha DIANI</h1>
-					<span class="hirefor"> Vice Doyen Chargé des Affaires Pédagogiques</span>
+					<span class="hirefor">Bases de Données</span>
 				</div>
 			</div>
 			<!-- box 4 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="./images/reseau.jpg" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<h1>Pr. Hassan BIHRI</h1>
-					<span class="hirefor">Secrétaire général</span>
+					<span class="hirefor"> Introduction aux Réseaux Informatiques</span>
 				</div>
 			</div>
 			<!-- end box4 -->			
