@@ -90,7 +90,7 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 		<div class="row space-top space-bot">
 			<div class="c12">
 				<h1 class="maintitle text-center">
-				<span>Contenu</span>
+				<span>Contenu Semestre 5:</span>
 				</h1>
 			</div>
 			<!-- box 1 -->
@@ -122,98 +122,70 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 					<span class="hirefor"> Introduction aux Réseaux Informatiques</span>
 				</div>
 			</div>
-			<!-- end box4 -->			
+            
+        <div class="row space-top space-bot">
+			<div class="c12">
+				<h1 class="maintitle text-center">
+				<span></span>
+				</h1>
+			</div>
+			
+            <!-- box 5 -->
+			<div class="c3" style="text-align:center;">
+				<img src="./images/linux.png" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					<span class="hirefor">Système d’exploitation UNIX/Linux</span>
+				</div>
+			</div>
+			<!-- box 6 -->
+			<div class="c3">
+				<img src="./images/English.jpg" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					
+					<span class="hirefor">TEC & Anglais</span>
+				</div>
+			</div>
+			<!-- end box6 -->			
 		</div>
 		<!-- CLIENTS
 		================================================== -->
-		<div class="row space-top">
-			<div class="c12 space-top">
-				<h1 class="maintitle">
-				<span>Contenu:</span>
+		<div class="row space-top space-bot">
+			<div class="c12">
+				<h1 class="maintitle text-center">
+				<span>Contenu Semestre 6:</span>
 				</h1>
 			</div>
-		</div>
-		<div class="row">
-			<div class="c12">
-				<div class="list_carousel">
-					<div class="carousel_nav">
-						<a class="prev" id="car_prev" href="#"><span>prev</span></a>
-						<a class="next" id="car_next" href="#"><span>next</span></a>
-					</div>
-					<div class="clearfix">
-					</div>
-					<ul id="recent-projects">
-						<!--box 1-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/css.jpg" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 2-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/cpp.png" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 3-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/java.png" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 4-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/linux.jpg" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 5-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/bdd.png" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 6-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/reseau.jpg" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 7-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-						<!--box 8-->
-						<li>
-						<div class="featured-projects clientslogo">
-							<div class="featured-projects-image">
-								<a href="#"><img src="./images/uml.png" class="imgOpa" alt=""></a>
-							</div>
-						</div>
-						</li>
-					</ul>
-					<div class="clearfix">
-					</div>
+			<!-- box 1 -->
+			<div class="c3" style="text-align:center;">
+				<img src="./images/uml.png" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					<span class="hirefor">Modélisation UML</span>
 				</div>
 			</div>
+			<!-- box 2 -->
+			<div class="c3">
+				<img src="./images/java.jpg" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					
+					<span class="hirefor">Programmation Orientée Objet en Langage JAVA</span>
+				</div>
+			</div>
+			<!-- box 3 -->
+			<div class="c3">
+				<img src="./images/ip.jpg" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					<span class="hirefor">Les Réseaux TCP/IP</span>
+				</div>
+			</div>
+			<!-- box 4 -->
+			<div class="c3">
+				<img src="#" class="imgOpa teamimage" alt="">
+				<div class="teamdescription">
+					<span class="hirefor"> PFE </span>
+				</div>
+			</div>
+			<!-- end box4 -->			
 		</div>
-</div><!-- end grid -->
 
 <!-- FOOTER
 ================================================== -->
