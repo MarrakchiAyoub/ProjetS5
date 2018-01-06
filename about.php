@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -38,7 +38,7 @@
 			<div class="c8">
 				<h1 class="titlehead">A propos de la FSTT</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
+			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
 		</div>
 	</div>

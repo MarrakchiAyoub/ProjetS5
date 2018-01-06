@@ -57,7 +57,7 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 			<div class="c8">
 				<h1 class="titlehead">Licence Genie Informatique</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-user"></i><?php echo " ".$nom." ".$pre ?></h1>
+			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
 		</div>
 	</div>

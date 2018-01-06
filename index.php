@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
 
