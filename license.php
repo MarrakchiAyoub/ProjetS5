@@ -36,7 +36,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">A propos de la FSTT</h1>
+				<h1 class="titlehead">Genie informatique</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><i class="icon-map-marker"></i>Contacter nous en + 212 (0) 5 39 39 39 54 / 55</h1>
 </div>
@@ -50,28 +50,40 @@
 		<div class="row">
 			<div class="c8">
 				<h1 class="maintitle ">
-				<span>OUR HISTORY</span>
+				<span>Objectifs de la formation:</span>
 				</h1>
 				<p>
-					<span class="dropcap">C</span>réée en 1995, la FST de Tanger est un des huit établissements de l’Université Abdelmalek Essaâdi. Elle regroupe actuellement une trentaine de programmes d'études repartis sur quatre cycles offerts par neuf  départements : Sciences de la Vie, Sciences de la Terre, Génie Chimique, Physique, Mathématiques, Génie Informatique, Génie Electrique et Génie Mécanique et  de Langues. Derrière ses programmes d’enseignement et de recherche, totalement inscrits dans le courant actuel des Sciences et Techniques, la FST de Tanger compte avec un corps professoral, jeune et performant, de 151  enseignants chercheurs et un staff veillant de 55 administratifs. Avec ses stages, sa formation pratique, son lien serré avec son environnement socio-économique, la FST de Tanger offre une formation adaptée, un encadrement personnalisé et est à l'écoute des besoins des étudiants. Un service des stages est également à la disposition des étudiants.
+                <li>Avoir une culture de base scientifique </li>
+                <li>Acquérir une base solide dans les axes majeurs et fondamentaux de la discipline informatique :</li>
+                <li>Algorithmique, Programmation, Bases de Données, Technologies Web, Systèmes d’Exploitation et
+Réseaux Informatiques,... ;</li>
+
+                <li>Développer un savoir-faire technique en informatique : technologie objet, informatique distribuée,
+architectures client-serveur et n-tiers, applications hétérogènes,…</li>
 				</p>
 			</div>
-			<div class="c4">
-				<h1 class="maintitle">
-				<span>SKILLS</span>
+            <div class="c8">
+				<h1 class="maintitle ">
+				<span>Public cible et conditions d'admission:</span>
 				</h1>
-				<ul id="skill">
-					<li><span class="bar progressdefault" style="width:100%;"></span>
-					<h3>Webdesign 100%</h3>
-					</li>
-					<li><span class="bar progressdefault" style="width:80%;"></span>
-					<h3>jQuery 80%</h3>
-					</li>
-					<li><span class="bar progressdefault" style="width:60%;"></span>
-					<h3>Wordpress 60%</h3>
-					</li>
-				</ul>
+				<p>
+					<span class="dropcap">L</span>’accès aux filières Licence en Sciences et Techniques a eu lieu sur étude de dossier et /ou par voie de test ou de concours, ouvert aux étudiants titulaires d’un baccalauréat ou d’un diplôme reconnu équivalent en satisfaisant aux critères d’admission précisés dans le descriptif de la filière
+
+L’accès aux filières Licence en Sciences et Techniques peut se faire également à différents niveaux de la licence, sur étude de dossier et/ou par voie de test ou de concours, pour les 
+étudiants satisfaisant aux pré-requis relatifs à ces niveaux et qui sont précisés dans le descriptif de la filière.
+				</p>
 			</div>
+            <div class="c8">
+				<h1 class="maintitle ">
+				<span>Competences visees et debouches:</span>
+				</h1>
+				<p>
+					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ...
+
+Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+				</p>
+			</div>
+			
 		</div>
 		<!-- OUR TEAM
 		================================================== -->
@@ -120,7 +132,7 @@
 		<div class="row space-top">
 			<div class="c12 space-top">
 				<h1 class="maintitle">
-				<span>Clients</span>
+				<span>Contenu:</span>
 				</h1>
 			</div>
 		</div>
@@ -138,7 +150,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/css.jpg" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -146,7 +158,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/cpp.png" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -154,7 +166,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/java.png" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -162,7 +174,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/linux.jpg" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -170,7 +182,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/bdd.png" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -178,7 +190,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/reseau.jpg" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
@@ -194,7 +206,7 @@
 						<li>
 						<div class="featured-projects clientslogo">
 							<div class="featured-projects-image">
-								<a href="#"><img src="http://placehold.it/220x140" class="imgOpa" alt=""></a>
+								<a href="#"><img src="./images/uml.png" class="imgOpa" alt=""></a>
 							</div>
 						</div>
 						</li>
