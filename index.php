@@ -86,24 +86,24 @@
 					<div class="introboxinner">
 						<span class="homeicone">
 						<i class="icon-bolt"></i>
-						</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</span> <h1 style = "color:#ffffff"> Creation </h1>
 					</div>
 				</div>
 				<!--Box 2-->
 				<div class="c4 introbox introboxmiddle">
 					<div class="introboxinner">
 						<span class="homeicone">
-						<i class="icon-cog"></i>
-						</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<i class="icon-lightbulb"></i>
+						</span> <h1 style = "color:#ffffff"> Innovation </h1>
 					</div>
 				</div>
 				<!--Box 3-->
 				<div class="c4 introbox introboxlast">
 					<div class="introboxinner">
 						<span class="homeicone">
-						<i class="icon-lightbulb"></i>
+						<i class="icon-cog"></i>
 						</span>
-						<h1> Innovation </h1>
+						<h1 style = "color:#ffffff"> Excellence </h1>
 					</div>
 				</div>
 			</div>
