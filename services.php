@@ -213,15 +213,15 @@
 				<hr class="footerstress">
 				<ul>
 					<li><a href="#">Services</a></li>
-					<li>Privacy Policy</li>
-					<li>Shortcodes</li>
-					<li>Columns</li>
-					<li>Portfolio</li>
-					<li>Blog</li>
-					<li>Contact</li>
-					<li>Font Awesome</li>
-					<li>Single Project</li>
-					<li>Home</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</ul>
 			</div>
 			<!-- end 4th column -->
