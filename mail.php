@@ -12,7 +12,7 @@ $comment = ($_GET['comment']) ?$_GET['comment'] : $_POST['comment'];
 if ($_POST) $post=1;
 
 //Simple server side validation for POST data, of course, you should validate the email
-if (!$name) $errors[count($errors)] = 'Please enter your name.';
+if (!$name) $errors[count($errors)] = 'Please enter Aghziel Aymane, Marrakchi Ayoub, Rahmouni Fatine, El Hasyouti Nourelhouda .';
 if (!$email) $errors[count($errors)] = 'Please enter your email.'; 
 if (!$comment) $errors[count($errors)] = 'Please enter your comment.'; 
 

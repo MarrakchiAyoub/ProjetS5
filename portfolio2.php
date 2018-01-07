@@ -234,11 +234,11 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c6">
-				 Your Name &copy; 2015. All Rights Reserved.
+				 Aghziel Aymane, Marrakchi Ayoub, Rahmouni Fatine, El Hasyouti Nourelhouda  &copy; 2018. All Rights Reserved.
 			</div>
 			<div class="c6">
 				<span class="right">
-				Premium Template by WowThemesNet </span>
+				</span>
 			</div>
 		</div>
 	</div>
