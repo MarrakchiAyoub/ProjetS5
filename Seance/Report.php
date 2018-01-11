@@ -59,7 +59,13 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-
+	<div class="form">
+	<form mothod="Post" name="seance">
+		la scéance que vous voulez reporter:
+		<input type="date" name="date1" selected="<?php echo date("d/m/Y"); ?>"></input>
+		
+	</form>
+	</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
