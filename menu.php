@@ -40,6 +40,7 @@
         echo '<li class="last"><a href="#">Espace Professeurs</a>
        <ul>
        <li><a href="#">Joindre des cours</a></li>
+       <li><a href="Seance/">Modifié une séance</a></li>
        <li><a href="gestionpro.php">Gestion de compte</a></li>
        <li><a href="dec.php">Deconnexion</a></li>
        </ul>

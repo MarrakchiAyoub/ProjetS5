@@ -1,7 +1,4 @@
-<?php session_start();
-$nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL;
-$pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
- ?>
+<?php session_start(); include('../lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -20,17 +17,15 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
         width: 180px;
     }
     .first {
-		width: 80px;
-		padding-top: 1px;
-		padding-bottom: 20px;
+        width: 80px;
     }
     </style>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="css/slider.css"/>
-<link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- change skin color -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-<script src="js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+<link rel="stylesheet" type="text/css" href="../css/skinblue.css"/><!-- change skin color -->
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<script src="../js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
 </head>
 <body>
 <!-- TOP LOGO & MENU
@@ -39,12 +34,12 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 	<div class="row space-bot">
 		<!--Logo-->
 		<div class="c4">
-			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+			<a href="../index.php">
+				<img src="../images/ece.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
-		<?php	include("menu.php"); ?>
+		<?php	include("../menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -55,7 +50,7 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Licence Genie Informatique</h1>
+				<h1 class="titlehead">Modifier une séance</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -64,32 +59,7 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 </div>
 <!-- CONTENT
 ================================================== -->
-<?php include 'lib/timetable.php';
-$timestamp= strtotime("today");
-$week=idate('W', $timestamp);
-$grp="GI-L3-1";
-$month=date('n');
-if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;}
-else if ($month>=1 && $month<=2) {$year1=date('Y')-1; $year2=date('Y');}
-if (isset($_GET['send'])){
-	$date=strtotime($_GET['date']);
-	$week=idate('W', $date);
-}
-?>
-<form method="GET">
-<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
-<input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
-<input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
-</form>
-<table class="emploi">
-		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
-		<tr><td class="first">Lundi</td><td><?php timetable($week, 1, $grp) ?></td><td><?php timetable($week, 2, $grp) ?></td><td><?php timetable($week, 3, $grp) ?></td><td><?php timetable($week, 4, $grp) ?></td></tr>
-		<tr><td class="first">Mardi</td><td><?php timetable($week, 5, $grp) ?></td><td><?php timetable($week, 6, $grp) ?></td><td><?php timetable($week, 7, $grp) ?></td><td><?php timetable($week, 8, $grp) ?></td></tr>
-		<tr><td class="first">Mercredi</td><td><?php timetable($week, 9, $grp) ?></td><td><?php timetable($week, 10, $grp) ?></td><td><?php timetable($week, 11, $grp) ?></td><td><?php timetable($week, 12, $grp) ?></td></tr>
-		<tr><td class="first">Jeudi</td><td><?php timetable($week, 13, $grp) ?></td><td><?php timetable($week, 14, $grp) ?></td><td><?php timetable($week, 15, $grp) ?></td><td><?php timetable($week, 16, $grp) ?></td></tr>
-		<tr><td class="first">Vendredi</td><td><?php timetable($week, 17, $grp) ?></td><td><?php timetable($week, 18, $grp) ?></td><td><?php timetable($week, 19, $grp) ?></td><td><?php timetable($week, 20, $grp) ?></td></tr>
-		<tr><td class="first">Samedi</td><td><?php timetable($week, 21, $grp) ?></td><td><?php timetable($week, 22, $grp) ?></td><td><?php timetable($week, 23, $grp) ?></td><td><?php timetable($week, 24, $grp) ?></td></tr>
-	</table>
+
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -101,7 +71,7 @@ if (isset($_GET['send'])){
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
+				<img src="../images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
@@ -172,19 +142,19 @@ if (isset($_GET['send'])){
 <!-- JAVASCRIPTS
 ================================================== -->
 <!-- all -->
-<script src="js/modernizr-latest.js"></script>
+<script src="../js/modernizr-latest.js"></script>
 
 <!-- menu & scroll to top -->
-<script src="js/common.js"></script>
+<script src="../js/common.js"></script>
 
 <!-- cycle -->
-<script src="js/jquery.cycle.js"></script>
+<script src="../js/jquery.cycle.js"></script>
 
 <!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
+<script src="../js/jquery.tweet.js"></script>
 
 <!-- filtering -->
-<script src="js/jquery.isotope.min.js"></script>
+<script src="../js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
 <script>
