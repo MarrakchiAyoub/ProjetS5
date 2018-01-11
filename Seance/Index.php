@@ -63,7 +63,7 @@
 <div style="height: 200px;padding-top: 30px;padding-left: 15px;">
 <form mothod="GET">
 <input type="radio" name="action" value="report"> Reporté une séance<br>
-  <span title="d'une maniere pérmanante"><input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifié le créneau une séance</span><br>
+  <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifié le créneau une séance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere pérmanante"></i><br>
   <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;"> Ajouté une séance de rattrapage<br>
   <input name="send" value="Continuer" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 100px;padding: 0;" type="submit">
 </form>

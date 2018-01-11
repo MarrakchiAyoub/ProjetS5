@@ -1,7 +1,7 @@
 <div class="c8">
 <nav id="topNav">
 <ul id="responsivemenu">
-    <li class="active"><a href="index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
+    <li class="active"><a href="/ProjetS5/index.php"><i class="icon-home homeicon"></i><span class="showmobile">Home</span></a></li>
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="/ProjetS5/about.php">A propos</a></li>
