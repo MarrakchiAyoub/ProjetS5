@@ -4,14 +4,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
-<title>Salique Theme Multipurpose Responsive </title>
+<title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- Change skin color here -->
+<link rel="stylesheet" type="text/css" href="css/slider.css"/>
+<link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- change skin color -->
 <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-<script src="js/jquery-1.9.0.min.js"></script><!-- scripts are at the bottom of the document -->
+<script src="js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
 </head>
 <body>
 <!-- TOP LOGO & MENU
@@ -21,7 +22,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->

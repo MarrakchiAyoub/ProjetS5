@@ -23,7 +23,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->
@@ -44,7 +44,7 @@
 			</p>
 			<a href="#" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
-				<img class="imgslide" src="./images/160.jpg" alt="">
+				<img class="imgslide" src="" alt="">
 			</div>
 		</div>
 		<!--Slide 2-->
@@ -55,7 +55,7 @@
 			</p>
 			<a href="gallery.php" class="da-link" style="width:192px;">Clickez-ici!</a>
 			<div class="da-img">
-				<img class="imgslide" src="./images/286.jpg" alt="">
+				<img class="imgslide" src="" alt="">
 			</div>
 		</div>
 		<!--Slide 3-->
@@ -66,7 +66,7 @@
 			</p>
 			<a href="#" class="da-link" style="width:224px;">Clickez-ici!</a>
 			<div class="da-img">
-				<img class="imgslide" src="./images/923.jpg" alt="">
+				<img class="imgslide" src="" alt="">
 			</div>
 		</div>
 		<nav class="da-arrows">

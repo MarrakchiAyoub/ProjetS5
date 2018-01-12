@@ -22,11 +22,11 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->
-		<?php	include("menu.php"); ?>
+	<?php	include("menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
