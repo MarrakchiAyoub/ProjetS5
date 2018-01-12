@@ -52,21 +52,19 @@
 		<div class="row">
 			<div class="c12">
 				<h1 class="maintitle ">
-				<span>NEWS / UPDATES / HISTORY</span>
+				<span>Planning</span>
 				</h1>
 				<div id="timelineContainer">
 					<div class="timelineToggle">
-						<p>
-							<a class="expandAll">+ expand all</a>
-						</p>
+						
 					</div>
 					<br class="clear">
 					
 					
 					<div class="timelineMajor">
-						<h2 class="timelineMajorMarker"><span>March, 2013</span></h2>
+						<h2 class="timelineMajorMarker"><span>Septembre, 2017</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19540517"><a>Holiday Sales and Discounts</a></dt>
+							<dt id="19540517"><a>Debut du semestre</a></dt>
 							<dd class="timelineEvent" id="19540517EX" style="display: none;">
 							<h3>March 2, 2013</h3>
 							<p>
@@ -82,9 +80,9 @@
 					
 					<!-- /.timelineMajor -->
 					<div class="timelineMajor">
-						<h2 class="timelineMajorMarker"><span>February, 2013</span></h2>
+						<h2 class="timelineMajorMarker"><span>Novembre, 2017</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19550828"><a>Updated iPhone app, with video</a></dt>
+							<dt id="19550828"><a>Semaine de preparation</a></dt>
 							<dd class="timelineEvent" id="19550828EX" style="display: none;">
 							<h3>February 28, 2013</h3>
 							<p>
@@ -96,7 +94,7 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19551201"><a>Android is now available</a></dt>
+							<dt id="19551201"><a>Demarage des controles continues 1</a></dt>
 							<dd class="timelineEvent" id="19551201EX" style="display: none;">
 							<h3>February 14, 2013</h3>
 							<p>
@@ -112,31 +110,25 @@
 					
 					<!-- /.timelineMajor -->
 					<div class="timelineMajor">
-						<h2 class="timelineMajorMarker"><span>April, 2012</span></h2>
+						<h2 class="timelineMajorMarker"><span>Decembre, 2017</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19570904"><a>"Ultra-HD" TVs</a></dt>
-							<dd class="timelineEvent" id="19570904EX" style="display: none;">
-							<h3>April 4, 2012</h3>
+							<dt id="19550828"><a>Semaine de preparation</a></dt>
+							<dd class="timelineEvent" id="19550828EX" style="display: none;">
+							<h3>February 28, 2013</h3>
 							<p>
-								 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
+								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 							</p>
 							<br class="clear">
 							</dd>
 							<!-- /.timelineEvent -->
 						</dl>
 						<!-- /.timelineMinor -->
-					</div>
-					
-					
-					<!-- /.timelineMajor -->
-					<div class="timelineMajor">
-						<h2 class="timelineMajorMarker"><span>March, 2012</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19610504"><a>Concept Design For iPhone 6</a></dt>
-							<dd class="timelineEvent" id="19610504EX" style="display: none;">
-							<h3>March 4, 2012</h3>
+							<dt id="19551201"><a>Demarage des controles continues 2</a></dt>
+							<dd class="timelineEvent" id="19551201EX" style="display: none;">
+							<h3>February 14, 2013</h3>
 							<p>
-								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								 So, there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
 							</p>
 							<br class="clear">
 							</dd>
@@ -150,9 +142,9 @@
 					<div class="timelineMajor">
 						<h2 class="timelineMajorMarker"><span>Janvier, 2018</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19630828"><a>CC2</a></dt>
-							<dd class="timelineEvent" id="19630828EX" style="display: none;">
-							<h3>Janvier 7, 2018</h3>
+							<dt id="19550828"><a>Semaine de rattrapage</a></dt>
+							<dd class="timelineEvent" id="19550828EX" style="display: none;">
+							<h3>February 28, 2013</h3>
 							<p>
 								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 							</p>
@@ -162,26 +154,47 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19641014"><a>Semaine de preparation</a></dt>
-							<dd class="timelineEvent" id="19641014EX" style="display: none;">
-							<h3>Janvier 1, 2018</h3>
+							<dt id="19551201"><a>Fin du semestre</a></dt>
+							<dd class="timelineEvent" id="19551201EX" style="display: none;">
+							<h3>February 14, 2013</h3>
 							<p>
-								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								 So, there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
 							</p>
 							<br class="clear">
 							</dd>
 							<!-- /.timelineEvent -->
 						</dl>
+						<!-- /.timelineMinor -->
+					</div>
+					
+					
+					<br class="clear">
+					
+					
+					<div class="timelineMajor">
+						<h2 class="timelineMajorMarker"><span>Janvier, 2018</span></h2>
+						<dl class="timelineMinor">
+							<dt id="19540517"><a>Debut du semestre</a></dt>
+							<dd class="timelineEvent" id="19540517EX" style="display: none;">
+							<h3>March 2, 2013</h3>
+							<p>
+								 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+							<br class="clear">
+							</dd>
+							<!-- /.timelineEvent -->
+						</dl>
+						<!-- /.timelineMinor -->
 					</div>
 					
 					
 					<!-- /.timelineMajor -->
 					<div class="timelineMajor">
-						<h2 class="timelineMajorMarker"><span>Novembre, 2017</span></h2>
+						<h2 class="timelineMajorMarker"><span>Mars, 2018</span></h2>
 						<dl class="timelineMinor">
-							<dt id="19640702"><a href="PlanningCC.php">CC1</a></dt>
-							<dd class="timelineEvent" id="19640702EX" style="display: none;">
-							<h3>Novembre 15, 2017</h3>
+							<dt id="19550828"><a>Semaine de preparation</a></dt>
+							<dd class="timelineEvent" id="19550828EX" style="display: none;">
+							<h3>February 28, 2013</h3>
 							<p>
 								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 							</p>
@@ -191,11 +204,11 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19641014"><a>Semaine de preparation</a></dt>
-							<dd class="timelineEvent" id="19641014EX" style="display: none;">
-							<h3>Novembre 8, 2017</h3>
+							<dt id="19551201"><a>Demarage des controles continues 1</a></dt>
+							<dd class="timelineEvent" id="19551201EX" style="display: none;">
+							<h3>February 14, 2013</h3>
 							<p>
-								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								 So, there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
 							</p>
 							<br class="clear">
 							</dd>
@@ -203,7 +216,67 @@
 						</dl>
 						<!-- /.timelineMinor -->
 					</div>
+					
+					
 					<!-- /.timelineMajor -->
+					<div class="timelineMajor">
+						<h2 class="timelineMajorMarker"><span>Mai, 2018</span></h2>
+						<dl class="timelineMinor">
+							<dt id="19550828"><a>Semaine de preparation</a></dt>
+							<dd class="timelineEvent" id="19550828EX" style="display: none;">
+							<h3>February 28, 2013</h3>
+							<p>
+								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+							<br class="clear">
+							</dd>
+							<!-- /.timelineEvent -->
+						</dl>
+						<!-- /.timelineMinor -->
+						<dl class="timelineMinor">
+							<dt id="19551201"><a>Demarage des controles continues 2</a></dt>
+							<dd class="timelineEvent" id="19551201EX" style="display: none;">
+							<h3>February 14, 2013</h3>
+							<p>
+								 So, there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
+							</p>
+							<br class="clear">
+							</dd>
+							<!-- /.timelineEvent -->
+						</dl>
+						<!-- /.timelineMinor -->
+					</div>
+					
+					
+					<!-- /.timelineMajor -->
+					<div class="timelineMajor">
+						<h2 class="timelineMajorMarker"><span>Juin, 2018</span></h2>
+						<dl class="timelineMinor">
+							<dt id="19550828"><a>Semaine de rattrapage</a></dt>
+							<dd class="timelineEvent" id="19550828EX" style="display: none;">
+							<h3>February 28, 2013</h3>
+							<p>
+								 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet, with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+							<br class="clear">
+							</dd>
+							<!-- /.timelineEvent -->
+						</dl>
+						<!-- /.timelineMinor -->
+						<dl class="timelineMinor">
+							<dt id="19551201"><a>Fin du semestre</a></dt>
+							<dd class="timelineEvent" id="19551201EX" style="display: none;">
+							<h3>February 14, 2013</h3>
+							<p>
+								 So, there are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
+							</p>
+							<br class="clear">
+							</dd>
+							<!-- /.timelineEvent -->
+						</dl>
+						<!-- /.timelineMinor -->
+					</div>
+					
 					
 					
 					<br class="clear">
