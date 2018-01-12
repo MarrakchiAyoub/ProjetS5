@@ -52,13 +52,11 @@
 		<div class="row">
 			<div class="c12">
 				<h1 class="maintitle ">
-				<span>NEWS / UPDATES / HISTORY</span>
+				<span>Planning</span>
 				</h1>
 				<div id="timelineContainer">
 					<div class="timelineToggle">
-						<p>
-							<a class="expandAll">+ expand all</a>
-						</p>
+						
 					</div>
 					<br class="clear">
 					
@@ -96,7 +94,7 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19551201"><a>Demarage des controles continu 1</a></dt>
+							<dt id="19551201"><a>Demarage des controles continues 1</a></dt>
 							<dd class="timelineEvent" id="19551201EX" style="display: none;">
 							<h3>February 14, 2013</h3>
 							<p>
@@ -126,7 +124,7 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19551201"><a>Demarage des controles continu 2</a></dt>
+							<dt id="19551201"><a>Demarage des controles continues 2</a></dt>
 							<dd class="timelineEvent" id="19551201EX" style="display: none;">
 							<h3>February 14, 2013</h3>
 							<p>
@@ -206,7 +204,7 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19551201"><a>Demarage des controles continu 1</a></dt>
+							<dt id="19551201"><a>Demarage des controles continues 1</a></dt>
 							<dd class="timelineEvent" id="19551201EX" style="display: none;">
 							<h3>February 14, 2013</h3>
 							<p>
@@ -236,7 +234,7 @@
 						</dl>
 						<!-- /.timelineMinor -->
 						<dl class="timelineMinor">
-							<dt id="19551201"><a>Demarage des controles continu 2</a></dt>
+							<dt id="19551201"><a>Demarage des controles continues 2</a></dt>
 							<dd class="timelineEvent" id="19551201EX" style="display: none;">
 							<h3>February 14, 2013</h3>
 							<p>
