@@ -208,6 +208,7 @@
 				<h2 class="title"><i class="icon-link"></i> Links</h2>
 				<hr class="footerstress">
 				<ul>
+<<<<<<< HEAD
 					<li>Services</li>
 					<li>Privacy Policy</li>
 					<li>Shortcodes</li>
@@ -218,6 +219,18 @@
 					<li>Font Awesome</li>
 					<li>Single Project</li>
 					<li>Home</li>
+=======
+					<li><a href="#">Services</a></li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+>>>>>>> ceed3da3ece2021981bec0a1b16d8dbff720b12b
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -229,11 +242,11 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c6">
-				 Your Name &copy; 2015. All Rights Reserved.
+				 Aghziel Aymane, Marrakchi Ayoub, Rahmouni Fatine, El Hasyouti Nourelhouda  &copy; 2018. All Rights Reserved.
 			</div>
 			<div class="c6">
 				<span class="right">
-				Premium Template by WowThemesNet </span>
+				</span>
 			</div>
 		</div>
 	</div>

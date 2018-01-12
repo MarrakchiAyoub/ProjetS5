@@ -79,7 +79,7 @@ if (isset($_GET['send'])){
 <form method="GET">
 <span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
 <input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
-<input name="send" value="valider" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 6%;padding: 0;" type="submit">
+<input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
 </form>
 <table class="emploi">
 		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
@@ -138,16 +138,16 @@ if (isset($_GET['send'])){
 				<h2 class="title"><i class="icon-link"></i> Links</h2>
 				<hr class="footerstress">
 				<ul>
-					<li>Services</li>
-					<li>Privacy Policy</li>
-					<li>Shortcodes</li>
-					<li>Columns</li>
-					<li>Portfolio</li>
-					<li>Blog</li>
-					<li>Contact</li>
-					<li>Font Awesome</li>
-					<li>Single Project</li>
-					<li>Home</li>
+					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -159,11 +159,11 @@ if (isset($_GET['send'])){
 	<div class="grid">
 		<div class="row">
 			<div class="c6">
-				 Your Name &copy; 2015. All Rights Reserved.
+				 Aghziel Aymane, Marrakchi Ayoub, Rahmouni Fatine, El Hasyouti Nourelhouda  &copy; 2018. All Rights Reserved.
 			</div>
 			<div class="c6">
 				<span class="right">
-				Premium Template by WowThemesNet </span>
+				</span>
 			</div>
 		</div>
 	</div>

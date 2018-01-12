@@ -1,4 +1,4 @@
-<?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
+<?php session_start(); include('../lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -20,12 +20,12 @@
         width: 80px;
     }
     </style>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="css/slider.css"/>
-<link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- change skin color -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-<script src="js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+<link rel="stylesheet" type="text/css" href="../css/skinblue.css"/><!-- change skin color -->
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<script src="../js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
 </head>
 <body>
 <!-- TOP LOGO & MENU
@@ -34,12 +34,12 @@
 	<div class="row space-bot">
 		<!--Logo-->
 		<div class="c4">
-			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+			<a href="../index.php">
+				<img src="../images/ece.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
-		<?php	include("menu.php"); ?>
+		<?php	include("../menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -50,7 +50,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Compte Etudiant</h1>
+				<h1 class="titlehead">Mettre a jour une séance</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -59,65 +59,30 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-<div id="form"  style="margin-left:7%; margin-top: 45px; width: 30%; float: left">
-	<h3>Connexion</h3><br>
-<form method="POST">
-email:<input name="mailetu" type="email" required><br>
-mot de passe: <input name="passetu" type="password" required><br>
-<?php include 'verif.php'; ?>
-<button class="blue" type="submit" name="sendetu"/>connexion</button>
-  <input type="reset" value="Annuler"><br>
+<h4 style="margin-left: 20px">Je souhaite:</h4>
+<div style="height: 200px;padding-top: 30px;padding-left: 15px;">
+<form mothod="GET">
+<input type="radio" name="action" value="report"> Reporté une séance<br>
+  <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifié le créneau une séance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere pérmanante"></i><br>
+  <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;"> Ajouté une séance de rattrapage<br>
+  <input name="send" value="Continuer" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 100px;padding: 0;" type="submit">
 </form>
-</div>
-
-<div id="form" style="margin-left:50%; margin-top: 58px; width: 30%"> 
-	<h3>Inscription</h3><br>
-<script>
-function validatepass() {
-    var x = document.forms["inscription"]["psw"].value;
-	var y = document.forms["inscription"]["n_psw"].value;
-    if (x != y) {
-		document.getElementById("pwd").innerHTML="Les mot de passes ne sont pas identiques";
-        return false;
+<?php
+if (isset($_GET['send'])){
+    switch ($_GET['action'])
+    {
+        case 'report' :
+        header('location: report.php');
+        break;
+        case 'modif' :
+        header('location: modifier.php');
+        break;
+        case 'ajout' :
+        header('location: Ajouté.php');
     }
-	var fil = document.forms["inscription"]["fil"].value;
-	var nve = document.forms["inscription"]["nve"].value;
-	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
-		 return false;
-	}
-
 }
-</script>
-<form mothod="POST" name="inscription" onsubmit="return validatepass()">
-<?php include 'inscription.php'; ?>
-CNE:*<input name="cne" type="text" required><br>
-Nom:*<input name="nom" type="text" required><br>
-Prénom:* <input name="pre" type="text" required><br>
-Mot de passe:* <input name="psw" type="password" required><br>
-Resaisir le mot de passe:* <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
-E-mail:* <input name="email" type="email" required><br>
-Date de naissance: <input name="ddn" type="date"><br>
-filière:* <select name="fil" required>
-    <option value="GI">Génie informatique</option>
-    <option value="LSI">Logiciels et systèmes informatiques</option>
-    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
-    <option value="SIR">Systèmes informatiques et réseaux</option>
-  </select>
-Niveau d'étude:* <select name="nve" required>
-    <option value="L3">3éme année licence</option>
-    <option value="M1">1ére année Master</option>
-    <option value="M2">2éme année Master</option>
-    <option value="C1">1ére année cycle</option>
-    <option value="C2">2éme année cycle</option>
-    <option value="C3">3éme année cycle</option>
-	</select><p id="nve" class="err"></p>
-	<br>
-<button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
-  <input type="reset" value="Annuler"><br>
-  </form>
- </div>
-
+?>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -129,7 +94,7 @@ Niveau d'étude:* <select name="nve" required>
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img class="foot-logo" src="images/logo.png" alt="" style="padding-top: 70px;">
+				<img src="../images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
@@ -200,19 +165,19 @@ Niveau d'étude:* <select name="nve" required>
 <!-- JAVASCRIPTS
 ================================================== -->
 <!-- all -->
-<script src="js/modernizr-latest.js"></script>
+<script src="../js/modernizr-latest.js"></script>
 
 <!-- menu & scroll to top -->
-<script src="js/common.js"></script>
+<script src="../js/common.js"></script>
 
 <!-- cycle -->
-<script src="js/jquery.cycle.js"></script>
+<script src="../js/jquery.cycle.js"></script>
 
 <!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
+<script src="../js/jquery.tweet.js"></script>
 
 <!-- filtering -->
-<script src="js/jquery.isotope.min.js"></script>
+<script src="../js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
 <script>

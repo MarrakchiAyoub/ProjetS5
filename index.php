@@ -86,24 +86,24 @@
 					<div class="introboxinner">
 						<span class="homeicone">
 						<i class="icon-bolt"></i>
-						</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						</span> <h1 style = "color:#ffffff"> Creation </h1>
 					</div>
 				</div>
 				<!--Box 2-->
 				<div class="c4 introbox introboxmiddle">
 					<div class="introboxinner">
 						<span class="homeicone">
-						<i class="icon-cog"></i>
-						</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<i class="icon-lightbulb"></i>
+						</span> <h1 style = "color:#ffffff"> Innovation </h1>
 					</div>
 				</div>
 				<!--Box 3-->
 				<div class="c4 introbox introboxlast">
 					<div class="introboxinner">
 						<span class="homeicone">
-						<i class="icon-lightbulb"></i>
+						<i class="icon-cog"></i>
 						</span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<h1 style = "color:#ffffff"> Excellence </h1>
 					</div>
 				</div>
 			</div>
@@ -120,17 +120,16 @@
 		<div class="c12">
 			<div class="royalcontent">
 			  <h1 class="royalheader">Departement Genie Informatique</h1>
-			  <h1 class="title" style="text-transform:none;">Html theme with awesome features, sliders, unlimited colors & much more!</h1>
 			</div>
 		</div>
 		<!--Box 1-->
 		<div class="c4">
 		  <h2 class="title hometitlebg"><em class="icon-qrcode smallrightmargin"></em>Cycle Licence</h2>
 		  <div class="noshadowbox">
-			<h5>DELIVERY</h5>
+			<h5>3 ans</h5>
 				<p>
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
-				</p>
+				Vous avez un bac ? Vous souhaitez avoir une license en informatique ? Optez pour notre formation L.G.I à la faculté des sciences et techniques de Tanger. 
+				</p><br>
 				<p class="bottomlink">
 					<a href="license.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
@@ -140,10 +139,9 @@
 		<div class="c4">
 		  <h2 class="title hometitlebg"><em class="icon-cog smallrightmargin"></em>cycle master</h2>
 		  <div class="noshadowbox">
-			<h5>QUALITY</h5>
+			<h5>2 ans</h5>
 				<p>
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
-				</p>
+				Vous avez un bac +3 ou license ? Vous souhaitez avoir un master en informatique ? Optez pour notre formation S.I.A.D ou S.I.R à la faculté des sciences et techniques de Tanger.				</p>
 				<p class="bottomlink">
 					<a href="master.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
@@ -153,9 +151,9 @@
 		<div class="c4">
 		  <h2 class="title hometitlebg"><em class="icon-user" style="margin-right:10px;"></em> cycle d'ingenieur</h2>
 		  <div class="noshadowbox">
-			<h5>PRICING</h5>
+			<h5>3 ans</h5>
 				<p>
-					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis purus lobortis. In et purus ut nunc elementum dapibus facilisis in quam.
+				Vous avez un bac +2 ou license ? Vous souhaitez être un ingénieure d'état en informatique ? Optez pour notre formation L.S.I à la faculté des sciences et techniques de Tanger. 
 				</p>
 				<p class="bottomlink">
 					<a href="cycle.php" class="neutralbutton"><i class="icon-link"></i></a>
@@ -304,17 +302,7 @@
 	================================================== -->
 	<div class="row space-bot">
 		<div class="c12">
-			<div class="wrapaction">
-				<div class="c9">
-					<h1 class="subtitles">Salique is incredibly awesome, with a refreshingly clean design</h1>
-					 We produce comprehensive mapping of consumers' relationships with communications across bought, owned & earned media based on bespoke insight. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit lacus mattis orci fermentum mollis iaculis.
-				</div>
-				<div class="c3 text-center" style="margin-top:40px;">
-					<div class="actionbutton">
-						<i class=" icon-download-alt"></i> DOWNLOAD NOW
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 </div><!-- end grid -->
@@ -367,16 +355,8 @@
 				<h2 class="title"><i class="icon-link"></i> Links</h2>
 				<hr class="footerstress">
 				<ul>
-					<li>Services</li>
-					<li>Privacy Policy</li>
-					<li>Shortcodes</li>
-					<li>Columns</li>
-					<li>Portfolio</li>
-					<li>Blog</li>
-					<li>Contact</li>
-					<li>Font Awesome</li>
-					<li>Single Project</li>
-					<li>Home</li>
+					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
+					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -388,11 +368,11 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c6">
-				 Your Name &copy; 2015. All Rights Reserved.
+				 Aghziel Aymane, Marrakchi Ayoub, Rahmouni Fatine, El Hasyouti Nourelhouda  &copy; 2018. All Rights Reserved.
 			</div>
 			<div class="c6">
 				<span class="right">
-				Premium Template by WowThemesNet </span>
+				</span>
 			</div>
 		</div>
 	</div>
