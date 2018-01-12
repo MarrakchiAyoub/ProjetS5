@@ -56,11 +56,9 @@
 				<p>
                 <li>Avoir une culture de base scientifique </li>
                 <li>Acquérir une base solide dans les axes majeurs et fondamentaux de la discipline informatique :</li>
-                <li>Algorithmique, Programmation, Bases de Données, Technologies Web, Systèmes d’Exploitation et
-Réseaux Informatiques,... ;</li>
+                <li>Algorithmique, Programmation, Bases de Données, Technologies Web, Systèmes d’Exploitation et Réseaux Informatiques,... ;</li>
 
-                <li>Développer un savoir-faire technique en informatique : technologie objet, informatique distribuée,
-architectures client-serveur et n-tiers, applications hétérogènes,…</li>
+                <li>Développer un savoir-faire technique en informatique : technologie objet, informatique distribuée, architectures client-serveur et n-tiers, applications hétérogènes,…</li>
 				</p>
 			</div>
             <div class="c8">
@@ -68,10 +66,7 @@ architectures client-serveur et n-tiers, applications hétérogènes,…</li>
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
 				<p>
-					<span class="dropcap">L</span>’accès aux filières Licence en Sciences et Techniques a eu lieu sur étude de dossier et /ou par voie de test ou de concours, ouvert aux étudiants titulaires d’un baccalauréat ou d’un diplôme reconnu équivalent en satisfaisant aux critères d’admission précisés dans le descriptif de la filière
-
-L’accès aux filières Licence en Sciences et Techniques peut se faire également à différents niveaux de la licence, sur étude de dossier et/ou par voie de test ou de concours, pour les 
-étudiants satisfaisant aux pré-requis relatifs à ces niveaux et qui sont précisés dans le descriptif de la filière.
+					<span class="dropcap">L</span>’accès aux filières Licence en Sciences et Techniques a eu lieu sur étude de dossier et /ou par voie de test ou de concours, ouvert aux étudiants titulaires d’un baccalauréat ou d’un diplôme reconnu équivalent en satisfaisant aux critères d’admission précisés dans le descriptif de la filière L’accès aux filières Licence en Sciences et Techniques peut se faire également à différents niveaux de la licence, sur étude de dossier et/ou par voie de test ou de concours, pour les étudiants satisfaisant aux pré-requis relatifs à ces niveaux et qui sont précisés dans le descriptif de la filière.
 				</p>
 			</div>
             <div class="c8">
@@ -79,9 +74,7 @@ L’accès aux filières Licence en Sciences et Techniques peut se faire égalem
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<p>
-					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ...
-
-Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ... Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
 				</p>
 			</div>
 			
@@ -123,7 +116,7 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 					<span class="hirefor"> Introduction aux Réseaux Informatiques</span>
 				</div>
 			</div>
-            
+        </div>    
         <div class="row space-top space-bot">
 			<div class="c12">
 				<h1 class="maintitle text-center">
@@ -187,7 +180,7 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 			</div>
 			<!-- end box4 -->			
 		</div>
-
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
