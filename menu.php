@@ -5,19 +5,19 @@
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="/ProjetS5/about.php">A propos</a></li>
-      <li><a href="/ProjetS5/licence.php">Licence</a></li>
-      <li><a href="/ProjetS5/Master1.php">Master 1</a></li>					
-      <li><a href="/ProjetS5/Master2.php">Master 2</a></li>
-      <li><a href="/ProjetS5/cycle.php">Cycle d'Ingenieur</a></li>
+      <li><a href="/ProjetS5/licence.php">G.I.</a></li>
+      <li><a href="/ProjetS5/Master1.php">S.I.R.</a></li>					
+      <li><a href="/ProjetS5/Master2.php">S.I.A.D.</a></li>
+      <li><a href="/ProjetS5/cycle.php">L.S.I.</a></li>
       <li><a href="/ProjetS5/timeline.php">Timeline</a></li>
     </ul>
     </li>
     <li><a href="#">Emplois du temps</a>
       <ul>
-        <li><a href="/ProjetS5/emploi-LGI.php">Licence</a></li>
-        <li><a href="/ProjetS5/emploi-M1.php">Master 1</a></li>
-        <li><a href="/ProjetS5/emploi-M2.php">Master 2</a></li>
-        <li><a href="/ProjetS5/emploi-cycle.php">Cycle d'Ingenieur</a></li>
+        <li><a href="/ProjetS5/emploi-LGI.php">G.I.</a></li>
+        <li><a href="/ProjetS5/emploi-M1.php">S.I.R.</a></li>
+        <li><a href="/ProjetS5/emploi-M2.php">S.I.A.D.</a></li>
+        <li><a href="/ProjetS5/emploi-cycle.php">L.S.I.</a></li>
     </ul>
     </li>
     <?php if(!isset($_SESSION['type']))
