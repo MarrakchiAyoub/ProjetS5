@@ -49,7 +49,7 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
+	<div class="shadowundertop"></div>
 		<div class="row">
 			<div class="c8">
 				<h1 class="maintitle ">
@@ -76,13 +76,7 @@
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<p>
-<<<<<<< HEAD:license.php
 					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ... Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
-=======
-					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ...
-
-                    Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
->>>>>>> 16b1a10a9b5c7c4acaa51c7a33bb5c8301ae6a91:licence.php
 				</p>
 			</div>
 			

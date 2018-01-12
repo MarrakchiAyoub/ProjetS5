@@ -48,7 +48,7 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
+	<div class="shadowundertop"></div>
 		<div class="row">
 			<div class="c8">
 				<h1 class="maintitle ">
@@ -89,17 +89,15 @@
 				<h1 class="maintitle ">
 				<span>Competences visees et debouches:</span>
 				</h1>
-				<p>
 					<span class="dropcap">L</span>'informatique est une discipline particulièrement ouverte vers le milieu professionnel. Nul n'a besoin de rappeler le nombre d'offres d'emplois dans ce secteur durant ces dernières années. Il est plus que probable qu'il reste en pleine expansion encore quelque temps, autant dans les entreprises que dans les métiers de l'enseignement et de la recherche.
                     Le parcours fournit aux étudiants des bases théoriques solides qui leur permettront d’effectuer de la recherche théorique ou appliquée de haut niveau. Deux options sont possibles :
                     <ul style="list-style-type:disc">
                         <li>Continuer en thèse de doctorat dans un des domaines de recherche particuliers tels que : l’image, le texte, la parole ou le signal, ou dans le domaine de la bioinformatique, dans un laboratoire universitaire ou celui d’une entreprise publique ou privée.</li>
                         <li>Faire de la recherche appliquée en tant qu’ingénieur de recherche dans un département de recherche et développement (R&D) d’une entreprise publique ou privée, dans les domaines tels que la grande distribution, le secteur bancaire, la surveillance, le marketing, le diagnostic, la bioinformatique, le traitement et l’analyse du signal et de l’image, le web mining, le text mining etc </li>
 				    </ul>
-                </p>
-			</div>
-			
-		</div>
+            </div>			
+    </div>
+</div>
 		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
     
@@ -153,6 +151,7 @@
             </dl>
         </div>
     </div>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -314,6 +313,7 @@ $(document).ready(function() {
 		$(this).next().slideToggle('normal'); // Toggle dd when the respective dt is clicked
 		}); 
 });
+
 </script>
 </body>
 </html>

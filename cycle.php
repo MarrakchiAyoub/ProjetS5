@@ -1,7 +1,6 @@
 <?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
@@ -48,7 +47,7 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
+    <div class="shadowundertop"></div>
 		<div class="row">
 			<div class="c8">
 				<h1 class="maintitle ">
@@ -174,6 +173,7 @@
             </dl>
         </div>
     </div>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">

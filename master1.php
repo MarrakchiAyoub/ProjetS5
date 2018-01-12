@@ -33,22 +33,22 @@
 <!-- HEADER
 ================================================== -->
 <div class="undermenuarea">
-	<div class="boxedshadow">
-	</div>
+	<div class="boxedshadow"></div>
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Master Systèmes informatiques et réseaux</h1>
+				<h1 class="titlehead">Licence Genie informatique</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
-</div>
+			<div class="c4">				
+                <h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
+            </div>
 		</div>
 	</div>
 </div>
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
-		<div class="shadowundertop"></div>
+	<div class="shadowundertop"></div>
 		<div class="row">
 			<div class="c8">
 				<h1 class="maintitle ">
@@ -57,23 +57,21 @@
 				<p>
                 Le Master Systèmes Informatiques et Réseaux répond a besoin de formation par la recherchedans le domaine de technologies de l’information et de la communication caractérisée par laconvergence des techniques des réseaux et des applications informatiques.
 
-   La création de ceMaster résulte d’un constat intégrant non seulement des considérations scientifiques ettechniques mais également les aspects économiques et industriels liés aux avancées dans lesdomaines des Technologies de l’information et de la Communication.
+                La création de ceMaster résulte d’un constat intégrant non seulement des considérations scientifiques ettechniques mais également les aspects économiques et industriels liés aux avancées dans lesdomaines des Technologies de l’information et de la Communication.
 				</p>
 			</div>
             <div class="c8">
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
-				<p>
+				
 					L'accès aux formations de Master en Sciences et techniques est ouvert aux titulaires :
-                    <br>
                     <ul  style="list-style-type:disc">
-
                         <li>De la licence dans le domaine de formation du Master en Sciences et Techniques ou d’undiplôme reconnu équivalent satisfaisant aux critères d’admission prévus dans le descriptif dela filière.. </li>
                         <li>De diplômes au moins d’un niveau équivalent de la licence, sur étude de dossier et/ou parvoie de concours, et satisfaisant aux critères d’admission prévus dans le descriptif de la filière.</li>
                         <li>Pré-requis pédagogiques : Ecologie, Biologie, Géologie, Chimie, Statistique, Informatique. Procédures de sélection et d’entretien : sur dossier et entretien. </li>
                     </ul>
-				</p>
+            
 			</div>
             <div class="c8">
 				<h1 class="maintitle ">
@@ -83,13 +81,13 @@
 					<span class="dropcap">A</span>près l’obtention du Master Recherche, une alternative est offerte, soit entreprendre une formation de haut niveau par la préparation d’une thèse en informatique, soit rejoindre le mondeindustriel ou cette première expérience en recherche pourra déjà ouvrir les portes des servicesde recherche et développement. Néanmoins, la poursuite en Thèse reste la finalité première dece Master Recherche.
 				</p>
 			</div>
-			
-		</div>
+    </div>
+</div>
 		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
     
-		<div class="grid">
-		<div class="shadowundertop"></div>
+<div class="grid">
+	=<div class="shadowundertop"></div>
 		<div class="row">
 			<!-- box 1 -->
 			<div class="c4">
@@ -138,6 +136,7 @@
             </dl>
         </div>
     </div>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
