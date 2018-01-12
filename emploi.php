@@ -1,3 +1,4 @@
+<!-- initialisation de l'emploi du temps -->
 <head>
     <style>
         table { border-collapse: collapse; }
@@ -14,8 +15,8 @@
     </style>
 </head>
 <?php include 'lib/bdd.php'; ?>
-<form method="POST">
-    filiere:  <select name="fil">
+<form method="POST"> <!-- toute la page est un formulaire -->
+    filiere:  <select name="fil"> 
   <option value="LSI">Cycle</option>
   <option value="GI">licence</option>
   <option value="SIAD">Master SIAD</option>
@@ -30,7 +31,7 @@ group:  <select name="grp">
   <option value="C3-1">c3</option>
 </select>
 salle: <input type="text" name="sal" >
-<table>
+<table> <!-- chaque case du tableu contien un select ou son nom est le numero du creneau  -->
     <tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
     <tr><td class="first">Lundi</td>
     <td>C1
@@ -280,10 +281,12 @@ salle: <input type="text" name="sal" >
 <button type="submit" name="send"/>envoyer</button>
 </form>
 <?php
-$year=date('Y')-1;
+if ($month>=8 && $month<=12){$year=date('Y');} //detection de l'année
+else if ($month>=1 && $month<=8) {$year=date('Y')-1;}
 $timestamp= strtotime($year."/09/15");
 $week1=idate('W', $timestamp);
-$year=date('Y');
+if ($month>=8 && $month<=12){$year=date('Y')+1;}
+else if ($month>=1 && $month<=8) {$year=date('Y');}
 $timestamp= strtotime($year."/01/20");
 $week2=idate('W', $timestamp);
 $resu=1;
@@ -291,18 +294,19 @@ if (isset($_POST['send'])){
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['grp'];
     $sal=$_POST['sal'];
-  for($w=$week1; $w<=52; $w++){
-    for ($i=1; $i<25; $i++){
+  for($w=$week1; $w<=52; $w++){ //boucle1 parcourir toute les semaine 
+    for ($i=1; $i<25; $i++){ // pour chaque creneau 
         $crn="mod-".$i;
-       if($_POST[$crn]){
+       if($_POST[$crn]){ //s'assurer que le creneau contient une seance
            $mod=$_POST[$crn];
+           //l'nsertion dans la BDD
            $sql="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$w', '$i', '$sal', '$mod', '$fil', '$grp')";
            if(mysqli_query($conn, $sql)){ $cof=1; } else { $cof =0; }
            $resu=$resu*$cof;
         }
      }
    }
-   for($w=1; $w<=$week2; $w++){
+   for($w=1; $w<=$week2; $w++){ //boucle2 continuer le parcour des semaines
     for ($i=1; $i<25; $i++){
         $crn="mod-".$i;
        if($_POST[$crn]){

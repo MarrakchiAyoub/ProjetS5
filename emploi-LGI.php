@@ -64,14 +64,14 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 </div>
 <!-- CONTENT
 ================================================== -->
-<?php include 'lib/timetable.php';
+<?php include 'lib/timetable.php'; //appele au fichier contenant la fonction "tametable"
 $timestamp= strtotime("today");
-$week=idate('W', $timestamp);
+$week=idate('W', $timestamp); //recevoir le numero de semaine
 $grp="GI-L3-1";
 $month=date('n');
-if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;}
+if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;} //detection de l'année
 else if ($month>=1 && $month<=2) {$year1=date('Y')-1; $year2=date('Y');}
-if (isset($_GET['send'])){
+if (isset($_GET['send'])){ //changement de date au cas ou le formulaire est envoyer
 	$date=strtotime($_GET['date']);
 	$week=idate('W', $date);
 }
@@ -81,7 +81,8 @@ if (isset($_GET['send'])){
 <input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
 <input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
 </form>
-<table class="emploi">
+<!-- creation du tableau 'emplois de temps' ou chaque case contien la fonction 'timetable' -->
+<table class="emploi"> 
 		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
 		<tr><td class="first">Lundi</td><td><?php timetable($week, 1, $grp) ?></td><td><?php timetable($week, 2, $grp) ?></td><td><?php timetable($week, 3, $grp) ?></td><td><?php timetable($week, 4, $grp) ?></td></tr>
 		<tr><td class="first">Mardi</td><td><?php timetable($week, 5, $grp) ?></td><td><?php timetable($week, 6, $grp) ?></td><td><?php timetable($week, 7, $grp) ?></td><td><?php timetable($week, 8, $grp) ?></td></tr>
