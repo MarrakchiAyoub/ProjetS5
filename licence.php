@@ -1,6 +1,7 @@
 <?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
@@ -22,7 +23,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->
@@ -37,10 +38,11 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Genie informatique</h1>
+				<h1 class="titlehead">Licence Genie informatique</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
-</div>
+			<div class="c4">				
+                <h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
+            </div>
 		</div>
 	</div>
 </div>
@@ -81,7 +83,7 @@ L’accès aux filières Licence en Sciences et Techniques peut se faire égalem
 				<p>
 					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ...
 
-Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+                    Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
 				</p>
 			</div>
 			
@@ -238,14 +240,6 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
 					
-					
-					
-					
-					
-					
-					
-					
-					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -266,19 +260,17 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 		</div>
 	</div>
 </div>
+<!-- END CONTENT AREA -->
 <!-- JAVASCRIPTS
 ================================================== -->
-<!-- all-->
+<!-- all -->
 <script src="js/modernizr-latest.js"></script>
 
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- testimonial rotator -->
-<script src="js/jquery.cycle.js"></script>
-
-<!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
+<!-- slider -->
+<script src="js/jquery.cslider.js"></script>
 
 <!-- cycle -->
 <script src="js/jquery.cycle.js"></script>
@@ -286,7 +278,10 @@ Les orientations potentielles de poursuite des études sont de type : Masters à
 <!-- carousel items -->
 <script src="js/jquery.carouFredSel-6.0.3-packed.js"></script>
 
-<!-- CALL Showcase - change 5 from min:5 and max:5 to the number of items you want visible -->
+<!-- twitter -->
+<script src="js/jquery.tweet.js"></script>
+
+<!-- Call Showcase - change 4 from min:4 and max:4 to the number of items you want visible -->
 <script type="text/javascript">
 $(window).load(function(){			
 			$('#recent-projects').carouFredSel({
@@ -310,15 +305,15 @@ $(window).load(function(){
 				scroll : 2000,
 				items: {
 					visible: {
-						min: 5,
-						max: 5
+						min: 4,
+						max: 4
 					}
 				}
 			});
 		});	
 </script>
 
-<!-- CALL opacity on hover images -->
+<!-- Call opacity on hover images from carousel-->
 <script type="text/javascript">
 $(document).ready(function(){
     $("img.imgOpa").hover(function() {
@@ -328,24 +323,6 @@ $(document).ready(function(){
       $(this).stop().animate({opacity: "1.0"}, 'slow');
     });
   });
-</script>
-
-<!-- CALL tabs -->
-<script type="text/javascript">
-$(document).ready(function() {	
-	$('#tabs li a:not(:first)').addClass('inactive');
-	$('.container:not(:first)').hide();	
-	$('#tabs li a').click(function(){		
-		var t = $(this).attr('href');
-		if($(this).hasClass('inactive')){ //added to not animate when active
-			$('#tabs li a').addClass('inactive');		
-			$(this).removeClass('inactive');
-			$('.container').hide();
-			$(t).fadeIn('slow');	
-		}			
-		return false;
-	}) //end click
-});
 </script>
 </body>
 </html>

@@ -1,4 +1,7 @@
-<?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
+<?php session_start();
+$nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL;
+$pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,6 +10,21 @@
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<style>
+        table { border-collapse: collapse; }
+    tr {
+        height: 50px;
+        }
+    td {
+        border: solid 2px;
+        width: 180px;
+    }
+    .first {
+		width: 80px;
+		padding-top: 1px;
+		padding-bottom: 20px;
+    }
+    </style>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -22,7 +40,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->
@@ -37,7 +55,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Masonry Five</h1>
+				<h1 class="titlehead">Cycle d'Ingenieur</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -46,123 +64,32 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-<div class="grid">
-		<div class="shadowundertop">
-		</div>
-	<!-- begin categories -->
-	<div class="row space-bot">
-		<div class="c12">
-			<h1 class="maintitle space-top">
-				<span>EXPLORE BEAUTY</span>
-			</h1>
-			<div id="nav">
-				<ul>
-					<li><a href="" data-filter="*" class="selected">All Items</a></li>
-					<li><a href="" data-filter=".cat1">Category 1</a></li>
-					<li><a href="" data-filter=".cat2">Category 2</a></li>
-					<li><a href="" data-filter=".cat3">Category 3</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- end categories -->
-	<div class="row space-top">
-		<div id="content">
-			<!-- box 1 -->
-			<div class="boxfivecolumns cat1 cat3">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 2 -->
-			<div class="boxfivecolumns cat1">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 3 -->
-			<div class="boxfivecolumns cat2 cat3">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 4 -->
-			<div class="boxfivecolumns cat1">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 5 -->
-			<div class="boxfivecolumns cat2">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 6 -->
-			<div class="boxfivecolumns cat2">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 7 -->
-			<div class="boxfivecolumns cat2 cat3">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 8 -->
-			<div class="boxfivecolumns cat1">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 9 -->
-			<div class="boxfivecolumns cat2 cat3">
-				<div class="boxcontainer">
-					<a href="#"><img src="http://placehold.it/400x200&text=any.size.you+wish" alt=""></a>
-					<h1><a href="#">Salique Beauty</a></h1>
-					<p>
-						 porta acean pulvinar
-					</p>
-				</div>
-			</div>
-			<!-- box 10 etc -->
-			
-		</div>
-	</div>
-</div><!-- end grid -->
+<?php include 'lib/timetable.php';
+$timestamp= strtotime("today");
+$week=idate('W', $timestamp);
+$grp="GI-L3-1";
+$month=date('n');
+if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;}
+else if ($month>=1 && $month<=2) {$year1=date('Y')-1; $year2=date('Y');}
+if (isset($_GET['send'])){
+	$date=strtotime($_GET['date']);
+	$week=idate('W', $date);
+}
+?>
+<form method="GET">
+<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
+<input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
+<input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
+</form>
+<table class="emploi">
+		<tr style="height:30px"><td class="first" style="border:none"></td><td><div style="float:left">8:30</div><div style="float:right">10:15</div></td><td><div style="float:left">10:30</div><div style="float:right">12:15</div></td><td><div style="float:left">1:30</div><div style="float:right">15:15</div></td><td><div style="float:left">15:30</div><div style="float:right">17:15</div></td></tr>
+		<tr><td class="first">Lundi</td><td><?php timetable($week, 1, $grp) ?></td><td><?php timetable($week, 2, $grp) ?></td><td><?php timetable($week, 3, $grp) ?></td><td><?php timetable($week, 4, $grp) ?></td></tr>
+		<tr><td class="first">Mardi</td><td><?php timetable($week, 5, $grp) ?></td><td><?php timetable($week, 6, $grp) ?></td><td><?php timetable($week, 7, $grp) ?></td><td><?php timetable($week, 8, $grp) ?></td></tr>
+		<tr><td class="first">Mercredi</td><td><?php timetable($week, 9, $grp) ?></td><td><?php timetable($week, 10, $grp) ?></td><td><?php timetable($week, 11, $grp) ?></td><td><?php timetable($week, 12, $grp) ?></td></tr>
+		<tr><td class="first">Jeudi</td><td><?php timetable($week, 13, $grp) ?></td><td><?php timetable($week, 14, $grp) ?></td><td><?php timetable($week, 15, $grp) ?></td><td><?php timetable($week, 16, $grp) ?></td></tr>
+		<tr><td class="first">Vendredi</td><td><?php timetable($week, 17, $grp) ?></td><td><?php timetable($week, 18, $grp) ?></td><td><?php timetable($week, 19, $grp) ?></td><td><?php timetable($week, 20, $grp) ?></td></tr>
+		<tr><td class="first">Samedi</td><td><?php timetable($week, 21, $grp) ?></td><td><?php timetable($week, 22, $grp) ?></td><td><?php timetable($week, 23, $grp) ?></td><td><?php timetable($week, 24, $grp) ?></td></tr>
+	</table>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -298,7 +225,7 @@ $('#nav a').click(function (event) {
 });
  </script>
  
- <!-- Call opacity on hover images-->
+  <!-- Call opacity on hover images-->
 <script type="text/javascript">
 $(document).ready(function(){
     $(".boxcontainer img").hover(function() {
