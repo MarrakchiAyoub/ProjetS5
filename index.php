@@ -42,7 +42,7 @@
 			<p>
 			Ce si est le site departement Genie informatique de la FST-T.
 			</p>
-			<a href="#" class="da-link" style="width:202px;">A propos</a>
+			<a href="about.php" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
@@ -53,7 +53,7 @@
 			<p>
 				 Vous pouvez consulter votre emplois et chaque professeur peut reporter sa seance .
 			</p>
-			<a href="gallery.php" class="da-link" style="width:192px;">Clickez-ici!</a>
+			<a href="connectetu.php" class="da-link" style="width:192px;">Connecte-Toi</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
@@ -64,7 +64,7 @@
 			<p>
 				vous pouvez consulter et telecharger les cours . 
 			</p>
-			<a href="#" class="da-link" style="width:224px;">Clickez-ici!</a>
+			<a href="connectetu.php" class="da-link" style="width:224px;">Connecte-Toi</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
