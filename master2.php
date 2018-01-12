@@ -226,14 +226,17 @@
 <!-- END CONTENT AREA -->
 <!-- JAVASCRIPTS
 ================================================== -->
-<!-- all -->
+<!-- all-->
 <script src="js/modernizr-latest.js"></script>
 
 <!-- menu & scroll to top -->
 <script src="js/common.js"></script>
 
-<!-- slider -->
-<script src="js/jquery.cslider.js"></script>
+<!-- testimonial rotator -->
+<script src="js/jquery.cycle.js"></script>
+
+<!-- twitter -->
+<script src="js/jquery.tweet.js"></script>
 
 <!-- cycle -->
 <script src="js/jquery.cycle.js"></script>
@@ -241,10 +244,7 @@
 <!-- carousel items -->
 <script src="js/jquery.carouFredSel-6.0.3-packed.js"></script>
 
-<!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
-
-<!-- Call Showcase - change 4 from min:4 and max:4 to the number of items you want visible -->
+<!-- CALL Showcase - change 5 from min:5 and max:5 to the number of items you want visible -->
 <script type="text/javascript">
 $(window).load(function(){			
 			$('#recent-projects').carouFredSel({
@@ -276,7 +276,8 @@ $(window).load(function(){
 		});	
 </script>
 
-<!-- Call opacity on hover images from carousel-->
+
+<!-- CALL opacity on hover images -->
 <script type="text/javascript">
 $(document).ready(function(){
     $("img.imgOpa").hover(function() {
@@ -286,6 +287,33 @@ $(document).ready(function(){
       $(this).stop().animate({opacity: "1.0"}, 'slow');
     });
   });
+</script>
+
+<!-- CALL tabs -->
+<script type="text/javascript">
+$(document).ready(function() {	
+	$('#tabs li a:not(:first)').addClass('inactive');
+	$('.container:not(:first)').hide();	
+	$('#tabs li a').click(function(){		
+		var t = $(this).attr('href');
+		if($(this).hasClass('inactive')){ //added to not animate when active
+			$('#tabs li a').addClass('inactive');		
+			$(this).removeClass('inactive');
+			$('.container').hide();
+			$(t).fadeIn('slow');	
+		}			
+		return false;
+	}) //end click
+});
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function () {
+	   // ---- FAQs ---------------------------------------------------------------------------------------------------------------
+		$('.faqs dd').hide(); // Hide all DDs inside .faqs
+		$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ // Add class "hover" on dt when hover
+		$(this).next().slideToggle('normal'); // Toggle dd when the respective dt is clicked
+		}); 
+});
 </script>
 </body>
 </html>

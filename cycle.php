@@ -224,14 +224,6 @@
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
 					
-					
-					
-					
-					
-					
-					
-					
-					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -252,6 +244,7 @@
 		</div>
 	</div>
 </div>
+<!-- END CONTENT AREA -->
 <!-- JAVASCRIPTS
 ================================================== -->
 <!-- all-->
@@ -296,13 +289,14 @@ $(window).load(function(){
 				scroll : 2000,
 				items: {
 					visible: {
-						min: 5,
-						max: 5
+						min: 4,
+						max: 4
 					}
 				}
 			});
 		});	
 </script>
+
 
 <!-- CALL opacity on hover images -->
 <script type="text/javascript">
