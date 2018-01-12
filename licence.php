@@ -175,7 +175,7 @@
 			</div>
 			<!-- box 4 -->
 			<div class="c3">
-				<img src="#" class="imgOpa teamimage" alt="">
+				<img src="./images/diploma.png" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
 					<span class="hirefor"> PFE </span>
 				</div>
