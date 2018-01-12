@@ -218,7 +218,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
+				<img class="foot-logo" src="images/logo.png" alt="" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
