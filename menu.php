@@ -5,10 +5,10 @@
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="/ProjetS5/about.php">A propos</a></li>
-      <li><a href="/ProjetS5/licence.php">G.I.</a></li>
-      <li><a href="/ProjetS5/Master1.php">S.I.R.</a></li>					
-      <li><a href="/ProjetS5/Master2.php">S.I.A.D.</a></li>
-      <li><a href="/ProjetS5/cycle.php">L.S.I.</a></li>
+      <li title="Génie Informatique"><a href="/ProjetS5/licence.php" >G.I.</a></li>
+      <li title="Systèmes Informatiques et Réseaux"><a href="/ProjetS5/Master1.php" >S.I.R.</a></li>					
+      <li title="Systèmes Informatiques et d’aide à la décision"><a href="/ProjetS5/Master2.php" >S.I.A.D.</a></li>
+      <li title="Logiciels et systèmes informatiques"><a href="/ProjetS5/cycle.php" >L.S.I.</a></li>
       <li><a href="/ProjetS5/timeline.php">Timeline</a></li>
     </ul>
     </li>

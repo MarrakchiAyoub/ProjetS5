@@ -143,8 +143,8 @@
 				<p>
 				Vous avez un bac +3 ou license ? Vous souhaitez avoir un master en informatique ? Optez pour notre formation S.I.A.D ou S.I.R à la faculté des sciences et techniques de Tanger.				</p>
 				<p class="bottomlink">
-					<a href="master1.php" class="neutralbutton"><i class="icon-link"></i></a>
-                    <a href="master2.php" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="master1.php" title="S.I.R" class="neutralbutton"><i class="icon-link"></i></a>
+                    <a href="master2.php" title="S.I.A.D" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>
