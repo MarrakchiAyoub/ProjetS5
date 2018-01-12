@@ -5,18 +5,19 @@
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="/ProjetS5/about.php">A propos</a></li>
-      <li><a href="/ProjetS5/services.php">Services</a></li>
-      <li><a href="/ProjetS5/faq.php">F.A.Q.s</a></li>					
-        <li><a href="/ProjetS5/gallery.php">Gallery</a></li>
-        <li><a href="/ProjetS5/timeline.php">Timeline</a></li>
-        <li class="/ProjetS5/last"><a href="404.php">404 Page</a></li>
+      <li><a href="/ProjetS5/licence.php">Licence</a></li>
+      <li><a href="/ProjetS5/Master1.php">Master 1</a></li>					
+      <li><a href="/ProjetS5/Master2.php">Master 2</a></li>
+      <li><a href="/ProjetS5/cycle.php">Cycle d'Ingenieur</a></li>
+      <li><a href="/ProjetS5/timeline.php">Timeline</a></li>
     </ul>
     </li>
     <li><a href="#">Emplois du temps</a>
       <ul>
         <li><a href="/ProjetS5/emploi-LGI.php">Licence</a></li>
-        <li><a href="/ProjetS5/portfolio-masonry4.php">Master</a></li>
-        <li><a href="/ProjetS5/portfolio-masonry5.php">Cycle d'ingenieur</a></li>
+        <li><a href="/ProjetS5/emploi-M1.php">Master 1</a></li>
+        <li><a href="/ProjetS5/emploi-M2.php">Master 2</a></li>
+        <li><a href="/ProjetS5/emploi-cycle.php">Cycle d'Ingenieur</a></li>
     </ul>
     </li>
     <?php if(!isset($_SESSION['type']))

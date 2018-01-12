@@ -60,7 +60,7 @@
 			================================================== -->
 			<!-- box 1 -->
 			<div class="c3" style="text-align:center;">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1>Pr. EN-NAIMI Mokhtar</h1>
 					<span class="hirefor">Chef de Departement</span>
@@ -68,7 +68,7 @@
 			</div>
 			<!-- box 2 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1>Pr. ELBRAK Mohammed</h1>
 					<span class="hirefor"> Chef de "Genie Info (Licence)" </span>
@@ -76,7 +76,7 @@
 			</div>
 			<!-- box 3 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1> Pr. BOUHORMA Mohammed </h1>
 					<span class="hirefor"> Chef de "Systèmes informatiques et réseaux (MASTER)"</span>
@@ -84,7 +84,7 @@
 			</div>
 			<!-- box 4 -->
 			<div class="c3">
-				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
+				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1>Pr. GHADI Abderrahim</h1>
 					<span class="hirefor">Chef de "Logiciels et systèmes informatiques (CI)"</span>
@@ -104,7 +104,7 @@
 			================================================== -->
 			<div class="c4">
 				<p>
-					<img src="http://placehold.it/367x251" style="border-bottom: 5px solid #eee;" alt="">
+					<img class="profs" src="images/Prof.png" style="border-bottom: 5px solid #eee;" alt="">
 				</p>
 			</div>
 			<div class="c4">
@@ -164,7 +164,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Profa.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. BAIDA</a></h1>
@@ -178,7 +178,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. Ghadi</a></h1>
@@ -192,7 +192,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. EMRANI</a></h1>
@@ -206,7 +206,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. ELBRAK</a></h1>
@@ -220,7 +220,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. EZZIYYANI</a></h1>
@@ -234,7 +234,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. GUILLI</a></h1>
@@ -248,7 +248,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. EN-NAIMI</a></h1>
@@ -262,7 +262,7 @@
 						<li>
 						<div class="featured-projects">
 							<div class="featured-projects-image">
-								<a href="#"><img class="imgOpa" src="http://placehold.it/275x185" alt=""></a>
+								<a href="#"><img class="profs" src="images/Prof.png" alt=""></a>
 							</div>
 							<div class="featured-projects-content">
 								<h1><a href="#">Pr. AITKBIR</a></h1>

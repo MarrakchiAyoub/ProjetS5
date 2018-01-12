@@ -42,7 +42,7 @@
 			<p>
 			Ce si est le site departement Genie informatique de la FST-T.
 			</p>
-			<a href="#" class="da-link" style="width:202px;">A propos</a>
+			<a href="about.php" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
@@ -53,7 +53,7 @@
 			<p>
 				 Vous pouvez consulter votre emplois et chaque professeur peut reporter sa seance .
 			</p>
-			<a href="gallery.php" class="da-link" style="width:192px;">Clickez-ici!</a>
+			<a href="connectetu.php" class="da-link" style="width:192px;">Connecte-Toi</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
@@ -64,7 +64,7 @@
 			<p>
 				vous pouvez consulter et telecharger les cours . 
 			</p>
-			<a href="#" class="da-link" style="width:224px;">Clickez-ici!</a>
+			<a href="connectetu.php" class="da-link" style="width:224px;">Connecte-Toi</a>
 			<div class="da-img">
 				<img class="imgslide" src="" alt="">
 			</div>
@@ -131,7 +131,7 @@
 				Vous avez un bac ? Vous souhaitez avoir une license en informatique ? Optez pour notre formation L.G.I à la faculté des sciences et techniques de Tanger. 
 				</p><br>
 				<p class="bottomlink">
-					<a href="license.php" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="licence.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>
@@ -143,7 +143,8 @@
 				<p>
 				Vous avez un bac +3 ou license ? Vous souhaitez avoir un master en informatique ? Optez pour notre formation S.I.A.D ou S.I.R à la faculté des sciences et techniques de Tanger.				</p>
 				<p class="bottomlink">
-					<a href="master.php" class="neutralbutton"><i class="icon-link"></i></a>
+					<a href="master1.php" class="neutralbutton"><i class="icon-link"></i></a>
+                    <a href="master2.php" class="neutralbutton"><i class="icon-link"></i></a>
 				</p>
 			</div>
 		</div>

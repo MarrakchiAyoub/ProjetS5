@@ -612,3 +612,8 @@ ul.teambox { padding-left: 25px }
 .foot-logo {
     width: 200px; height: auto;
 }
+
+.profs {
+    width: auto;
+    height: 200px;
+}

@@ -1,6 +1,7 @@
 <?php session_start(); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
 <!DOCTYPE HTML>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width"/>
@@ -22,7 +23,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-			<img src="images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="images/logo.png" class="logo" alt="" >
 			</a>
 		</div>
 		<!--Menu-->
@@ -37,10 +38,11 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Genie informatique</h1>
+				<h1 class="titlehead">Licence Genie informatique</h1>
 			</div>
-			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
-</div>
+			<div class="c4">				
+                <h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
+            </div>
 		</div>
 	</div>
 </div>
@@ -74,7 +76,13 @@
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<p>
+<<<<<<< HEAD:license.php
 					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ... Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+=======
+					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ...
+
+                    Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+>>>>>>> 16b1a10a9b5c7c4acaa51c7a33bb5c8301ae6a91:licence.php
 				</p>
 			</div>
 			
@@ -231,14 +239,6 @@
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
 					
-					
-					
-					
-					
-					
-					
-					
-					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -259,6 +259,7 @@
 		</div>
 	</div>
 </div>
+<!-- END CONTENT AREA -->
 <!-- JAVASCRIPTS
 ================================================== -->
 <!-- all-->
@@ -303,13 +304,14 @@ $(window).load(function(){
 				scroll : 2000,
 				items: {
 					visible: {
-						min: 5,
-						max: 5
+						min: 4,
+						max: 4
 					}
 				}
 			});
 		});	
 </script>
+
 
 <!-- CALL opacity on hover images -->
 <script type="text/javascript">
@@ -338,6 +340,15 @@ $(document).ready(function() {
 		}			
 		return false;
 	}) //end click
+});
+</script>
+<script type="text/javascript"> 
+  $(document).ready(function () {
+	   // ---- FAQs ---------------------------------------------------------------------------------------------------------------
+		$('.faqs dd').hide(); // Hide all DDs inside .faqs
+		$('.faqs dt').hover(function(){$(this).addClass('hover')},function(){$(this).removeClass('hover')}).click(function(){ // Add class "hover" on dt when hover
+		$(this).next().slideToggle('normal'); // Toggle dd when the respective dt is clicked
+		}); 
 });
 </script>
 </body>
