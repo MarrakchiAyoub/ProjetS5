@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="row space-bot">
-		<div class="c12">
+		  <div class="c12">
 			<div class="list_carousel">
 				<div class="carousel_nav">
 					<a class="prev" id="car_prev" href="#"><span>prev</span></a>
@@ -141,7 +141,6 @@
 						</div>
 					</div>
 					</li>
-					</li>
 					<!--featured-projects 4-->
 					<li>
 					<div class="featured-projects">
@@ -187,7 +186,8 @@
 					</li>
 				</ul>
 				</div>		
-		</div>
+		  </div>
+        </div>
 		<!-- CLIENTS
 		================================================== -->
 		<div class="row space-top space-bot">
