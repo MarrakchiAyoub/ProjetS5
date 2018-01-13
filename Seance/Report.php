@@ -106,7 +106,7 @@
 					<option value=2>10:30 - 12:15</option>
 					<option value=3>13:30 - 15:15</option>
 					<option value=4>15:30 - 17:15</option>
-					</select>
+					</select>	<input type="checkbox" name="want"> je ne souhaite pas choisir quand maintenant<br>
 					la salle:
 					<input type="text" name="sal" placeholder="Ex: E23">
 					<button type="submit" name="valid" value="rep" class="blue">Validé</button>
