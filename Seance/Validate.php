@@ -66,7 +66,7 @@ if(isset($_POST['valid-mod'])){
     else {$s_free= false; $msg="cette salle n'est pas disponible à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
     $year=date('Y');
     $f_s=strtotime("01/21/".$year);
-    $sem_f=idate('W' ,$f_s); echo $sem, "<br>", $sem_f;
+    $sem_f=idate('W' ,$f_s);
     if($s_exist && $s_free){
      $success=1;
      if(idate('m', $date1)<=12 && idate('m', $date1)>=9 ){ 
