@@ -130,8 +130,7 @@
 					<hr class="hrtitle">
 					<img src="images/sir.jpg" class="imgOpa teamimage" alt="">
 					<div class="teamdescription">
-						<h1>Prof. BOUHORMA Mohammed </h1>
-						<span class="hirefor">RESPONSABLE DE FILIERE</span>
+						
 					</div>
 					<br/>
 					<img src="images/Prof.png" class="imgOpa teamimage" alt="">
