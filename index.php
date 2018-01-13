@@ -44,7 +44,7 @@
 			</p>
 			<a href="about.php" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">
-				<img class="imgslide" src="" alt="">
+				<img class="imgslide" src="images/dev.png" alt="">
 			</div>
 		</div>
 		<!--Slide 2-->
@@ -55,18 +55,18 @@
 			</p>
 			<a href="connectetu.php" class="da-link" style="width:192px;">Connecte-Toi</a>
 			<div class="da-img">
-				<img class="imgslide" src="" alt="">
+				<img class="imgslide" src="images/emp.png" alt="">
 			</div>
 		</div>
 		<!--Slide 3-->
 		<div class="da-slide">
 			<h2> Cours </h2>
 			<p>
-				vous pouvez consulter et telecharger les cours . 
+				Vous pouvez consulter et telecharger les cours. 
 			</p>
 			<a href="connectetu.php" class="da-link" style="width:224px;">Connecte-Toi</a>
 			<div class="da-img">
-				<img class="imgslide" src="" alt="">
+				<img class="imgslide" src="images/cours.png" alt="" >
 			</div>
 		</div>
 		<nav class="da-arrows">

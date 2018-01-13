@@ -83,65 +83,110 @@
 		</div>
 		<!-- OUR TEAM
 		================================================== -->
-		<div class="row space-top space-bot">
-			<div class="c12">
-				<h1 class="maintitle text-center">
+		<div class="row space-top">
+			<div class="c12 space-top">
+				<h1 class="maintitle ">
 				<span>Contenu Semestre 5:</span>
 				</h1>
 			</div>
-			<!-- box 1 -->
-			<div class="c3" style="text-align:center;">
-				<img src="./images/cpp.jpg" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					<span class="hirefor">Programmation Orientée Objet en C++</span>
+		</div>
+		<div class="row space-bot">
+		<div class="c12">
+			<div class="list_carousel">
+				<div class="carousel_nav">
+					<a class="prev" id="car_prev" href="#"><span>prev</span></a>
+					<a class="next" id="car_next" href="#"><span>next</span></a>
 				</div>
-			</div>
-			<!-- box 2 -->
-			<div class="c3">
-				<img src="./images/css.jpg" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					
-					<span class="hirefor">Architecture C/S et Développement Web Dynamique</span>
+				<div class="clearfix">
 				</div>
-			</div>
-			<!-- box 3 -->
-			<div class="c3">
-				<img src="./images/bdd.png" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					<span class="hirefor">Bases de Donnees</span>
-				</div>
-			</div>
-			<!-- box 4 -->
-			<div class="c3">
-				<img src="./images/reseau.jpg" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					<span class="hirefor"> Introduction aux Réseaux Informatiques</span>
-				</div>
-			</div>
-        </div>    
-        <div class="row space-top space-bot">
-			<div class="c12">
-				<h1 class="maintitle text-center">
-				<span></span>
-				</h1>
-			</div>
-			
-            <!-- box 5 -->
-			<div class="c3" style="text-align:center;">
-				<img src="./images/linux.png" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					<span class="hirefor">Système d’exploitation UNIX/Linux</span>
-				</div>
-			</div>
-			<!-- box 6 -->
-			<div class="c3">
-				<img src="./images/English.jpg" class="imgOpa teamimage" alt="">
-				<div class="teamdescription">
-					
-					<span class="hirefor">TEC & Anglais</span>
-				</div>
-			</div>
-			<!-- end box6 -->			
+				<ul id="recent-projects">
+					<!--featured-projects 1-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#"><img src="./images/cpp.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<div class="teamdescription">
+								<span class="hirefor">Programmation Orientée Objet en C++</span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<!--featured-projects 2-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#">
+							<img src="./images/css.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<div class="teamdescription">
+								<span class="hirefor">Architecture C/S et Développement Web Dynamique</span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<!--featured-projects 3-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#">
+							<img src="./images/bdd.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<div class="teamdescription">
+								<span class="hirefor">Bases de Donnees</span>
+							</div>
+						</div>
+					</div>
+					</li>
+					</li>
+					<!--featured-projects 4-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#">
+							<img src="./images/reseau.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<img src="./images/reseau.jpg" class="imgOpa teamimage" alt="">
+							<div class="teamdescription">
+								<span class="hirefor">Introduction aux Réseaux Informatiques</span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<!--featured-projects 5-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#">
+							<img src="./images/linux.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<div class="teamdescription">
+								<span class="hirefor">Système d’exploitation UNIX/Linux</span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<!--featured-projects 6-->
+					<li>
+					<div class="featured-projects">
+						<div class="featured-projects-image">
+							<a href="#">
+							<img src="./images/english.jpg" class="imgOpa teamimage" alt=""></a>
+						</div>
+						<div class="c3" style="text-align:center;">
+							<div class="teamdescription">
+								<span class="hirefor">TEC & Anglais</span>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+				</div>		
 		</div>
 		<!-- CLIENTS
 		================================================== -->
