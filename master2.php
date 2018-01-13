@@ -38,7 +38,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Master Systèmes Informatiques et Aide à la décision</h1>
+				<h1 class="titlehead">Master Systemes Informatiques et Aide à la Decision</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -55,20 +55,16 @@
 				<span>Objectifs de la formation:</span>
 				</h1>
 				<p>
-               Le Master Sciences et techniques : Systèmes Informatiques et d’aide à la décision répond à un besoin de formation dans le domaine des technologies de l´information et des systèmes d’aides à la décision. Ce Master intègre non seulement des considérations scientifiques et techniques mais également les aspects économiques et sociaux liés aux avancées dans les domaines de l'informatique et de l’intelligence artificielle. Le Master à pour but d’une part d’étudier les méthodes d’apprentissage non supervisé, semi-supervisé et supervisé. Ces méthodes utilisées dans le contexte de fouille de données qui est l’art d’extraire des informations, voire des connaissances à partir des données de plus en plus volumineuses. Celles-ci peuvent provenir de divers domaines tels que la génomique, l’analyse textuelle, l’image, les réseaux et la parole. D’autre part, une attention particulière sera accordée à la visualisation des données de grande dimension. 
+               <span class="dropcap">L</span>e Master Sciences et techniques : Systèmes Informatiques et d’aide à la décision répond à un besoin de formation dans le domaine des technologies de l´information et des systèmes d’aides à la décision. Ce Master intègre non seulement des considérations scientifiques et techniques mais également les aspects économiques et sociaux liés aux avancées dans les domaines de l'informatique et de l’intelligence artificielle. Le Master à pour but d’une part d’étudier les méthodes d’apprentissage non supervisé, semi-supervisé et supervisé. Ces méthodes utilisées dans le contexte de fouille de données qui est l’art d’extraire des informations, voire des connaissances à partir des données de plus en plus volumineuses. Celles-ci peuvent provenir de divers domaines tels que la génomique, l’analyse textuelle, l’image, les réseaux et la parole. D’autre part, une attention particulière sera accordée à la visualisation des données de grande dimension. 
 				</p>
-			</div>
-            <div class="c8">
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
                 <ol style="1">
                     <strong><li>Diplômes requis</li></strong>
-                    <ul style="list-style-type:disc">
-                        <li> Licence Informatique, licence sciences et techniques en Informatique, licence fondamentale, licence scientifique avec les pré-requis pédagogiques ou niveau équivalent. </li>
-                    </ul>
+                        Licence Informatique, licence sciences et techniques en Informatique, licence fondamentale, licence scientifique avec les pré-requis pédagogiques ou niveau équivalent.
                     <strong><li>Pré-requis pédagogiques</li></strong>
-                    <ul style="list-style-type:disc">
+                    <ul style="list-style-type:square">
                         <li> Formation informatique générale algorithmique et programmation </li>
                         <li> Bonne connaissance des mathématiques de base (logique, algèbre, analyse, probabilités, ...).</li>
                        <li>Initiation aux réseaux informatiques</li>
@@ -76,34 +72,25 @@
                     </ul>
                     <strong><li>Procédures de sélection</li></strong>
                     (La norme RG3 prévoit que l’accès aux formations du MST doit se faire sur étude de dossier et par voie de concours)
-                    <ul  style="list-style-type:disc">
+                    <ul  style="list-style-type:square">
                         <li> Etude du dossier</li>
                         <li> Test écrit</li>
                        <li> Éventuellement un test oral</li>
                        <li>Autres informations (voir la page du lancement du concours de la FSTT)</li>
                     </ul>
                 </ol>
-				
-			</div>
-            <div class="c8">
 				<h1 class="maintitle ">
 				<span>Competences visees et debouches:</span>
 				</h1>
 					<span class="dropcap">L</span>'informatique est une discipline particulièrement ouverte vers le milieu professionnel. Nul n'a besoin de rappeler le nombre d'offres d'emplois dans ce secteur durant ces dernières années. Il est plus que probable qu'il reste en pleine expansion encore quelque temps, autant dans les entreprises que dans les métiers de l'enseignement et de la recherche.
                     Le parcours fournit aux étudiants des bases théoriques solides qui leur permettront d’effectuer de la recherche théorique ou appliquée de haut niveau. Deux options sont possibles :
-                    <ul style="list-style-type:disc">
-                        <li>Continuer en thèse de doctorat dans un des domaines de recherche particuliers tels que : l’image, le texte, la parole ou le signal, ou dans le domaine de la bioinformatique, dans un laboratoire universitaire ou celui d’une entreprise publique ou privée.</li>
-                        <li>Faire de la recherche appliquée en tant qu’ingénieur de recherche dans un département de recherche et développement (R&D) d’une entreprise publique ou privée, dans les domaines tels que la grande distribution, le secteur bancaire, la surveillance, le marketing, le diagnostic, la bioinformatique, le traitement et l’analyse du signal et de l’image, le web mining, le text mining etc </li>
+                    <ul style="list-style-type:square">
+                        <li> Continuer en thèse de doctorat dans un des domaines de recherche particuliers tels que : l’image, le texte, la parole ou le signal, ou dans le domaine de la bioinformatique, dans un laboratoire universitaire ou celui d’une entreprise publique ou privée.</li>
+                        <li> Faire de la recherche appliquée en tant qu’ingénieur de recherche dans un département de recherche et développement (R&D) d’une entreprise publique ou privée, dans les domaines tels que la grande distribution, le secteur bancaire, la surveillance, le marketing, le diagnostic, la bioinformatique, le traitement et l’analyse du signal et de l’image, le web mining, le text mining etc </li>
 				    </ul>
-            </div>			
-    </div>
-</div>
-		<!-- Contenu S1 / S2 / S3 / S4
+                		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
-    
-		<div class="grid">
-		<div class="shadowundertop"></div>
-		<div class="row">
+
 			<!-- box 1 -->
 			<div class="c4">
 				<h1 class="faqstitle"><span class="icon-tags faqsicon"></span>CONTENU</h1>
@@ -111,7 +98,7 @@
             
 				<dt>Semestre 1</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Bases de données avancées</li>
                             <li>Théorie des graphes et applications</li>
                             <li>Architecture des réseaux et protocoles</li>
@@ -122,7 +109,7 @@
                     </dd>
                 <dt>Semestre 2</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Programmation Web et mobiles</li>
                             <li>Réseaux sans fil et mobiles</li>
                             <li>Développement d'applications distribuées</li>
@@ -133,7 +120,7 @@
                     </dd>
                 <dt>Semestre 3</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Architectures et Technologies de virtualisation</li>
                             <li>Développement d’applications mobiles</li>
                             <li>RIA et Web sémantique</li>
@@ -144,14 +131,34 @@
                     </dd>
                     <dt>Semestre 4</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>PFE</li>
                         </ul>
                     </dd>
             </dl>
         </div>
     </div>
+             <!-- SIDEBAR -->
+            <div class="c3">
+				<div class="rightsidebar">
+					<h2 class="title stresstitle">S.I.A.D</h2>
+					<hr class="hrtitle">
+					<img src="images/sir.jpg" class="imgOpa teamimage" alt="">
+					<div class="teamdescription">
+						
+					</div>
+					<br/>
+					<img src="images/Prof.png" class="imgOpa teamimage" alt="">
+					<div class="teamdescription">
+						<h1>Prof. GHADI Abderrahim</h1>
+						<span class="hirefor">RESPONSABLE DE FILIERE</span>
+					</div>
+				</div>
+			</div>       
+            <!-- end sidebar -->
+    </div>
 </div>
+
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -163,7 +170,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img class="foot-logo" src="images/logo.png" alt="" style="padding-top: 70px;">
+				<img class="foot-logo" src="images/logo.png" alt="">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">

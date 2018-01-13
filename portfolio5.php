@@ -313,7 +313,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img class="foot-logo" src="images/logo.png" alt="" style="padding-top: 70px;">
+				<img class="foot-logo" src="images/logo.png" alt="">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">

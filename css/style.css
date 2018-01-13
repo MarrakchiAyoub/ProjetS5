@@ -617,3 +617,11 @@ ul.teambox { padding-left: 25px }
     width: auto;
     height: 200px;
 }
+
+.logo-footer {
+    float: left;
+}
+
+.footer {
+    float: right;
+}

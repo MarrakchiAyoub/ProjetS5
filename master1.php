@@ -130,8 +130,7 @@
 					<hr class="hrtitle">
 					<img src="images/sir.jpg" class="imgOpa teamimage" alt="">
 					<div class="teamdescription">
-						<h1>Prof. BOUHORMA Mohammed </h1>
-						<span class="hirefor">RESPONSABLE DE FILIERE</span>
+						
 					</div>
 					<br/>
 					<img src="images/Prof.png" class="imgOpa teamimage" alt="">
@@ -157,10 +156,12 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img class="foot-logo" src="images/logo.png" alt="" style="padding-top: 70px;">
-			</div>
+				<img class="foot-logo" src="images/logo.png" alt="">
+            </div>
+            
 			<!-- 2nd column -->
 			<div class="c3">
+                
 				<h2 class="title"><i class="icon-twitter"></i> Follow us</h2>
 				<hr class="footerstress">
 				<ul class="social-links" style="margin-top:15px;">
@@ -199,6 +200,7 @@
 				</ul>
 			</div>
 			<!-- end 4th column -->
+                
 		</div>
 	</div>
 </div>
