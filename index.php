@@ -40,7 +40,7 @@
 		<div class="da-slide">
 			<h2> Bienvenue </h2>
 			<p>
-			Ce si est le site departement Genie informatique de la FST-T.
+			Ce si est le site du departement Genie informatique de la FST-T.
 			</p>
 			<a href="about.php" class="da-link" style="width:202px;">A propos</a>
 			<div class="da-img">

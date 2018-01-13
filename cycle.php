@@ -37,7 +37,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Cycle d'Ingenieur</h1>
+				<h1 class="titlehead">Cycle d'Ingenieur Logiciels et systemes informatiques</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -53,7 +53,6 @@
 				<h1 class="maintitle ">
 				<span>Objectifs de la formation:</span>
 				</h1>
-				<p>
                 Former des ingénieurs capables de :
                 <ul style="list-style-type:disc">
                     <li>Comprendre les enjeux technologiques et métiers </li>
@@ -61,15 +60,12 @@
                     <li>Intervenir sur des problématiques complexes</li>
                     <li>Piloter des projets et les changements qu'ils entrainent.</li>
                 </ul>
-
+                <p>
                 Les élèves-ingénieurs complètent leur formation académique en effectuant des stages pratiques en entreprise au cours du Cycle Ingénieur.
-				</p>
-			</div>
-            <div class="c8">
+                </p>
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
-				<p>
 					 Titulaires de :
                     <br>
                     <ul  style="list-style-type:disc">
@@ -77,36 +73,28 @@
                         <li>Licence Sciences et Techniques et Licence Fondamentale : Dossier & Entretien ;</li>
                         <li>Classes préparatoires et réussite au concours commun des écoles d’ingénieurs.</li>
                     </ul>
-				</p>
-			</div>
-            <div class="c8">
+				
+			
 				<h1 class="maintitle ">
 				<span>Competences visees et debouches:</span>
 				</h1>
-				<p>
 				<ul style="list-style-type:disc">
                     <li>Ingénierie logicielle</li>
                     <li>Ingénierie de réseaux d’entreprises</li>
                     <li>Intégration des systèmes client-serveur</li>
                     <li>Administrateur Système et réseau.</li>
                 </ul>
-				</p>
-			</div>
-		</div>
+				
+		
 		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
-    
-		<div class="grid">
-		<div class="shadowundertop"></div>
-		<div class="row">
-			<!-- box 1 -->
 			<div class="c4">
 				<h1 class="faqstitle"><span class="icon-tags faqsicon"></span>CONTENU</h1>
 				<dl class="faqs">
             
 				<dt>Semestre 1</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li> Mathématiques pour l’ingénieur</li>
                             <li>Systèmes d’exploitation et systèmes embarqués</li>
                             <li>Architecture des ordinateurs</li>
@@ -118,7 +106,7 @@
                     </dd>
                 <dt>Semestre 2</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Urbanisation des SI et Conduite des projets Informatique</li>
                             <li>Développement web et Frameworks   (php, zend, samfony)</li>
                             <li>Statistique descriptive et inferentielle</li>
@@ -130,7 +118,7 @@
                     </dd>
                 <dt>Semestre 3</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Programmation Java et Programmation mobile</li>
                             <li>Administration des bases de données et optimisation des requêtes</li>
                             <li>INTERNET DES OBJETS  et Architectures Mobile</li>
@@ -142,7 +130,7 @@
                     </dd>
                     <dt>Semestre 4</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Architectures web distribuées   (j2ee)</li>
                             <li>Systèmes Multi-Agents et Systèmes Multi-Experts</li>
                             <li>Vision Artificielle</li>
@@ -154,7 +142,7 @@
                     </dd>
                     <dt>Semestre 5</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>Processus d'évaluation et Qualité des Logiciels</li>
                             <li>Audit et Sécurité Intélligentedes systèmes d’informations</li>
                             <li>Systèmes d’informations décisionnel et data mininig</li>
@@ -166,14 +154,34 @@
                     </dd>
                     <dt>Semestre 6</dt>
 					<dd>
-                        <ul>
+                        <ul style="list-style-type:square">
                             <li>PFE</li>
                         </ul>
                     </dd>
-            </dl>
+                </dl>
+            </div>
         </div>
+         <!-- SIDEBAR -->
+            <div class="c3">
+				<div class="rightsidebar">
+					<h2 class="title stresstitle">L.S.I.</h2>
+					<hr class="hrtitle">
+					<img src="images/lsi.jpg" class="imgOpa teamimage" alt="">
+					<div class="teamdescription">
+						
+					</div>
+					<br/>
+					<img src="images/Prof.png" class="imgOpa teamimage" alt="">
+					<div class="teamdescription">
+						<h1>Prof. Abderrahim Ghadi </h1>
+						<span class="hirefor">RESPONSABLE DE FILIERE</span>
+					</div>
+				</div>
+			</div>       
+            <!-- end sidebar -->
     </div>
 </div>
+
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
