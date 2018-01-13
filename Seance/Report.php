@@ -90,7 +90,7 @@
     <option value="C3">3éme année cycle</option>
 	</select><p id="nve" class="err"></p>
 					<span>la scéance que vous voulez reporter:</span>
-					le :<input type="date" name="date1" selected="<?php echo date("d/m/Y"); ?>"></input>
+					le :<input type="date" name="date1" ></input>
 					à
 					<select name="cren1">
 					<option value=1>8:30 - 10:15</option>
@@ -99,9 +99,9 @@
 					<option value=4>15:30 - 17:15</option>
 					</select>
 					<span>Quand voulez la reporter:</span>
-					le :<input type="date" name="date1" selected="<?php echo date("d/m/Y"); ?>"></input>
+					le :<input type="date" name="date2"></input>
 					à
-					<select name="cren">
+					<select name="cren2">
 					<option value=1>8:30 - 10:15</option>
 					<option value=2>10:30 - 12:15</option>
 					<option value=3>13:30 - 15:15</option>
@@ -109,7 +109,7 @@
 					</select>
 					la salle:
 					<input type="text" name="sal" placeholder="Ex: E23">
-					<button type="submit" name="Rep" class="blue">Validé</button>
+					<button type="submit" name="valid" value="rep" class="blue">Validé</button>
 	 			</form>
 			</div>
 			<div class="c6">
