@@ -167,7 +167,7 @@
 	<div class="row space-top">
 		<div class="c12 space-top">
 			<h1 class="maintitle ">
-			<span>SHOWCASE</span>
+			<span>GALLERY</span>
 			</h1>
 		</div>
 	</div>
@@ -188,10 +188,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Dolor sit amet</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">CLASSES</a></h1>
+
 						</div>
 					</div>
 					</li>
@@ -202,10 +200,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Nunc elementum </a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">LAB. </a></h1>
+							
 						</div>
 					</div>
 					</li>
@@ -216,10 +212,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Sit amet</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">DEPARTEMENT INFORMATIQUE</a></h1>
+							
 						</div>
 					</div>
 					</li>
@@ -230,11 +224,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Dapibus facilisis</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
-						</div>
+							<h1><a href="#">ADMINISTRATION</a></h1>
+				        </div>
 					</div>
 					</li>
 					<!--featured-projects 5-->
@@ -244,10 +235,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Nunc elementum</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">SALLE DE CONFERENCES</a></h1>
+							
 						</div>
 					</div>
 					</li>
@@ -258,10 +247,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Dolor sit amet</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">UNIVERSITE</a></h1>
+							
 						</div>
 					</div>
 					</li>
@@ -272,10 +259,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">HTML Theme</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">AMPHI</a></h1>
+							
 						</div>
 					</div>
 					</li>
@@ -286,10 +271,8 @@
 							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Salique bedroom</a></h1>
-							<p>
-								 porta acean pulvinar
-							</p>
+							<h1><a href="#">CLASSES</a></h1>
+							
 						</div>
 					</div>
 					</li>

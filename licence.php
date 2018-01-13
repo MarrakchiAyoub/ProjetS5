@@ -81,7 +81,7 @@
 			</div>
 			
 		</div>
-		<!-- OUR TEAM
+		<!-- S5
 		================================================== -->
 		<div class="row space-top">
 			<div class="c12 space-top">
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="row space-bot">
-		<div class="c12">
+		  <div class="c12">
 			<div class="list_carousel">
 				<div class="carousel_nav">
 					<a class="prev" id="car_prev" href="#"><span>prev</span></a>
@@ -106,89 +106,89 @@
 						<div class="featured-projects-image">
 							<a href="#"><img src="./images/cpp.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<div class="teamdescription">
-								<span class="hirefor">Programmation Orientée Objet en C++</span>
-							</div>
-						</div>
+						<div class="featured-projects-content">
+                            <h1><a href="#">Programmation Orientée Objet en C++</a></h1>
+							<p>
+								 Prof. EN-NAIMI
+							</p>
+                        </div>
 					</div>
 					</li>
 					<!--featured-projects 2-->
-					<li>
+                    <li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#">
-							<img src="./images/css.jpg" class="imgOpa teamimage" alt=""></a>
+							<a href="#"><img src="./images/css.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<div class="teamdescription">
-								<span class="hirefor">Architecture C/S et Développement Web Dynamique</span>
-							</div>
-						</div>
+						<div class="featured-projects-content">
+                            <h1><a href="#">Architecture C/S et Développement Web Dynamique</a></h1>
+							<p>
+								 Prof. BAIDA
+							</p>
+                        </div>
 					</div>
 					</li>
 					<!--featured-projects 3-->
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#">
-							<img src="./images/bdd.jpg" class="imgOpa teamimage" alt=""></a>
+							<a href="#"><img src="./images/bdd.png" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<div class="teamdescription">
-								<span class="hirefor">Bases de Donnees</span>
-							</div>
+						<div class="featured-projects-content">
+							<h1><a href="#">Base de Donnees</a></h1>
+							<p>
+								 Prof. EZZIYYANI
+							</p>
 						</div>
 					</div>
 					</li>
-					</li>
 					<!--featured-projects 4-->
-					<li>
+                    <li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#">
-							<img src="./images/reseau.jpg" class="imgOpa teamimage" alt=""></a>
+							<a href="#"><img src="./images/reseau.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<img src="./images/reseau.jpg" class="imgOpa teamimage" alt="">
-							<div class="teamdescription">
-								<span class="hirefor">Introduction aux Réseaux Informatiques</span>
-							</div>
+						<div class="featured-projects-content">
+							<h1><a href="#">Introduction aux Réseaux Informatiques</a></h1>
+							<p>
+								 Prof. ELBRAK
+							</p>
 						</div>
 					</div>
 					</li>
 					<!--featured-projects 5-->
-					<li>
+                    <li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#">
-							<img src="./images/linux.jpg" class="imgOpa teamimage" alt=""></a>
+							<a href="#"><img src="./images/linux.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<div class="teamdescription">
-								<span class="hirefor">Système d’exploitation UNIX/Linux</span>
-							</div>
+						<div class="featured-projects-content">
+							<h1><a href="#">Système d’exploitation UNIX/Linux</a></h1>
+							<p>
+								 Prof. GHADI & Prof. EMRANI
+							</p>
 						</div>
 					</div>
 					</li>
 					<!--featured-projects 6-->
-					<li>
+                    <li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#">
-							<img src="./images/english.jpg" class="imgOpa teamimage" alt=""></a>
+							<a href="#"><img src="./images/English.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
-						<div class="c3" style="text-align:center;">
-							<div class="teamdescription">
-								<span class="hirefor">TEC & Anglais</span>
-							</div>
+						<div class="featured-projects-content">
+							<h1><a href="#">TEC & Anglais</a></h1>
+							<p>
+								 Prof. GUILLI & Prof. BAKKALI
+							</p>
 						</div>
 					</div>
 					</li>
 				</ul>
 				</div>		
-		</div>
-		<!-- CLIENTS
+		  </div>
+        </div>
+		<!-- S6
 		================================================== -->
 		<div class="row space-top space-bot">
 			<div class="c12">
