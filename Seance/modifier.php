@@ -35,7 +35,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="../index.php">
-				<img src="../images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="../images/logo.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
@@ -147,7 +147,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="../images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
+				<img src="../images/logo.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">

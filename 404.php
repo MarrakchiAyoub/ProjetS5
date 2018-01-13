@@ -22,7 +22,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="index.php">
-				<img src="images/ece.png" class="logo" alt="">
+				<img src="images/logo.png" class="logo" alt="">
 			</a>
 		</div>
 		<!--Menu-->

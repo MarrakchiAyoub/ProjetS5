@@ -35,7 +35,7 @@
 		<!--Logo-->
 		<div class="c4">
 			<a href="../index.php">
-				<img src="../images/ece.png" class="logo" alt="" height="100px" width="160px">
+				<img src="../images/logo.png" class="logo" alt="" height="100px" width="160px">
 			</a>
 		</div>
 		<!--Menu-->
@@ -59,7 +59,66 @@
 </div>
 <!-- CONTENT
 ================================================== -->
-
+<div class="grid">
+ <div class="shadowundertop"></div>
+	<div class="row">
+	<div class="c6">
+	<script>
+	function checkgroup() {
+		var fil = document.forms["seance"]["fil"].value;
+	var nve = document.forms["seance"]["nve"].value;
+	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
+		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
+		 return false;
+	}
+	}
+	</script>
+				<form mothod="POST" name="seance" onsubmit="return checkgroup()">
+				<?php include 'Validate.php' ?>
+				selectionner le group
+				filière:* <select name="fil" required>
+    <option value="GI">Génie informatique</option>
+    <option value="LSI">Logiciels et systèmes informatiques</option>
+    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
+    <option value="SIR">Systèmes informatiques et réseaux</option>
+  </select>
+				Niveau d'étude:* <select name="nve" required>
+    <option value="L3">3éme année licence</option>
+    <option value="M1">1ére année Master</option>
+    <option value="M2">2éme année Master</option>
+    <option value="C1">1ére année cycle</option>
+    <option value="C2">2éme année cycle</option>
+    <option value="C3">3éme année cycle</option>
+	</select><p id="nve" class="err"></p>
+					votre module:
+					<select name="mod">
+					<option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
+					<option value="GIBDD">Bases de Données</option>
+					<option value="GICPP">Programmation Orientée Objet en C++</option>
+					<option value="GIIRI">Introduction aux Réseaux Informatiques</option>
+					<option value="GISEL">Système d’exploitation UNIX/Linux</option>
+					<option value="GITEA">TEC et Anglais</option>
+					</select>
+					<span>Quand voulez la programmer:</span>
+					le :<input type="date" name="date2"></input>
+					à
+					<select name="cren2">
+					<option value=1>8:30 - 10:15</option>
+					<option value=2>10:30 - 12:15</option>
+					<option value=3>13:30 - 15:15</option>
+					<option value=4>15:30 - 17:15</option>
+					</select>
+					la salle:
+					<input type="text" name="sal" placeholder="Ex: E23">
+					<button type="submit" name="valid-aj" formmethod="post" class="blue">Validé</button>
+	 			</form>
+			</div>
+			<div class="c6">
+				"some cool image"
+			</div>
+	 
+	</div>
+</div>
 <!-- FOOTER
 ================================================== -->
 <div id="wrapfooter">
@@ -71,7 +130,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="../images/ECE.png" alt="" width="160" height="180" style="padding-top: 70px;">
+				<img src="../images/logo.png" alt="" width="160" height="180" style="padding-top: 70px;">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
