@@ -50,7 +50,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Modifier une séance</h1>
+				<h1 class="titlehead">Modifier une seance</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
