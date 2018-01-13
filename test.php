@@ -15,6 +15,6 @@ echo getcreneau(strtotime('next wednesday'), 2),"<br>";
 echo strtotime('12:15pm')-strtotime('10:30am');
 echo "<br>", idate('w', strtotime("next tuesday"));
 echo "<br>", idate('w', strtotime("next wednesday"));
-echo "<br>", idate('w', strtotime("next thursday"));
+echo "<br>", idate('m', strtotime("next thursday"));
 echo "<br>", date('Y')-1;
 ?>
