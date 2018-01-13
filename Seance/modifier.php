@@ -125,8 +125,8 @@
 					la salle:
 					<input type="text" name="sal" placeholder="Ex: E23">
 					Appliqué les modification à partir de: 
-					<input type="radio" value="today" name="debut"> cette semaine 
-					<input type="radio" value="next week" name="debut"> la semaine prochaine <br><br>
+					<input type="radio" value="today" name="debut"> la séance prochaine
+					<input type="radio" value="next week" name="debut"> la séance d'aprés <br><br>
 					<button type="submit" name="valid-mod" formmethod="post" class="blue">Validé</button>
 	 			</form>
 			</div>

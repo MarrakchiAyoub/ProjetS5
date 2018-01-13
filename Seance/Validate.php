@@ -1,7 +1,7 @@
 <?php
 include '../lib/bdd.php';
 include '../lib/timetable.php';
-if(isset($_POST['valid-rep'])){
+if(isset($_POST['valid-rep'])){ //validation de "reporter"
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
     $date1=strtotime($_POST['date1']); //initiation des valeurs
@@ -14,7 +14,7 @@ if(isset($_POST['valid-rep'])){
         $row=mysqli_fetch_assoc($result);
         $mod=$row['cod_mod'];}
     else { $s_exist= false; $msg="il n'existe aucune seance pendant ce temps pour ce groupe" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
-    if (empty($_POST['want'])){ //voir si le prof veut reporter
+    if (empty($_POST['want'])){ //voir si le prof veut reporter ou selement suprimer
     $date2=strtotime($_POST['date2']);
     $sem2=idate('W',$date2);
     $cre2=$_POST['cren2'];
@@ -42,7 +42,7 @@ if(isset($_POST['valid-rep'])){
      }}
  }
 }
-if(isset($_POST['valid-mod'])){
+if(isset($_POST['valid-mod'])){ // validation de "modifié"
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
     if($_POST['debut']=="today") $when="this"; else $when="next";
@@ -100,7 +100,7 @@ if(isset($_POST['valid-mod'])){
 }
  }
 }
-if(isset($_POST['valid-aj'])){
+if(isset($_POST['valid-aj'])){ // validation d'ajout
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
     $date=strtotime($_POST['date']); //initiation des valeurs
