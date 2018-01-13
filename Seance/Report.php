@@ -73,7 +73,8 @@
 	}
 	}
 	</script>
-				<form mothod="Post" name="seance" onsubmit="return checkgroup()">
+				<form mothod="POST" name="seance" onsubmit="return checkgroup()">
+				<?php include 'Validate.php' ?>
 				selectionner le group
 				filière:* <select name="fil" required>
     <option value="GI">Génie informatique</option>
@@ -106,10 +107,10 @@
 					<option value=2>10:30 - 12:15</option>
 					<option value=3>13:30 - 15:15</option>
 					<option value=4>15:30 - 17:15</option>
-					</select>	<input type="checkbox" name="want"> je ne souhaite pas choisir quand maintenant<br>
+					</select>	<input type="checkbox" name="want" value="no"> je ne souhaite pas choisir quand maintenant<br>
 					la salle:
 					<input type="text" name="sal" placeholder="Ex: E23">
-					<button type="submit" name="valid" value="rep" class="blue">Validé</button>
+					<button type="submit" name="valid-rep" formmethod="post" class="blue">Validé</button>
 	 			</form>
 			</div>
 			<div class="c6">
