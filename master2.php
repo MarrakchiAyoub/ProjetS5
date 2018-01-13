@@ -143,7 +143,7 @@
 				<div class="rightsidebar">
 					<h2 class="title stresstitle">S.I.A.D</h2>
 					<hr class="hrtitle">
-					<img src="images/sir.jpg" class="imgOpa teamimage" alt="">
+					<img src="images/siad.jpg" class="imgOpa teamimage" alt="">
 					<div class="teamdescription">
 						
 					</div>
