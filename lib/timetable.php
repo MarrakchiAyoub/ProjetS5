@@ -8,4 +8,10 @@ if(mysqli_num_rows($result)){ $row=mysqli_fetch_array($result);
 echo '<span class="salle">'.$row['num_sal'].'</span><p class="module">'.$row['nom_mod'].'</p>'; //affichage des information recuperé si existante
 }
 }
+function getcreneau ($timestamp, $cre_j) {
+    $j=idate('w', $timestamp);    
+            if($j==0)  { $c=0; $dispo=0;}
+            else { $c=($j-1)*4; $dispo=1; }
+ return $dispo*($c+$cre_j);
+}
 ?>
