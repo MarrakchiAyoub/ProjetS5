@@ -119,7 +119,7 @@ $sql="select * from seances where num_sem='$sem' and num_cren='$cren' and cod_gr
     else {$g_free= false; $msg="ce groupe à déja une sceance à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
 $free= $s_free && $g_free;
  if($free){
-        $sql="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem', '$cren, '$sal', '$mod', '$fil', '$grp')";
+        $sql="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem', '$cren', '$sal', '$mod', '$fil', '$grp')";
         $result=mysqli_query($conn, $sql);
         if ($result) echo '<p align="center" class="info">la séance à bien été Ajouté<p>';
         else echo '<p align="center" class="err">On à rencontré des erreurs lors de la modification</p>';
