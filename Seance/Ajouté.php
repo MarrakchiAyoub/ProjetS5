@@ -100,9 +100,9 @@
 					<option value="GITEA">TEC et Anglais</option>
 					</select>
 					<span>Quand voulez la programmer:</span>
-					le :<input type="date" name="date2"></input>
+					le :<input type="date" name="date"></input>
 					à
-					<select name="cren2">
+					<select name="cren">
 					<option value=1>8:30 - 10:15</option>
 					<option value=2>10:30 - 12:15</option>
 					<option value=3>13:30 - 15:15</option>

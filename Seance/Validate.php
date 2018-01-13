@@ -100,5 +100,29 @@ if(isset($_POST['valid-mod'])){
 }
  }
 }
-
+if(isset($_POST['valid-aj'])){
+    $fil=$_POST['fil'];
+    $grp=$_POST['fil']."-".$_POST['nve']."-1";
+    $date=strtotime($_POST['date']); //initiation des valeurs
+    $sem=idate('W',$date);
+    $cre=$_POST['cren'];
+    $cren=getcreneau($date, $cre);
+    $sal=$_POST['sal'];
+    $mod=$_POST['mod'];
+    $sql="select * from seances where num_sem='$sem' and num_cren='$cren' and num_sal='$sal' ";
+    $result=mysqli_query($conn, $sql);
+    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilité de la salle
+    else {$s_free= false; $msg="cette salle n'est pas disponible à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+$sql="select * from seances where num_sem='$sem' and num_cren='$cren' and cod_grp='$grp' ";
+    $result=mysqli_query($conn, $sql);
+    if(!mysqli_num_rows($result)) $g_free= true; //voir la disponibilité de la salle
+    else {$g_free= false; $msg="ce groupe à déja une sceance à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+$free= $s_free && $g_free;
+ if($free){
+        $sql="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem', '$cren, '$sal', '$mod', '$fil', '$grp')";
+        $result=mysqli_query($conn, $sql);
+        if ($result) echo '<p align="center" class="info">la séance à bien été Ajouté<p>';
+        else echo '<p align="center" class="err">On à rencontré des erreurs lors de la modification</p>';
+      }
+}
 ?>
