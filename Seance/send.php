@@ -12,4 +12,5 @@
                 header('location: Ajoute.php');
             }
         }
-        ?>
+        else header('location: /ProjetS5/Error/404.php');
+?>
