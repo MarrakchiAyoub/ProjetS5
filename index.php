@@ -185,7 +185,7 @@
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
+							<a href="#"><img src="./images/class.jpg" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
 							<h1><a href="#">CLASSES</a></h1>
@@ -265,17 +265,7 @@
 					</div>
 					</li>
 					<!--featured-projects 8-->
-					<li>
-					<div class="featured-projects">
-						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
-						</div>
-						<div class="featured-projects-content">
-							<h1><a href="#">CLASSES</a></h1>
-							
-						</div>
-					</div>
-					</li>
+					
 				</ul>
 				<div class="clearfix">
 				</div>
