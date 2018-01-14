@@ -16,13 +16,14 @@ function showcours(string $fil) {
     while($row=mysqli_fetch_assoc($result)){
         $link=$row['lien_cou'];
         $cat=$row['cod_ele_mod'];
+        $img=pathinfo($link, PATHINFO_DIRNAME).'/img.png';
         $name=basename($link, ".pdf");
         if($row['type_cou']=="Crs"){ $type="Cours"; }
         else { $type=$row['type_cou']; }
         echo '<div class="boxfourcolumns '.$cat.'">
         <div class="boxcontainer">
             <span class="gallery">
-            <a data-gal="prettyPhoto[gallery1]" href="'.$link.'"><img src="http://placehold.it/350x150&text=any.size.you+wish" class="imgOpa"/></a>
+            <a  href="'.$link.'"><img src="'.$img.'" class="imgOpa"/></a>
             </span>
             <h1><a href="'.$link.'">'.$name.'</a></h1>
             <p>
