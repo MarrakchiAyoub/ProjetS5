@@ -118,7 +118,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
                         <input type="date" name="date"> </p>
                 </div>
                     <hr class="rule">
-					<div class="sel sel--superman1">
+					<div class="sel sel--superman2">
                     <select name="cren">
 					<option value=1>8:30 - 10:15</option>
 					<option value=2>10:30 - 12:15</option>
