@@ -110,11 +110,11 @@ CREATE TABLE IF NOT EXISTS `ele_mod` (
 --
 
 INSERT INTO `ele_mod` (`cod_ele_mod`, `cod_mod`, `cod_fil`, `cod_prof`, `nom_ele_mod`, `nbr_heu_cour`, `nbr_heu_TD`, `nbr_heu_TP`) VALUES
-('GIACS', 'GIACS', 'GI', '6', 'Architecture C/S et Développement Web Dynamique', NULL, NULL, NULL),
+('GIACS', 'GIACS', 'GI', '6', 'Architecture C/S et Developpement Web Dynamique', NULL, NULL, NULL),
 ('GIANG', 'GITEA', 'GI', '10', 'Anglais', NULL, NULL, NULL),
-('GIBDD', 'GIBDD', 'GI', '5', 'Bases de Données  ', NULL, NULL, NULL),
-('GICPP', 'GICPP', 'GI', '7', 'Programmation Orientée Objet en C++', NULL, NULL, NULL),
-('GIIRI', 'GIIRI', 'GI', '1', 'Introduction aux Réseaux Informatiques', NULL, NULL, NULL),
+('GIBDD', 'GIBDD', 'GI', '5', 'Bases de Donnees  ', NULL, NULL, NULL),
+('GICPP', 'GICPP', 'GI', '7', 'Programmation Orientee Objet en C++', NULL, NULL, NULL),
+('GIIRI', 'GIIRI', 'GI', '1', 'Introduction aux Reseaux Informatiques', NULL, NULL, NULL),
 ('GILNX', 'GISEL', 'GI', '2', 'System d\'exploitation Lunix', NULL, NULL, NULL),
 ('GITEC', 'GITEA', 'GI', '8', 'T.E.C', NULL, NULL, NULL),
 ('GIUNX', 'GISEL', 'GI', '9', 'Scrypting Unix', NULL, NULL, NULL);
@@ -169,10 +169,10 @@ CREATE TABLE IF NOT EXISTS `filieres` (
 --
 
 INSERT INTO `filieres` (`cod_fil`, `nom_fil`, `resp_fil`) VALUES
-('GI', 'Génie informatique', '1'),
-('LSI', 'Logiciels et systèmes informatiques', '2'),
-('SIAD', 'Systèmes Informatiques et Aide à la décision', '3'),
-('SIR', 'Systèmes informatiques et réseaux', '4');
+('GI', 'Genie informatique', '1'),
+('LSI', 'Logiciels et systemes informatiques', '2'),
+('SIAD', 'Systemes Informatiques et Aide a la decision', '3'),
+('SIR', 'Systemes informatiques et reseaux', '4');
 
 -- --------------------------------------------------------
 

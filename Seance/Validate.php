@@ -22,27 +22,27 @@ if(isset($_POST['valid-rep'])){ //validation de "reporter"
     $sal=$_POST['sal'];
     $sql="select * from seances where num_sem='$sem2' and num_cren='$cren2' and num_sal='$sal'";
     $result=mysqli_query($conn, $sql);
-    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilité de la salle
-    else {$s_free= false; $msg="cette salle n'est pas disponible à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilite de la salle
+    else {$s_free= false; $msg="cette salle n'est pas disponible a ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
 }
  if($s_exist){
      if(!empty($_POST['want'])){
          $sql="delete from seances where num_sem='$sem1' and num_cren='$cren1' and cod_grp='$grp' ";
          $result=mysqli_query($conn, $sql);
-         if($result) echo '<p align="center" class="info">séance bien supprimé<p>';
-         else echo '<p align="center" class="err">On à rencontré des erreurs lors de la supression</p>';
+         if($result) echo '<p align="center" class="info">seance bien supprime<p>';
+         else echo '<p align="center" class="err">On a rencontre des erreurs lors de la supression</p>';
      }
      else{if($s_free){
         $sql1="delete from seances where num_sem='$sem1' and num_cren='$cren1' and cod_grp='$grp' ";
         $result1=mysqli_query($conn, $sql1);
         $sql2="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem2', '$cren2', '$sal', '$mod', '$fil', '$grp')";
         $result2=mysqli_query($conn, $sql2);
-        if ($result1 && $result2) echo '<p align="center" class="info">la séance à bien été reporter<p>';
-        else echo '<p align="center" class="err">On à rencontré des erreurs lors de la modification</p>';
+        if ($result1 && $result2) echo '<p align="center" class="info">la seance a bien ete reporter<p>';
+        else echo '<p align="center" class="err">On a rencontre des erreurs lors de la modification</p>';
      }}
  }
 }
-if(isset($_POST['valid-mod'])){ // validation de "modifié"
+if(isset($_POST['valid-mod'])){ // validation de "modifie"
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
     if($_POST['debut']=="today") $when="this"; else $when="next";
@@ -62,8 +62,8 @@ if(isset($_POST['valid-mod'])){ // validation de "modifié"
     $sal=$_POST['sal'];
     $sql="select * from seances where num_sem='$sem' and num_cren='$cren2' and num_sal='$sal'";
     $result=mysqli_query($conn, $sql);
-    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilité de la salle
-    else {$s_free= false; $msg="cette salle n'est pas disponible à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilite de la salle
+    else {$s_free= false; $msg="cette salle n'est pas disponible a ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
     $year=date('Y');
     $f_s=strtotime("01/21/".$year);
     $sem_f=idate('W' ,$f_s);
@@ -95,8 +95,8 @@ if(isset($_POST['valid-mod'])){ // validation de "modifié"
             if ($result1 && $result2) $res=1; else $res=0;
             $success*=$res;
     }
-       if($success) echo '<p align="center" class="info">la séance à bien été Modifier<p>';
-        else echo '<p align="center" class="err">On à rencontré des erreurs lors de la modification</p>';
+       if($success) echo '<p align="center" class="info">la seance a bien ete Modifier<p>';
+        else echo '<p align="center" class="err">On a rencontre des erreurs lors de la modification</p>';
 }
  }
 }
@@ -111,18 +111,18 @@ if(isset($_POST['valid-aj'])){ // validation d'ajout
     $mod=$_POST['mod'];
     $sql="select * from seances where num_sem='$sem' and num_cren='$cren' and num_sal='$sal' ";
     $result=mysqli_query($conn, $sql);
-    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilité de la salle
-    else {$s_free= false; $msg="cette salle n'est pas disponible à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+    if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilite de la salle
+    else {$s_free= false; $msg="cette salle n'est pas disponible a ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
 $sql="select * from seances where num_sem='$sem' and num_cren='$cren' and cod_grp='$grp' ";
     $result=mysqli_query($conn, $sql);
-    if(!mysqli_num_rows($result)) $g_free= true; //voir la disponibilité de la salle
-    else {$g_free= false; $msg="ce groupe à déja une sceance à ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
+    if(!mysqli_num_rows($result)) $g_free= true; //voir la disponibilite de la salle
+    else {$g_free= false; $msg="ce groupe a deja une sceance a ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
 $free= $s_free && $g_free;
  if($free){
         $sql="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem', '$cren', '$sal', '$mod', '$fil', '$grp')";
         $result=mysqli_query($conn, $sql);
-        if ($result) echo '<p align="center" class="info">la séance à bien été Ajouté<p>';
-        else echo '<p align="center" class="err">On à rencontré des erreurs lors de la modification</p>';
+        if ($result) echo '<p align="center" class="info">la seance a bien ete Ajoute<p>';
+        else echo '<p align="center" class="err">On a rencontre des erreurs lors de la modification</p>';
       }
 }
 ?>

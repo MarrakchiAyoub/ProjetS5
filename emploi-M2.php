@@ -55,7 +55,7 @@ $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Master Systèmes Informatiques et Aide à la décision</h1>
+				<h1 class="titlehead">Master Systemes Informatiques et Aide a la decision</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -77,7 +77,7 @@ if (isset($_GET['send'])){
 }
 ?>
 <form method="GET">
-<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
+<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionne une date precise: </span>
 <input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
 <input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
 </form>
@@ -127,7 +127,7 @@ if (isset($_GET['send'])){
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

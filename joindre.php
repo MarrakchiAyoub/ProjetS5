@@ -57,16 +57,16 @@
                 <br>
                 nom de la matiere:
                 <select name="ele-mod" required>
-                <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-                <option value="GIBDD">Bases de Données</option>
-                <option value="GICPP">Programmation Orientée Objet en C++</option>
-                <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
+                <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+                <option value="GIBDD">Bases de Donnees</option>
+                <option value="GICPP">Programmation Orientee Objet en C++</option>
+                <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
                 <option value="GILNX">System d'exploitation Lunix</option>
                 <option value="GITEC">T.E.C</option>
                 <option value="GIUNX">Scrypting Unix</option>
                 <option value="GIANG">Anglais</option>
                 </select>
-                type de fichier à joindre:
+                type de fichier a joindre:
                 <input type="radio" name="type" value="Crs" required> Cours 
                 <input type="radio" name="type" value="TD"> TD 
                 <input type="radio" name="type" value="TP"> TP <br>
@@ -117,7 +117,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

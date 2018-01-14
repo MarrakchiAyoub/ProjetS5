@@ -57,10 +57,10 @@
 				</h1>
 				<p>
                 <li>Avoir une culture de base scientifique </li>
-                <li>Acquérir une base solide dans les axes majeurs et fondamentaux de la discipline informatique :</li>
-                <li>Algorithmique, Programmation, Bases de Données, Technologies Web, Systèmes d’Exploitation et Réseaux Informatiques,... ;</li>
+                <li>Acquerir une base solide dans les axes majeurs et fondamentaux de la discipline informatique :</li>
+                <li>Algorithmique, Programmation, Bases de Donnees, Technologies Web, Systemes d’Exploitation et Reseaux Informatiques,... ;</li>
 
-                <li>Développer un savoir-faire technique en informatique : technologie objet, informatique distribuée, architectures client-serveur et n-tiers, applications hétérogènes,…</li>
+                <li>Developper un savoir-faire technique en informatique : technologie objet, informatique distribuee, architectures client-serveur et n-tiers, applications heterogenes,…</li>
 				</p>
 			</div>
             <div class="c8">
@@ -68,7 +68,7 @@
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
 				<p>
-					<span class="dropcap">L</span>’accès aux filières Licence en Sciences et Techniques a eu lieu sur étude de dossier et /ou par voie de test ou de concours, ouvert aux étudiants titulaires d’un baccalauréat ou d’un diplôme reconnu équivalent en satisfaisant aux critères d’admission précisés dans le descriptif de la filière L’accès aux filières Licence en Sciences et Techniques peut se faire également à différents niveaux de la licence, sur étude de dossier et/ou par voie de test ou de concours, pour les étudiants satisfaisant aux pré-requis relatifs à ces niveaux et qui sont précisés dans le descriptif de la filière.
+					<span class="dropcap">L</span>’acces aux filieres Licence en Sciences et Techniques a eu lieu sur etude de dossier et /ou par voie de test ou de concours, ouvert aux etudiants titulaires d’un baccalaureat ou d’un diplôme reconnu equivalent en satisfaisant aux criteres d’admission precises dans le descriptif de la filiere L’acces aux filieres Licence en Sciences et Techniques peut se faire egalement a differents niveaux de la licence, sur etude de dossier et/ou par voie de test ou de concours, pour les etudiants satisfaisant aux pre-requis relatifs a ces niveaux et qui sont precises dans le descriptif de la filiere.
 				</p>
 			</div>
             <div class="c8">
@@ -76,7 +76,7 @@
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<p>
-					<span class="dropcap">T</span>echnicien supérieur en développement d’application en C++ et JAVA ; Technicien supérieur en réseaux locaux ; Technicien supérieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et développeur des sites web dynamiques, ... Les orientations potentielles de poursuite des études sont de type : Masters à dominance informatique, Masters orientés e-Technologies, Masters à dominance automatique ou informatique industrielle ou informatique décisionnelle et formations d’ingénieurs.
+					<span class="dropcap">T</span>echnicien superieur en developpement d’application en C++ et JAVA ; Technicien superieur en reseaux locaux ; Technicien superieur en SGBD-R : installation, configuration et administration des SGBD ; WebMaster et developpeur des sites web dynamiques, ... Les orientations potentielles de poursuite des etudes sont de type : Masters a dominance informatique, Masters orientes e-Technologies, Masters a dominance automatique ou informatique industrielle ou informatique decisionnelle et formations d’ingenieurs.
 				</p>
 			</div>
 			
@@ -107,7 +107,7 @@
 							<a href="#"><img src="./images/cpp.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-                            <h1><a href="#">Programmation Orientée Objet en C++</a></h1>
+                            <h1><a href="#">Programmation Orientee Objet en C++</a></h1>
 							<p>
 								 Prof. EN-NAIMI
 							</p>
@@ -121,7 +121,7 @@
 							<a href="#"><img src="./images/css.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-                            <h1><a href="#">Architecture C/S et Développement Web Dynamique</a></h1>
+                            <h1><a href="#">Architecture C/S et Developpement Web Dynamique</a></h1>
 							<p>
 								 Prof. BAIDA
 							</p>
@@ -149,7 +149,7 @@
 							<a href="#"><img src="./images/reseau.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Introduction aux Réseaux Informatiques</a></h1>
+							<h1><a href="#">Introduction aux Reseaux Informatiques</a></h1>
 							<p>
 								 Prof. ELBRAK
 							</p>
@@ -163,7 +163,7 @@
 							<a href="#"><img src="./images/linux.jpg" class="imgOpa teamimage" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
-							<h1><a href="#">Système d’exploitation UNIX/Linux</a></h1>
+							<h1><a href="#">Systeme d’exploitation UNIX/Linux</a></h1>
 							<p>
 								 Prof. GHADI & Prof. EMRANI
 							</p>
@@ -200,7 +200,7 @@
 			<div class="c3" style="text-align:center;">
 				<img src="./images/uml.png" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<span class="hirefor">Modélisation UML</span>
+					<span class="hirefor">Modelisation UML</span>
 				</div>
 			</div>
 			<!-- box 2 -->
@@ -208,14 +208,14 @@
 				<img src="./images/java.jpg" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
 					
-					<span class="hirefor">Programmation Orientée Objet en Langage JAVA</span>
+					<span class="hirefor">Programmation Orientee Objet en Langage JAVA</span>
 				</div>
 			</div>
 			<!-- box 3 -->
 			<div class="c3">
 				<img src="./images/ip.jpg" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
-					<span class="hirefor">Les Réseaux TCP/IP</span>
+					<span class="hirefor">Les Reseaux TCP/IP</span>
 				</div>
 			</div>
 			<!-- box 4 -->
@@ -265,7 +265,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

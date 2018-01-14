@@ -56,24 +56,24 @@
 				<span>Objectifs de la formation:</span>
 				</h1>
 				<p>
-                <span class="dropcap">L</span>e Master Systèmes Informatiques et Réseaux répond a besoin de formation par la recherchedans le domaine de technologies de l’information et de la communication caractérisée par laconvergence des techniques des réseaux et des applications informatiques.
+                <span class="dropcap">L</span>e Master Systemes Informatiques et Reseaux repond a besoin de formation par la recherchedans le domaine de technologies de l’information et de la communication caracterisee par laconvergence des techniques des reseaux et des applications informatiques.
 
-                La création de ceMaster résulte d’un constat intégrant non seulement des considérations scientifiques ettechniques mais également les aspects économiques et industriels liés aux avancées dans lesdomaines des Technologies de l’information et de la Communication.
+                La creation de ceMaster resulte d’un constat integrant non seulement des considerations scientifiques ettechniques mais egalement les aspects economiques et industriels lies aux avancees dans lesdomaines des Technologies de l’information et de la Communication.
 				</p>
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
-					L'accès aux formations de Master en Sciences et techniques est ouvert aux titulaires :
+					L'acces aux formations de Master en Sciences et techniques est ouvert aux titulaires :
                     <ul  style="list-style-type:square">
-                        <li> De la licence dans le domaine de formation du Master en Sciences et Techniques ou d’undiplôme reconnu équivalent satisfaisant aux critères d’admission prévus dans le descriptif dela filière.. </li>
-                        <li> De diplômes au moins d’un niveau équivalent de la licence, sur étude de dossier et/ou parvoie de concours, et satisfaisant aux critères d’admission prévus dans le descriptif de la filière.</li>
-                        <li> Pré-requis pédagogiques : Ecologie, Biologie, Géologie, Chimie, Statistique, Informatique. Procédures de sélection et d’entretien : sur dossier et entretien. </li>
+                        <li> De la licence dans le domaine de formation du Master en Sciences et Techniques ou d’undiplôme reconnu equivalent satisfaisant aux criteres d’admission prevus dans le descriptif dela filiere.. </li>
+                        <li> De diplômes au moins d’un niveau equivalent de la licence, sur etude de dossier et/ou parvoie de concours, et satisfaisant aux criteres d’admission prevus dans le descriptif de la filiere.</li>
+                        <li> Pre-requis pedagogiques : Ecologie, Biologie, Geologie, Chimie, Statistique, Informatique. Procedures de selection et d’entretien : sur dossier et entretien. </li>
                     </ul>
 				<h1 class="maintitle ">
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<p>
-					<span class="dropcap">A</span>près l’obtention du Master Recherche, une alternative est offerte, soit entreprendre une formation de haut niveau par la préparation d’une thèse en informatique, soit rejoindre le mondeindustriel ou cette première expérience en recherche pourra déjà ouvrir les portes des servicesde recherche et développement. Néanmoins, la poursuite en Thèse reste la finalité première dece Master Recherche.
+					<span class="dropcap">A</span>pres l’obtention du Master Recherche, une alternative est offerte, soit entreprendre une formation de haut niveau par la preparation d’une these en informatique, soit rejoindre le mondeindustriel ou cette premiere experience en recherche pourra deja ouvrir les portes des servicesde recherche et developpement. Neanmoins, la poursuite en These reste la finalite premiere dece Master Recherche.
 				</p>
                 		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
@@ -84,22 +84,22 @@
 				<dt>Semestre 1</dt>
 					<dd>
                         <ul style="list-style-type:square">
-                            <li>Bases de données avancées</li>
-                            <li>Théorie des graphes et applications</li>
-                            <li>Architecture des réseaux et protocoles</li>
-                            <li>Systèmes d'exploitation et systèmes embarqués</li>
-                            <li>Programmation orientée objets  (Java/C++)</li>
-                            <li>Anglais avancé et techniques d'expositions</li>
+                            <li>Bases de donnees avancees</li>
+                            <li>Theorie des graphes et applications</li>
+                            <li>Architecture des reseaux et protocoles</li>
+                            <li>Systemes d'exploitation et systemes embarques</li>
+                            <li>Programmation orientee objets  (Java/C++)</li>
+                            <li>Anglais avance et techniques d'expositions</li>
                         </ul>
                     </dd>
                 <dt>Semestre 2</dt>
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Programmation Web et mobiles</li>
-                            <li>Réseaux sans fil et mobiles</li>
-                            <li>Développement d'applications distribuées</li>
+                            <li>Reseaux sans fil et mobiles</li>
+                            <li>Developpement d'applications distribuees</li>
                             <li>Ressource et planification des entreprises (OpenERP)</li>
-                            <li>Administration système et réseaux</li>
+                            <li>Administration systeme et reseaux</li>
                             <li>Anglais professionnel et techniques de coaching</li>
                         </ul>
                     </dd>
@@ -107,10 +107,10 @@
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Architectures et Technologies de virtualisation</li>
-                            <li>Développement d’applications mobiles</li>
-                            <li>RIA et Web sémantique</li>
+                            <li>Developpement d’applications mobiles</li>
+                            <li>RIA et Web semantique</li>
                             <li>Informatique Ambiante et Mobile</li>
-                            <li>Sécurité des Systèmes et Réseaux</li>
+                            <li>Securite des Systemes et Reseaux</li>
                             <li>Management de projets et gestion de l'innovation</li>
                         </ul>
                     </dd>
@@ -182,7 +182,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

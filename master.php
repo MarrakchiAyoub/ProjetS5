@@ -54,7 +54,7 @@
 				<span>OUR HISTORY</span>
 				</h1>
 				<p>
-					<span class="dropcap">C</span>réée en 1995, la FST de Tanger est un des huit établissements de l’Université Abdelmalek Essaâdi. Elle regroupe actuellement une trentaine de programmes d'études repartis sur quatre cycles offerts par neuf  départements : Sciences de la Vie, Sciences de la Terre, Génie Chimique, Physique, Mathématiques, Génie Informatique, Génie Electrique et Génie Mécanique et  de Langues. Derrière ses programmes d’enseignement et de recherche, totalement inscrits dans le courant actuel des Sciences et Techniques, la FST de Tanger compte avec un corps professoral, jeune et performant, de 151  enseignants chercheurs et un staff veillant de 55 administratifs. Avec ses stages, sa formation pratique, son lien serré avec son environnement socio-économique, la FST de Tanger offre une formation adaptée, un encadrement personnalisé et est à l'écoute des besoins des étudiants. Un service des stages est également à la disposition des étudiants.
+					<span class="dropcap">C</span>reee en 1995, la FST de Tanger est un des huit etablissements de l’Universite Abdelmalek Essaâdi. Elle regroupe actuellement une trentaine de programmes d'etudes repartis sur quatre cycles offerts par neuf  departements : Sciences de la Vie, Sciences de la Terre, Genie Chimique, Physique, Mathematiques, Genie Informatique, Genie Electrique et Genie Mecanique et  de Langues. Derriere ses programmes d’enseignement et de recherche, totalement inscrits dans le courant actuel des Sciences et Techniques, la FST de Tanger compte avec un corps professoral, jeune et performant, de 151  enseignants chercheurs et un staff veillant de 55 administratifs. Avec ses stages, sa formation pratique, son lien serre avec son environnement socio-economique, la FST de Tanger offre une formation adaptee, un encadrement personnalise et est a l'ecoute des besoins des etudiants. Un service des stages est egalement a la disposition des etudiants.
 				</p>
 			</div>
 			<div class="c4">
@@ -95,7 +95,7 @@
 				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
 					<h1>PR. MOHAMMED BAKKALI </h1>
-					<span class="hirefor">Vice Doyen Chargé de la Recherche Scientifique et de la Coopération</span>
+					<span class="hirefor">Vice Doyen Charge de la Recherche Scientifique et de la Cooperation</span>
 				</div>
 			</div>
 			<!-- box 3 -->
@@ -103,7 +103,7 @@
 				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
 					<h1>Pr. Mustapha DIANI</h1>
-					<span class="hirefor"> Vice Doyen Chargé des Affaires Pédagogiques</span>
+					<span class="hirefor"> Vice Doyen Charge des Affaires Pedagogiques</span>
 				</div>
 			</div>
 			<!-- box 4 -->
@@ -111,7 +111,7 @@
 				<img src="http://placehold.it/270x180" class="imgOpa teamimage" alt="">
 				<div class="teamdescription">
 					<h1>Pr. Hassan BIHRI</h1>
-					<span class="hirefor">Secrétaire général</span>
+					<span class="hirefor">Secretaire general</span>
 				</div>
 			</div>
 			<!-- end box4 -->			
@@ -244,7 +244,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

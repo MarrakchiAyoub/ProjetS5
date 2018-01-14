@@ -79,7 +79,7 @@
 				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1> Pr. BOUHORMA Mohammed </h1>
-					<span class="hirefor"> Chef de "Systèmes informatiques et réseaux (MASTER)"</span>
+					<span class="hirefor"> Chef de "Systemes informatiques et reseaux (MASTER)"</span>
 				</div>
 			</div>
 			<!-- box 4 -->
@@ -87,7 +87,7 @@
 				<img src="images/Prof.png" class="profs" alt="">
 				<div class="teamdescription">
 					<h1>Pr. GHADI Abderrahim</h1>
-					<span class="hirefor">Chef de "Logiciels et systèmes informatiques (CI)"</span>
+					<span class="hirefor">Chef de "Logiciels et systemes informatiques (CI)"</span>
 				</div>
 			</div>
 			<!-- END TEAM STYLE 1
@@ -320,7 +320,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

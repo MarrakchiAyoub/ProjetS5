@@ -36,244 +36,244 @@ salle: <input type="text" name="sal" >
     <tr><td class="first">Lundi</td>
     <td>C1
     <select name="mod-1">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select></td>
     <td>C2
     <select name="mod-2">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select></td>
     <td>C3
     <select name="mod-3">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select></td>
     <td>C4
     <select name="mod-4">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
     <tr><td class="first">Mardi</td>
     <td>C5
     <select name="mod-5">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C6
     <select name="mod-6">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C7
     <select name="mod-7">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C8
     <select name="mod-8">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
     <tr><td class="first">Mercredi</td>
     <td>C9
     <select name="mod-9">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C10
     <select name="mod-10">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C11
     <select name="mod-11">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select></td
     ><td>C12
     <select name="mod-12">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
     <tr><td class="first">Jeudi</td>
     <td>C13
     <select name="mod-13">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C14
     <select name="mod-14">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C15
     <select name="mod-15">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C16
     <select name="mod-16">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
     <tr><td class="first">Vendredi</td>
     <td>C17
     <select name="mod-17">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C18
     <select name="mod-18">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C19
     <select name="mod-19">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C20
     <select name="mod-20">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
     <tr><td class="first">Samedi</td>
     <td>C21
     <select name="mod-21">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C22
     <select name="mod-22">
-     <option value=0></option> <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value=0></option> <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C23
     <select name="mod-23">
      <option value=0></option> 
-     <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td>
     <td>C24
     <select name="mod-24">
      <option value=0></option> 
-     <option value="GIACS">Architecture C/S et Développement Web Dynamique</option>
-  <option value="GIBDD">Bases de Données</option>
-  <option value="GICPP">Programmation Orientée Objet en C++</option>
-  <option value="GIIRI">Introduction aux Réseaux Informatiques</option>
-  <option value="GISEL">Système d’exploitation UNIX/Linux</option>
+     <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
+  <option value="GIBDD">Bases de Donnees</option>
+  <option value="GICPP">Programmation Orientee Objet en C++</option>
+  <option value="GIIRI">Introduction aux Reseaux Informatiques</option>
+  <option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
   <option value="GITEA">TEC et Anglais</option>
 </select>
     </td></tr>
@@ -281,7 +281,7 @@ salle: <input type="text" name="sal" >
 <button type="submit" name="send"/>envoyer</button>
 </form>
 <?php
-if ($month>=8 && $month<=12){$year=date('Y');} //detection de l'année
+if ($month>=8 && $month<=12){$year=date('Y');} //detection de l'annee
 else if ($month>=1 && $month<=8) {$year=date('Y')-1;}
 $timestamp= strtotime($year."/09/15");
 $week1=idate('W', $timestamp);

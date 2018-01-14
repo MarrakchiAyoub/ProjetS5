@@ -55,38 +55,38 @@
 				<span>Objectifs de la formation:</span>
 				</h1>
 				<p>
-               <span class="dropcap">L</span>e Master Sciences et techniques : Systèmes Informatiques et d’aide à la décision répond à un besoin de formation dans le domaine des technologies de l´information et des systèmes d’aides à la décision. Ce Master intègre non seulement des considérations scientifiques et techniques mais également les aspects économiques et sociaux liés aux avancées dans les domaines de l'informatique et de l’intelligence artificielle. Le Master à pour but d’une part d’étudier les méthodes d’apprentissage non supervisé, semi-supervisé et supervisé. Ces méthodes utilisées dans le contexte de fouille de données qui est l’art d’extraire des informations, voire des connaissances à partir des données de plus en plus volumineuses. Celles-ci peuvent provenir de divers domaines tels que la génomique, l’analyse textuelle, l’image, les réseaux et la parole. D’autre part, une attention particulière sera accordée à la visualisation des données de grande dimension. 
+               <span class="dropcap">L</span>e Master Sciences et techniques : Systemes Informatiques et d’aide a la decision repond a un besoin de formation dans le domaine des technologies de l´information et des systemes d’aides a la decision. Ce Master integre non seulement des considerations scientifiques et techniques mais egalement les aspects economiques et sociaux lies aux avancees dans les domaines de l'informatique et de l’intelligence artificielle. Le Master a pour but d’une part d’etudier les methodes d’apprentissage non supervise, semi-supervise et supervise. Ces methodes utilisees dans le contexte de fouille de donnees qui est l’art d’extraire des informations, voire des connaissances a partir des donnees de plus en plus volumineuses. Celles-ci peuvent provenir de divers domaines tels que la genomique, l’analyse textuelle, l’image, les reseaux et la parole. D’autre part, une attention particuliere sera accordee a la visualisation des donnees de grande dimension. 
 				</p>
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
 				</h1>
                 <ol style="1">
                     <strong><li>Diplômes requis</li></strong>
-                        Licence Informatique, licence sciences et techniques en Informatique, licence fondamentale, licence scientifique avec les pré-requis pédagogiques ou niveau équivalent.
-                    <strong><li>Pré-requis pédagogiques</li></strong>
+                        Licence Informatique, licence sciences et techniques en Informatique, licence fondamentale, licence scientifique avec les pre-requis pedagogiques ou niveau equivalent.
+                    <strong><li>Pre-requis pedagogiques</li></strong>
                     <ul style="list-style-type:square">
-                        <li> Formation informatique générale algorithmique et programmation </li>
-                        <li> Bonne connaissance des mathématiques de base (logique, algèbre, analyse, probabilités, ...).</li>
-                       <li>Initiation aux réseaux informatiques</li>
-                       <li>Initiation aux systèmes d’information</li>
+                        <li> Formation informatique generale algorithmique et programmation </li>
+                        <li> Bonne connaissance des mathematiques de base (logique, algebre, analyse, probabilites, ...).</li>
+                       <li>Initiation aux reseaux informatiques</li>
+                       <li>Initiation aux systemes d’information</li>
                     </ul>
-                    <strong><li>Procédures de sélection</li></strong>
-                    (La norme RG3 prévoit que l’accès aux formations du MST doit se faire sur étude de dossier et par voie de concours)
+                    <strong><li>Procedures de selection</li></strong>
+                    (La norme RG3 prevoit que l’acces aux formations du MST doit se faire sur etude de dossier et par voie de concours)
                     <ul  style="list-style-type:square">
                         <li> Etude du dossier</li>
-                        <li> Test écrit</li>
-                       <li> Éventuellement un test oral</li>
+                        <li> Test ecrit</li>
+                       <li> eventuellement un test oral</li>
                        <li>Autres informations (voir la page du lancement du concours de la FSTT)</li>
                     </ul>
                 </ol>
 				<h1 class="maintitle ">
 				<span>Competences visees et debouches:</span>
 				</h1>
-					<span class="dropcap">L</span>'informatique est une discipline particulièrement ouverte vers le milieu professionnel. Nul n'a besoin de rappeler le nombre d'offres d'emplois dans ce secteur durant ces dernières années. Il est plus que probable qu'il reste en pleine expansion encore quelque temps, autant dans les entreprises que dans les métiers de l'enseignement et de la recherche.
-                    Le parcours fournit aux étudiants des bases théoriques solides qui leur permettront d’effectuer de la recherche théorique ou appliquée de haut niveau. Deux options sont possibles :
+					<span class="dropcap">L</span>'informatique est une discipline particulierement ouverte vers le milieu professionnel. Nul n'a besoin de rappeler le nombre d'offres d'emplois dans ce secteur durant ces dernieres annees. Il est plus que probable qu'il reste en pleine expansion encore quelque temps, autant dans les entreprises que dans les metiers de l'enseignement et de la recherche.
+                    Le parcours fournit aux etudiants des bases theoriques solides qui leur permettront d’effectuer de la recherche theorique ou appliquee de haut niveau. Deux options sont possibles :
                     <ul style="list-style-type:square">
-                        <li> Continuer en thèse de doctorat dans un des domaines de recherche particuliers tels que : l’image, le texte, la parole ou le signal, ou dans le domaine de la bioinformatique, dans un laboratoire universitaire ou celui d’une entreprise publique ou privée.</li>
-                        <li> Faire de la recherche appliquée en tant qu’ingénieur de recherche dans un département de recherche et développement (R&D) d’une entreprise publique ou privée, dans les domaines tels que la grande distribution, le secteur bancaire, la surveillance, le marketing, le diagnostic, la bioinformatique, le traitement et l’analyse du signal et de l’image, le web mining, le text mining etc </li>
+                        <li> Continuer en these de doctorat dans un des domaines de recherche particuliers tels que : l’image, le texte, la parole ou le signal, ou dans le domaine de la bioinformatique, dans un laboratoire universitaire ou celui d’une entreprise publique ou privee.</li>
+                        <li> Faire de la recherche appliquee en tant qu’ingenieur de recherche dans un departement de recherche et developpement (R&D) d’une entreprise publique ou privee, dans les domaines tels que la grande distribution, le secteur bancaire, la surveillance, le marketing, le diagnostic, la bioinformatique, le traitement et l’analyse du signal et de l’image, le web mining, le text mining etc </li>
 				    </ul>
                 		<!-- Contenu S1 / S2 / S3 / S4
 		================================================== -->
@@ -99,22 +99,22 @@
 				<dt>Semestre 1</dt>
 					<dd>
                         <ul style="list-style-type:square">
-                            <li>Bases de données avancées</li>
-                            <li>Théorie des graphes et applications</li>
-                            <li>Architecture des réseaux et protocoles</li>
-                            <li>Systèmes d'exploitation et systèmes embarqués</li>
-                            <li>Programmation orientée objets  (Java/C++)</li>
-                            <li>Anglais avancé et techniques d'expositions</li>
+                            <li>Bases de donnees avancees</li>
+                            <li>Theorie des graphes et applications</li>
+                            <li>Architecture des reseaux et protocoles</li>
+                            <li>Systemes d'exploitation et systemes embarques</li>
+                            <li>Programmation orientee objets  (Java/C++)</li>
+                            <li>Anglais avance et techniques d'expositions</li>
                         </ul>
                     </dd>
                 <dt>Semestre 2</dt>
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Programmation Web et mobiles</li>
-                            <li>Réseaux sans fil et mobiles</li>
-                            <li>Développement d'applications distribuées</li>
+                            <li>Reseaux sans fil et mobiles</li>
+                            <li>Developpement d'applications distribuees</li>
                             <li>Ressource et planification des entreprises (OpenERP)</li>
-                            <li>Administration système et réseaux</li>
+                            <li>Administration systeme et reseaux</li>
                             <li>Anglais professionnel et techniques de coaching</li>
                         </ul>
                     </dd>
@@ -122,10 +122,10 @@
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Architectures et Technologies de virtualisation</li>
-                            <li>Développement d’applications mobiles</li>
-                            <li>RIA et Web sémantique</li>
+                            <li>Developpement d’applications mobiles</li>
+                            <li>RIA et Web semantique</li>
                             <li>Informatique Ambiante et Mobile</li>
-                            <li>Sécurité des Systèmes et Réseaux</li>
+                            <li>Securite des Systemes et Reseaux</li>
                             <li>Management de projets et gestion de l'innovation</li>
                         </ul>
                     </dd>
@@ -196,7 +196,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

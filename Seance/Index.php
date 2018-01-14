@@ -62,9 +62,9 @@
 <h4 style="margin-left: 20px">Je souhaite:</h4>
 <div style="height: 200px;padding-top: 30px;padding-left: 15px;">
 <form mothod="GET">
-<input type="radio" name="action" value="report"> Reporté une séance<br>
-  <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifié le créneau une séance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere pérmanante"></i><br>
-  <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;"> Ajouté une séance de rattrapage<br>
+<input type="radio" name="action" value="report"> Reporter une seance<br>
+  <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifier le creneau une seance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere permanante"></i><br>
+  <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;"> Ajouter une seance de rattrapage<br>
   <input name="send" value="Continuer" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 100px;padding: 0;" type="submit">
 </form>
 <?php
@@ -78,7 +78,7 @@ if (isset($_GET['send'])){
         header('location: modifier.php');
         break;
         case 'ajout' :
-        header('location: Ajouté.php');
+        header('location: Ajoute.php');
     }
 }
 ?>
@@ -120,7 +120,7 @@ if (isset($_GET['send'])){
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

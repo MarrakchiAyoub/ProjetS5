@@ -5,10 +5,10 @@
     <li><a href="#">DEPARTEMENT</a>
       <ul style="display: none;">
       <li><a href="/ProjetS5/about.php">A propos</a></li>
-      <li title="Génie Informatique"><a href="/ProjetS5/licence.php" >G.I.</a></li>
-      <li title="Systèmes Informatiques et Réseaux"><a href="/ProjetS5/Master1.php" >S.I.R.</a></li>					
-      <li title="Systèmes Informatiques et d’aide à la décision"><a href="/ProjetS5/Master2.php" >S.I.A.D.</a></li>
-      <li title="Logiciels et systèmes informatiques"><a href="/ProjetS5/cycle.php" >L.S.I.</a></li>
+      <li title="Genie Informatique"><a href="/ProjetS5/licence.php" >G.I.</a></li>
+      <li title="Systemes Informatiques et Reseaux"><a href="/ProjetS5/Master1.php" >S.I.R.</a></li>					
+      <li title="Systemes Informatiques et d’aide a la decision"><a href="/ProjetS5/Master2.php" >S.I.A.D.</a></li>
+      <li title="Logiciels et systemes informatiques"><a href="/ProjetS5/cycle.php" >L.S.I.</a></li>
       <li><a href="/ProjetS5/timeline.php">Timeline</a></li>
     </ul>
     </li>
@@ -32,7 +32,7 @@
      else {if($_SESSION['type']=='etudiant') {  
          echo '<li class="last"><a href="#">Espace Etudiant</a>
         <ul>
-        <li><a href="/ProjetS5/gallery.php">Télécharger des cours</a></li>
+        <li><a href="/ProjetS5/gallery.php">Telecharger des cours</a></li>
         <li><a href="/ProjetS5/gestionetu.php">Gestion de compte</a></li>
        <li><a href="/ProjetS5/dec.php">Deconnexion</a></li>
         </ul>
@@ -41,7 +41,7 @@
         echo '<li class="last"><a href="#">Espace Professeurs</a>
        <ul>
        <li><a href="/ProjetS5/joindre.php">Joindre des cours</a></li>
-       <li><a href="/ProjetS5/Seance/">Modifié une seance</a></li>
+       <li><a href="/ProjetS5/Seance/">Modifie une seance</a></li>
        <li><a href="/ProjetS5/gestionpro.php">Gestion de compte</a></li>
        <li><a href="/ProjetS5/dec.php">Deconnexion</a></li>
        </ul>

@@ -7,19 +7,10 @@
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
-<style>
-        table { border-collapse: collapse; }
-    tr {
-        height: 50px;
-        }
-    td {
-        border: solid 2px;
-        width: 180px;
-    }
-    .first {
-        width: 80px;
-    }
-    </style>
+
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <link rel="stylesheet" type="text/css" href="../css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
@@ -28,6 +19,7 @@
 <script src="../js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
 </head>
 <body>
+
 <!-- TOP LOGO & MENU
 ================================================== -->
 <div class="grid">
@@ -62,66 +54,85 @@
 <div class="grid">
  <div class="shadowundertop"></div>
 	<div class="row">
-	   <div class="c6">
-            <script>
+        <script>
                 function checkgroup() {
                 var fil = document.forms["seance"]["fil"].value;
                 var nve = document.forms["seance"]["nve"].value;
                 if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-                     document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
+                     document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filiere choisie";
                      return false;
                 }
                 }
-            </script>
-    <!-- Formulaire -->
+        </script>
+        <div class="d3">
         <form mothod="POST" name="seance" onsubmit="return checkgroup()">
             <?php include 'Validate.php' ?>
-                    Selectionner la filière:* 
-                <select name="fil" required>
-                    <option value="GI">Génie informatique</option>
-                    <option value="LSI">Logiciels et systèmes informatiques</option>
-                    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
-                    <option value="SIR">Systèmes informatiques et réseaux</option>
+            
+        <p class="d1">Selectionner la filiere:* </p> 
+        
+        <div class="sel sel--black-panther">
+          <select name="fil" id="select-profession">
+            <option value="GI">Genie informatique</option>
+            <option value="LSI">Logiciels et systemes informatiques</option>
+            <option value="SIAD">Systemes Informatiques et Aide a la decision</option>
+            <option value="SIR">Systemes informatiques et reseaux</option>
+          </select>
+        </div>
+
+        <hr class="rule">
+
+        <p class="d1"> <strong>Niveau d'etude :* </strong> </p> 
+        <div class="sel sel--superman">
+          <select name="nve" id="select-superpower" required>
+                    <option value="L3">3eme annee licence</option>
+                    <option value="M1">1ere annee Master</option>
+                    <option value="M2">2eme annee Master</option>
+                    <option value="C1">1ere annee cycle</option>
+                    <option value="C2">2eme annee cycle</option>
+                    <option value="C3">3eme annee cycle</option>
                 </select>
-                    Niveau d'étude :* 
-                <select name="nve" required>
-                    <option value="L3">3éme année licence</option>
-                    <option value="M1">1ére année Master</option>
-                    <option value="M2">2éme année Master</option>
-                    <option value="C1">1ére année cycle</option>
-                    <option value="C2">2éme année cycle</option>
-                    <option value="C3">3éme année cycle</option>
-                </select>
-                <p id="nve" class="err"></p>
-                <span>La scéance que vous voulez reporter le :</span>
-                    <input type="date" name="date1" >
-                        à :
-                    <select name="cren1">
+            
+        </div>
+        <hr class="rule">
+            <p id="nve" class="err"></p>
+        <p class="d1">La sceance que vous voulez reporter le :</p>
+            <div class="d2">
+                    <input type="date" name="date1" class="sel">
+            </div>
+                <div class="sel sel--superman">
+                    <select name="cren1" id="select-superpower" >
                         <option value=1>8:30 - 10:15</option>
                         <option value=2>10:30 - 12:15</option>
                         <option value=3>13:30 - 15:15</option>
                         <option value=4>15:30 - 17:15</option>
                     </select>
-                <span>Quand voulez-vous la reporter ?</span>
-                    <input type="date" name="date2">
-                    à :
-                    <select name="cren2">
+            </div>
+            <hr class="rule">
+                <p class="d1">Quand voulez-vous la reporter ?</p>
+                <div class="d2">    
+                    <input type="date" name="date2" class="sel"> 
+                </div>
+            <div class="sel sel--superman">
+                    <select name="cren2"  id="select-superpower">
                         <option value=1>8:30 - 10:15</option>
                         <option value=2>10:30 - 12:15</option>
                         <option value=3>13:30 - 15:15</option>
                         <option value=4>15:30 - 17:15</option>
                     </select>	
-            <p><input type="checkbox" name="want" value="no"> Je ne souhaite pas choisir quand maintenant</p>
+            </div>
+            
+            <p class="d1"> 
+                <input type="checkbox" name="want" value="no" class="d1"> Je ne souhaite pas choisir quand maintenant 
+            </p>
                 
-                    La salle:
+            <hr class="rule">
+            <div class="d2">
+            <p class="d1">La salle:</p>
                     <input type="text" name="sal" placeholder="Ex: E23">
-                    <button type="submit" name="valid-rep" formmethod="post" class="blue">Validé</button>
-                    </form>
-			</div>
-			<div class="c6">
-				
-		</div>
-	 
+            </div>        
+            <button type="submit" name="valid-rep" formmethod="post" class="blue">Valide</button>
+        </form>
+            </div>
 	</div>
 </div>
 <!-- FOOTER
@@ -161,7 +172,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>
@@ -221,6 +232,9 @@
 <script src="../js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');

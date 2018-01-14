@@ -53,15 +53,15 @@
 				<h1 class="maintitle ">
 				<span>Objectifs de la formation:</span>
 				</h1>
-                Former des ingénieurs capables de :
+                Former des ingenieurs capables de :
                 <ul style="list-style-type:disc">
-                    <li>Comprendre les enjeux technologiques et métiers </li>
-                    <li>Proposer et construire des solutions compétitives et réalistes</li>
-                    <li>Intervenir sur des problématiques complexes</li>
+                    <li>Comprendre les enjeux technologiques et metiers </li>
+                    <li>Proposer et construire des solutions competitives et realistes</li>
+                    <li>Intervenir sur des problematiques complexes</li>
                     <li>Piloter des projets et les changements qu'ils entrainent.</li>
                 </ul>
                 <p>
-                Les élèves-ingénieurs complètent leur formation académique en effectuant des stages pratiques en entreprise au cours du Cycle Ingénieur.
+                Les eleves-ingenieurs completent leur formation academique en effectuant des stages pratiques en entreprise au cours du Cycle Ingenieur.
                 </p>
 				<h1 class="maintitle ">
 				<span>Public cible et conditions d'admission:</span>
@@ -69,9 +69,9 @@
 					 Titulaires de :
                     <br>
                     <ul  style="list-style-type:disc">
-                        <li>DEUST, DEUG, DEUT ou DUT en 2 ans avec au moins une mention A.B. : Épreuve Écrite</li>
+                        <li>DEUST, DEUG, DEUT ou DUT en 2 ans avec au moins une mention A.B. : epreuve ecrite</li>
                         <li>Licence Sciences et Techniques et Licence Fondamentale : Dossier & Entretien ;</li>
-                        <li>Classes préparatoires et réussite au concours commun des écoles d’ingénieurs.</li>
+                        <li>Classes preparatoires et reussite au concours commun des ecoles d’ingenieurs.</li>
                     </ul>
 				
 			
@@ -79,10 +79,10 @@
 				<span>Competences visees et debouches:</span>
 				</h1>
 				<ul style="list-style-type:disc">
-                    <li>Ingénierie logicielle</li>
-                    <li>Ingénierie de réseaux d’entreprises</li>
-                    <li>Intégration des systèmes client-serveur</li>
-                    <li>Administrateur Système et réseau.</li>
+                    <li>Ingenierie logicielle</li>
+                    <li>Ingenierie de reseaux d’entreprises</li>
+                    <li>Integration des systemes client-serveur</li>
+                    <li>Administrateur Systeme et reseau.</li>
                 </ul>
 				
 		
@@ -95,24 +95,24 @@
 				<dt>Semestre 1</dt>
 					<dd>
                         <ul style="list-style-type:square">
-                            <li> Mathématiques pour l’ingénieur</li>
-                            <li>Systèmes d’exploitation et systèmes embarqués</li>
+                            <li> Mathematiques pour l’ingenieur</li>
+                            <li>Systemes d’exploitation et systemes embarques</li>
                             <li>Architecture des ordinateurs</li>
-                            <li>Programmation C  et Structures de données</li>
-                            <li>Architecture des réseaux informatiques et techniques d’acheminent</li>
-                            <li>Systèmes d’informations relationnelles et langage des requêtes</li>
-                            <li>Management général et comptabilité général</li>
+                            <li>Programmation C  et Structures de donnees</li>
+                            <li>Architecture des reseaux informatiques et techniques d’acheminent</li>
+                            <li>Systemes d’informations relationnelles et langage des requêtes</li>
+                            <li>Management general et comptabilite general</li>
                         </ul>
                     </dd>
                 <dt>Semestre 2</dt>
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Urbanisation des SI et Conduite des projets Informatique</li>
-                            <li>Développement web et Frameworks   (php, zend, samfony)</li>
+                            <li>Developpement web et Frameworks   (php, zend, samfony)</li>
                             <li>Statistique descriptive et inferentielle</li>
-                            <li>Modélisation orientée objet et Programmation C++</li>
-                            <li>Théorie des graphes et Applications</li>
-                            <li>Anglais  et techniques de rédaction</li>
+                            <li>Modelisation orientee objet et Programmation C++</li>
+                            <li>Theorie des graphes et Applications</li>
+                            <li>Anglais  et techniques de redaction</li>
                             <li>Gestion de L’innovation et management de projet</li>
                         </ul>
                     </dd>
@@ -120,22 +120,22 @@
 					<dd>
                         <ul style="list-style-type:square">
                             <li>Programmation Java et Programmation mobile</li>
-                            <li>Administration des bases de données et optimisation des requêtes</li>
+                            <li>Administration des bases de donnees et optimisation des requêtes</li>
                             <li>INTERNET DES OBJETS  et Architectures Mobile</li>
-                            <li>Administration réseaux et systèmes</li>
-                            <li>Méthodologies de l'Intelligence Artificielle</li>
-                            <li>Anglais avancé et techniques d’exposition</li>
-                            <li>Management stratégique et comptabilité analytique</li>
+                            <li>Administration reseaux et systemes</li>
+                            <li>Methodologies de l'Intelligence Artificielle</li>
+                            <li>Anglais avance et techniques d’exposition</li>
+                            <li>Management strategique et comptabilite analytique</li>
                         </ul>
                     </dd>
                     <dt>Semestre 4</dt>
 					<dd>
                         <ul style="list-style-type:square">
-                            <li>Architectures web distribuées   (j2ee)</li>
-                            <li>Systèmes Multi-Agents et Systèmes Multi-Experts</li>
+                            <li>Architectures web distribuees   (j2ee)</li>
+                            <li>Systemes Multi-Agents et Systemes Multi-Experts</li>
                             <li>Vision Artificielle</li>
                             <li>Technologies   .net</li>
-                            <li>Techniques Avancées en Génie  logiciel</li>
+                            <li>Techniques Avancees en Genie  logiciel</li>
                             <li>Ressources de planification d'entreprise  (Open Erp)</li>
                             <li>Mangement des ressources humaines</li>
                         </ul>
@@ -143,12 +143,12 @@
                     <dt>Semestre 5</dt>
 					<dd>
                         <ul style="list-style-type:square">
-                            <li>Processus d'évaluation et Qualité des Logiciels</li>
-                            <li>Audit et Sécurité Intélligentedes systèmes d’informations</li>
-                            <li>Systèmes d’informations décisionnel et data mininig</li>
+                            <li>Processus d'evaluation et Qualite des Logiciels</li>
+                            <li>Audit et Securite Intelligentedes systemes d’informations</li>
+                            <li>Systemes d’informations decisionnel et data mininig</li>
                             <li>Cloud Intelligence et virtulisation</li>
-                            <li>Géodecisionnel et Systèmes d’informations géographiques</li>
-                            <li>Intelligence économique</li>
+                            <li>Geodecisionnel et Systemes d’informations geographiques</li>
+                            <li>Intelligence economique</li>
                             <li>Anglais professionnel et techniques de coaching</li>
                         </ul>
                     </dd>
@@ -219,7 +219,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

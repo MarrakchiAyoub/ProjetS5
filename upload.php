@@ -60,24 +60,24 @@ $uploadOk = 1;
 $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
     if (file_exists($uploadfile)) {
         $uploadOk = 0;
-         echo '<p align="center" class="err">fichier déja existant</p>';
+         echo '<p align="center" class="err">fichier deja existant</p>';
     }
     if ($_FILES["userfile"]["size"] > 20971520) {
         echo '<p align="center" class="err">le fichier ne doit pas deppaser 20MB</p>';
         $uploadOk = 0;
     }
     if($FileType != "pdf") {
-    echo '<p align="center" class="err">le fichier doit être un pdf</p>', '<br><a href="joindre.php">retour à la page de téléchargement</a>';
+    echo '<p align="center" class="err">le fichier doit être un pdf</p>', '<br><a href="joindre.php">retour a la page de telechargement</a>';
     $uploadOk = 0;
     }
     if ($uploadOk){
         if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
             $sql="INSERT INTO `depot_cou`(`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES (NULL,'$cod','$el_mod','$uploadfile','$type')";
             $result=mysqli_query($conn, $sql);
-            echo '<p align="center" class="info">votre fichier à été enregistré avec succes<p>';
+            echo '<p align="center" class="info">votre fichier a ete enregistre avec succes<p>';
         } else {
             $msg="Votre fichier n'a pas pu être telecharger";
-            echo '<p align="center" class="err">'.$msg.'</p>', '<br><a href="joindre.php">retour à la page de téléchargement</a>';
+            echo '<p align="center" class="err">'.$msg.'</p>', '<br><a href="joindre.php">retour a la page de telechargement</a>';
         }
     }
 }
@@ -122,7 +122,7 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

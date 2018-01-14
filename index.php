@@ -128,7 +128,7 @@
 		  <div class="noshadowbox">
 			<h5>3 ans</h5>
 				<p>
-				Vous avez un bac ? Vous souhaitez avoir une license en informatique ? Optez pour notre formation L.G.I à la faculté des sciences et techniques de Tanger. 
+				Vous avez un bac ? Vous souhaitez avoir une license en informatique ? Optez pour notre formation L.G.I a la faculte des sciences et techniques de Tanger. 
 				</p><br>
 				<p class="bottomlink">
 					<a href="licence.php" class="neutralbutton"><i class="icon-link"></i></a>
@@ -141,7 +141,7 @@
 		  <div class="noshadowbox">
 			<h5>2 ans</h5>
 				<p>
-				Vous avez un bac +3 ou license ? Vous souhaitez avoir un master en informatique ? Optez pour notre formation S.I.A.D ou S.I.R à la faculté des sciences et techniques de Tanger.				</p>
+				Vous avez un bac +3 ou license ? Vous souhaitez avoir un master en informatique ? Optez pour notre formation S.I.A.D ou S.I.R a la faculte des sciences et techniques de Tanger.				</p>
 				<p class="bottomlink">
 					<a href="master1.php" title="S.I.R" class="neutralbutton"><i class="icon-link"></i></a>
                     <a href="master2.php" title="S.I.A.D" class="neutralbutton"><i class="icon-link"></i></a>
@@ -154,7 +154,7 @@
 		  <div class="noshadowbox">
 			<h5>3 ans</h5>
 				<p>
-				Vous avez un bac +2 ou license ? Vous souhaitez être un ingénieure d'état en informatique ? Optez pour notre formation L.S.I à la faculté des sciences et techniques de Tanger. 
+				Vous avez un bac +2 ou license ? Vous souhaitez être un ingenieure d'etat en informatique ? Optez pour notre formation L.S.I a la faculte des sciences et techniques de Tanger. 
 				</p>
 				<p class="bottomlink">
 					<a href="cycle.php" class="neutralbutton"><i class="icon-link"></i></a>
@@ -328,7 +328,7 @@
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

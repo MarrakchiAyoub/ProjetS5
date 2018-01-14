@@ -83,7 +83,7 @@ function validatepass() {
 	var fil = document.forms["inscription"]["fil"].value;
 	var nve = document.forms["inscription"]["nve"].value;
 	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
+		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filiere choisie";
 		 return false;
 	}
 
@@ -93,24 +93,24 @@ function validatepass() {
 <?php include 'inscription.php'; ?>
 CNE:*<input name="cne" type="text" required><br>
 Nom:*<input name="nom" type="text" required><br>
-Prénom:* <input name="pre" type="text" required><br>
+Prenom:* <input name="pre" type="text" required><br>
 Mot de passe:* <input name="psw" type="password" required><br>
 Resaisir le mot de passe:* <input name="n_psw" type="password" required><p id="pwd" class="err"></p><br>
 E-mail:* <input name="email" type="email" required><br>
 Date de naissance: <input name="ddn" type="date"><br>
-filière:* <select name="fil" required>
-    <option value="GI">Génie informatique</option>
-    <option value="LSI">Logiciels et systèmes informatiques</option>
-    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
-    <option value="SIR">Systèmes informatiques et réseaux</option>
+filiere:* <select name="fil" required>
+    <option value="GI">Genie informatique</option>
+    <option value="LSI">Logiciels et systemes informatiques</option>
+    <option value="SIAD">Systemes Informatiques et Aide a la decision</option>
+    <option value="SIR">Systemes informatiques et reseaux</option>
   </select>
-Niveau d'étude:* <select name="nve" required>
-    <option value="L3">3éme année licence</option>
-    <option value="M1">1ére année Master</option>
-    <option value="M2">2éme année Master</option>
-    <option value="C1">1ére année cycle</option>
-    <option value="C2">2éme année cycle</option>
-    <option value="C3">3éme année cycle</option>
+Niveau d'etude:* <select name="nve" required>
+    <option value="L3">3eme annee licence</option>
+    <option value="M1">1ere annee Master</option>
+    <option value="M2">2eme annee Master</option>
+    <option value="C1">1ere annee cycle</option>
+    <option value="C2">2eme annee cycle</option>
+    <option value="C3">3eme annee cycle</option>
 	</select><p id="nve" class="err"></p>
 	<br>
 <button class="blue" type="submit" formmethod="post" name="subscribe"/>Valider</button>
@@ -155,7 +155,7 @@ Niveau d'étude:* <select name="nve" required>
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>

@@ -69,7 +69,7 @@ $timestamp= strtotime("today");
 $week=idate('W', $timestamp); //recevoir le numero de semaine
 $grp="GI-L3-1";
 $month=date('n');
-if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;} //detection de l'année
+if ($month>=8 && $month<=12){$year1=date('Y'); $year2=date('Y')+1;} //detection de l'annee
 else if ($month>=1 && $month<=2) {$year1=date('Y')-1; $year2=date('Y');}
 if (isset($_GET['send'])){ //changement de date au cas ou le formulaire est envoyer
 	$date=strtotime($_GET['date']);
@@ -77,7 +77,7 @@ if (isset($_GET['send'])){ //changement de date au cas ou le formulaire est envo
 }
 ?>
 <form method="GET">
-<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionné une date precise: </span>
+<span style="float: left;margin-top: 15px;margin-left: 12px;">selectionne une date precise: </span>
 <input type="date" name="date" min="<?php echo $year1; ?>-09-15" max="<?php echo $year2; ?>-01-20" style="width: 10%;float: left;margin: 10px;height: 30px;padding: 0px;">
 <input name="send" value="valider" class="actionbutton" style="margin-top: 13px;width: 80px;padding: 0;margin-left: 1px;" type="submit">
 </form>
@@ -128,7 +128,7 @@ if (isset($_GET['send'])){ //changement de date au cas ou le formulaire est envo
 				<h2 class="title"><i class="icon-envelope-alt"></i> Contact</h2>
 				<hr class="footerstress">
 				<dl>
-					<dt>Ancienne Route de l’Aéroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
+					<dt>Ancienne Route de l’Aeroport, Km 10, Ziaten. BP : 416. Tanger - Maroc</dt>
 					<dd><span>Telephone:</span>+ 212 (0) 5 39 39 39 54 / 55</dd>
 					<dd>E-mail: <a href="more.html">depinfo@fstt.ac.ma</a></dd>
 				</dl>
