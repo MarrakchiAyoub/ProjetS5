@@ -1,4 +1,5 @@
-<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
+<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  
+if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /ProjetS5/Error/404.php'); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,6 +8,9 @@
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="Seance/css/style.css">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -47,44 +51,49 @@
 <!-- CONTENT
 ================================================== -->
 <div class="grid">
- <div class="shadowundertop"></div>
-    <div class="d3">
- <?php
-include 'lib/bdd.php';
-if(isset($_POST['send'])){
-    $el_mod=$_POST['ele-mod'];
-    $cod=$_SESSION['code'];
-    $type=$_POST['type'];
-$uploaddir = "Files/".$el_mod."/";
-$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
-$uploadOk = 1;
-$FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
-    if (file_exists($uploadfile)) {
-        $uploadOk = 0;
-         echo '<p align="center" class="err">fichier deja existant</p>';
-    }
-    if ($_FILES["userfile"]["size"] > 20971520) {
-        echo '<p align="center" class="err">le fichier ne doit pas deppaser 20MB</p>';
-        $uploadOk = 0;
-    }
-    if($FileType != "pdf") {
-    echo '<p align="center" class="err">Le fichier doit être un pdf</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
-    $uploadOk = 0;
-    }
-    if ($uploadOk){
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
-            $sql="INSERT INTO `depot_cou`(`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES (NULL,'$cod','$el_mod','$uploadfile','$type')";
-            $result=mysqli_query($conn, $sql);
-            echo '<p align="center" class="info">Votre fichier a ete enregistre avec succes<p>';
-        } else {
-            $msg="Votre fichier n'a pas pu être telecharger";
-            echo '<p align="center" class="err">'.$msg.'</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
-        }
-    }
-}
+    <div class="shadowundertop"></div>
+	   <div class="row">
+           <div class="d4">
 
-?>
-	</div>
+            
+            <?php
+                include 'lib/bdd.php';
+                if(isset($_POST['send'])){
+                $el_mod=$_POST['ele-mod'];
+                $cod=$_SESSION['code'];
+                $type=$_POST['type'];
+                $uploaddir = "Files/".$el_mod."/";
+                $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+                $uploadOk = 1;
+                $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
+                if (file_exists($uploadfile)) {
+                $uploadOk = 0;
+                echo '<p align="center" class="err d1">Fichier deja existant</p>';
+                }
+                if ($_FILES["userfile"]["size"] > 20971520) {
+                echo '<p align="center" class="err d1">Le fichier ne doit pas deppaser 20MB</p>';
+                $uploadOk = 0;
+                }
+                if($FileType != "pdf") {
+                echo '<p align="center" class="err d1">Le fichier doit être un pdf</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
+                $uploadOk = 0;
+                }
+                if ($uploadOk){
+                if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+                $sql="INSERT INTO `depot_cou`(`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES (NULL,'$cod','$el_mod','$uploadfile','$type')";
+                $result=mysqli_query($conn, $sql);
+                echo '<p align="center" class="info d1">Votre fichier a ete enregistre avec succes<p>';
+                } else {
+                $msg="Votre fichier n'a pas pu être telecharger";
+                echo '<p align="center" class="err d1">'.$msg.'</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
+                }
+                }
+            }
+
+            ?>
+            
+	   </div>
+    </div>
 </div>
 <!-- FOOTER
 ================================================== -->
@@ -135,7 +144,15 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
 				<hr class="footerstress">
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
-
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -175,6 +192,8 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
 <script src="js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="Seance/js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');
