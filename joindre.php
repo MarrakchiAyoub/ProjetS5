@@ -8,6 +8,9 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="Seance/css/style.css">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -50,13 +53,16 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <div class="grid">
  <div class="shadowundertop"></div>
 	<div class="row">
-	<div class="c6">
+	<div class="d3">
 				<form method="POST" enctype="multipart/form-data" action="upload.php">
-                fichier:
+                    <p class="d1"> Fichier : </p>
                 <input type="hidden" name="MAX_FILE_SIZE" value="20971520" />
                 <input name="userfile" type="file" required /><br>
-                <br>
-                nom de la matiere:
+                
+                    <hr class="rule">
+                    
+                    <p class="d1"> Nom de la matiere : </p>
+                <div class="sel sel--superman">
                 <select name="ele-mod" required>
                 <option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
                 <option value="GIBDD">Bases de Donnees</option>
@@ -67,16 +73,20 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
                 <option value="GIUNX">Scrypting Unix</option>
                 <option value="GIANG">Anglais</option>
                 </select>
-                type de fichier a joindre:
+                </div>
+                
+                    <hr class="rule">
+                
+                    <p class="d1"> Type de fichier a joindre: </p>
+                    <span style="font-size: 18px;">
                 <input type="radio" name="type" value="Crs" required> Cours 
                 <input type="radio" name="type" value="TD"> TD 
-                <input type="radio" name="type" value="TP"> TP <br>
+                <input type="radio" name="type" value="TP"> TP 
+                    </span>
                 <br>
-                <input name="send" value="Joindre" class="actionbutton" style="padding-left: 2%;padding-right: 2%;padding-bottom: 3px;padding-top: 3px;" type="submit">
+                <br>
+                <input name="send" value="Joindre" class="actionbutton" type="submit">
                 </form>
-			</div>
-			<div class="c6">
-				"some cool image"
 			</div>
 	 
 	</div>
@@ -178,6 +188,8 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <script src="js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="Seance/js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');
