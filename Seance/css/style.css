@@ -21,7 +21,7 @@
 .sel {
 font-size: 0.8em;
 display: inline-block;
-width: 40%;
+width: 50%;
 background-color: #FFF;
 position: relative;
 cursor: pointer;
@@ -190,7 +190,7 @@ margin-bottom: 10px;
 }
 
 .d2 {
-    width: 40%;
+    width: 50%;
     text-align: left;
 }
 
@@ -200,5 +200,5 @@ margin-bottom: 10px;
 }
 
 .d3 {
-    padding-left: 20%;
+    padding-left: 30%;
 }
