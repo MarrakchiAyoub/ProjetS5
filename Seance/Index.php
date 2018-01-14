@@ -21,6 +21,9 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
         width: 80px;
     }
     </style>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <link rel="stylesheet" type="text/css" href="../css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
@@ -60,29 +63,31 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 </div>
 <!-- CONTENT
 ================================================== -->
-<h4 style="margin-left: 20px">Je souhaite:</h4>
-<div style="height: 200px;padding-top: 30px;padding-left: 15px;">
-<form mothod="GET">
-<input type="radio" name="action" value="report"> Reporter une seance<br>
-  <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifier le creneau une seance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere permanante"></i><br>
-  <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;"> Ajouter une seance de rattrapage<br>
-  <input name="send" value="Continuer" class="actionbutton" style="margin-top: 13px;/*! height: 6px; */width: 100px;padding: 0;" type="submit">
-</form>
-<?php
-if (isset($_GET['send'])){
-    switch ($_GET['action'])
-    {
-        case 'report' :
-        header('location: report.php');
-        break;
-        case 'modif' :
-        header('location: modifier.php');
-        break;
-        case 'ajout' :
-        header('location: Ajoute.php');
-    }
-}
-?>
+    <div style="padding-left: 15%;">
+        <h4>Je souhaite:</h4>
+        <br>
+        <form mothod="GET">
+            <p class="d1"> <input type="radio" name="action" value="report">  Reporter une seance </p>
+            <p class="d1"> <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifier le creneau une seance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere permanante"></i> </p>
+            <p class="d1"><input type="radio" name="action" value="ajout" style="margin-bottom: 30px;">  Ajouter une seance de rattrapage </p>
+          <input name="send" value="Continuer" class="actionbutton" type="submit">
+        </form>
+        
+        <?php
+        if (isset($_GET['send'])){
+            switch ($_GET['action'])
+            {
+                case 'report' :
+                header('location: report.php');
+                break;
+                case 'modif' :
+                header('location: modifier.php');
+                break;
+                case 'ajout' :
+                header('location: Ajoute.php');
+            }
+        }
+        ?>
 </div>
 <!-- FOOTER
 ================================================== -->
@@ -181,6 +186,8 @@ if (isset($_GET['send'])){
 <script src="../js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');
