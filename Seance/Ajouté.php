@@ -74,7 +74,7 @@
 	}
 	</script>
 				<form mothod="POST" name="seance" onsubmit="return checkgroup()">
-				<?php include 'Validate.php' ?>
+				<?php include 'Validate.php'; ?>
 				selectionner le group
 				filière:* <select name="fil" required>
     <option value="GI">Génie informatique</option>
