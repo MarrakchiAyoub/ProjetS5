@@ -50,7 +50,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Modifier une séance</h1>
+				<h1 class="titlehead">Modifier une seance</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -125,8 +125,8 @@
 					la salle:
 					<input type="text" name="sal" placeholder="Ex: E23">
 					Appliqué les modification à partir de: 
-					<input type="radio" value="today" name="debut"> cette semaine 
-					<input type="radio" value="next week" name="debut"> la semaine prochaine <br><br>
+					<input type="radio" value="today" name="debut"> la séance prochaine
+					<input type="radio" value="next week" name="debut"> la séance d'aprés <br><br>
 					<button type="submit" name="valid-mod" formmethod="post" class="blue">Validé</button>
 	 			</form>
 			</div>
