@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 14, 2018 at 02:14 AM
+-- Generation Time: Jan 14, 2018 at 04:33 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `connexion` (
   UNIQUE KEY `Num_cnx` (`num_cnx`),
   KEY `cod_etu` (`cod_etu`),
   KEY `cod_prof` (`cod_prof`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `connexion`
@@ -54,7 +54,11 @@ INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES
 (7, '1210718413', NULL, '2018-01-11 12:06:46.000000'),
 (8, NULL, '10', '2018-01-11 00:00:00.000000'),
 (9, NULL, '2', '2018-01-13 00:00:00.000000'),
-(10, NULL, '2', '2018-01-14 00:00:00.000000');
+(10, NULL, '2', '2018-01-14 00:00:00.000000'),
+(11, '1210718413', NULL, '2018-01-14 13:00:06.000000'),
+(12, NULL, '2', '2018-01-14 00:00:00.000000'),
+(13, NULL, '2', '2018-01-14 00:00:00.000000'),
+(14, '1210718413', NULL, '2018-01-14 16:32:31.000000');
 
 -- --------------------------------------------------------
 
@@ -72,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `depot_cou` (
   PRIMARY KEY (`num_dep`),
   KEY `cod_porf` (`cod_porf`),
   KEY `cod_ele_mod` (`cod_ele_mod`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `depot_cou`
@@ -81,7 +85,11 @@ CREATE TABLE IF NOT EXISTS `depot_cou` (
 INSERT INTO `depot_cou` (`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES
 (1, '2', 'GICPP', 'Files/GICPP/EN-NAIMI-01_POO_C++_ComplementsTTTT.pdf', 'Crs'),
 (2, '2', 'GIACS', 'Files/GIACS/Cours HTML.pdf', 'Crs'),
-(3, '2', 'GICPP', 'Files/GICPP/EN-NAIMI-1_ApprendreC++.pdf', 'Crs');
+(3, '2', 'GICPP', 'Files/GICPP/EN-NAIMI-1_ApprendreC++.pdf', 'Crs'),
+(4, '2', 'GIBDD', 'Files/GIBDD/Chapiter2-Normalisation-de-BDD.pdf', 'Crs'),
+(5, '2', 'GIBDD', 'Files/GIBDD/CM4-IntroPLSQL2.pdf', 'Crs'),
+(6, '2', 'GIBDD', 'Files/GIBDD/TD Trigger.pdf', 'TD'),
+(7, '2', 'GILNX', 'Files/GILNX/Serie-exo.pdf', 'TP');
 
 -- --------------------------------------------------------
 
@@ -112,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `ele_mod` (
 INSERT INTO `ele_mod` (`cod_ele_mod`, `cod_mod`, `cod_fil`, `cod_prof`, `nom_ele_mod`, `nbr_heu_cour`, `nbr_heu_TD`, `nbr_heu_TP`) VALUES
 ('GIACS', 'GIACS', 'GI', '6', 'Architecture C/S et Developpement Web Dynamique', NULL, NULL, NULL),
 ('GIANG', 'GITEA', 'GI', '10', 'Anglais', NULL, NULL, NULL),
-('GIBDD', 'GIBDD', 'GI', '5', 'Bases de Donnees  ', NULL, NULL, NULL),
+('GIBDD', 'GIBDD', 'GI', '5', 'Bases de Donnees', NULL, NULL, NULL),
 ('GICPP', 'GICPP', 'GI', '7', 'Programmation Orientee Objet en C++', NULL, NULL, NULL),
 ('GIIRI', 'GIIRI', 'GI', '1', 'Introduction aux Reseaux Informatiques', NULL, NULL, NULL),
 ('GILNX', 'GISEL', 'GI', '2', 'System d\'exploitation Lunix', NULL, NULL, NULL),

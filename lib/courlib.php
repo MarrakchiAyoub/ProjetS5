@@ -23,7 +23,7 @@ function showcours(string $fil) {
         echo '<div class="boxfourcolumns '.$cat.'">
         <div class="boxcontainer">
             <span class="gallery">
-            <a data-gal="prettyPhoto[gallery1]" href="'.$link.'"><img src="'.$img.'" class="imgOpa"/></a>
+            <a  href="'.$link.'"><img src="'.$img.'" class="imgOpa"/></a>
             </span>
             <h1><a href="'.$link.'">'.$name.'</a></h1>
             <p>

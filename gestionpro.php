@@ -1,4 +1,5 @@
-<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
+<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  
+if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /ProjetS5/Error/404.php');?>
 <!DOCTYPE HTML>
 <html>
 <head>
