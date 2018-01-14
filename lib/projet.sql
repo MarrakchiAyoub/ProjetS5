@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jan 04, 2018 at 10:36 PM
+-- Generation Time: Jan 14, 2018 at 02:14 AM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.9
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `connexion` (
   UNIQUE KEY `Num_cnx` (`num_cnx`),
   KEY `cod_etu` (`cod_etu`),
   KEY `cod_prof` (`cod_prof`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `connexion`
@@ -49,7 +49,12 @@ INSERT INTO `connexion` (`num_cnx`, `cod_etu`, `cod_prof`, `date_cnx`) VALUES
 (2, '1210718413', NULL, '2018-01-04 00:00:00.000000'),
 (3, NULL, '10', '2018-01-04 00:00:00.000000'),
 (4, '1210718413', NULL, '2018-01-04 00:00:00.000000'),
-(5, '1210718413', NULL, '2018-01-04 00:00:00.000000');
+(5, '1210718413', NULL, '2018-01-04 00:00:00.000000'),
+(6, '1210718413', NULL, '2018-01-06 09:28:56.000000'),
+(7, '1210718413', NULL, '2018-01-11 12:06:46.000000'),
+(8, NULL, '10', '2018-01-11 00:00:00.000000'),
+(9, NULL, '2', '2018-01-13 00:00:00.000000'),
+(10, NULL, '2', '2018-01-14 00:00:00.000000');
 
 -- --------------------------------------------------------
 
@@ -67,7 +72,16 @@ CREATE TABLE IF NOT EXISTS `depot_cou` (
   PRIMARY KEY (`num_dep`),
   KEY `cod_porf` (`cod_porf`),
   KEY `cod_ele_mod` (`cod_ele_mod`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `depot_cou`
+--
+
+INSERT INTO `depot_cou` (`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES
+(1, '2', 'GICPP', 'Files/GICPP/EN-NAIMI-01_POO_C++_ComplementsTTTT.pdf', 'Crs'),
+(2, '2', 'GIACS', 'Files/GIACS/Cours HTML.pdf', 'Crs'),
+(3, '2', 'GICPP', 'Files/GICPP/EN-NAIMI-1_ApprendreC++.pdf', 'Crs');
 
 -- --------------------------------------------------------
 
@@ -269,6 +283,9 @@ CREATE TABLE IF NOT EXISTS `salles` (
 --
 
 INSERT INTO `salles` (`num_sal`, `nbr_places`) VALUES
+('E14', 60),
+('E15', 70),
+('E16', 60),
 ('E21', 50),
 ('E22', 50),
 ('E23', 70),
@@ -308,7 +325,6 @@ INSERT INTO `seances` (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `
 (1, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
 (1, 10, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
 (1, 11, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
-(1, 12, 'E23', 'GITEA', 'GI', 'GI-L3-1'),
 (1, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (1, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (1, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
@@ -325,8 +341,9 @@ INSERT INTO `seances` (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `
 (2, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (2, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
 (2, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
-(3, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(2, 19, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
 (3, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(3, 5, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
 (3, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
 (3, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
 (3, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),
@@ -337,6 +354,39 @@ INSERT INTO `seances` (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `
 (3, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (3, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
 (3, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(4, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(5, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(6, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(7, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(8, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(9, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(10, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(11, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(12, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(13, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(14, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(15, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(16, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(17, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(18, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(19, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(20, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(21, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(22, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(23, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(24, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(25, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(26, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(27, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(28, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(29, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(30, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(31, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(32, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(33, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(34, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(35, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(36, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
 (37, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
 (37, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
 (37, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
@@ -492,9 +542,10 @@ INSERT INTO `seances` (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `
 (49, 15, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (49, 16, 'E23', 'GIACS', 'GI', 'GI-L3-1'),
 (49, 17, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
-(49, 18, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
 (50, 1, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
 (50, 2, 'E23', 'GIBDD', 'GI', 'GI-L3-1'),
+(50, 3, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
+(50, 4, 'E23', 'GICPP', 'GI', 'GI-L3-1'),
 (50, 7, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
 (50, 8, 'E23', 'GISEL', 'GI', 'GI-L3-1'),
 (50, 9, 'E23', 'GIIRI', 'GI', 'GI-L3-1'),

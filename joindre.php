@@ -52,7 +52,7 @@
 	<div class="c6">
 				<form method="POST" enctype="multipart/form-data" action="upload.php">
                 fichier:
-                <input type="hidden" name="MAX_FILE_SIZE" value="2500000" />
+                <input type="hidden" name="MAX_FILE_SIZE" value="20971520" />
                 <input name="userfile" type="file" required /><br>
                 <br>
                 nom de la matiere:

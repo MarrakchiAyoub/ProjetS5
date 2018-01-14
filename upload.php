@@ -62,7 +62,7 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
         $uploadOk = 0;
          echo '<p align="center" class="err">fichier déja existant</p>';
     }
-    if ($_FILES["userfile"]["size"] > 2500000) {
+    if ($_FILES["userfile"]["size"] > 20971520) {
         echo '<p align="center" class="err">le fichier ne doit pas deppaser 20MB</p>';
         $uploadOk = 0;
     }
