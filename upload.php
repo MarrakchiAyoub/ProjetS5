@@ -48,6 +48,7 @@
 ================================================== -->
 <div class="grid">
  <div class="shadowundertop"></div>
+    <div class="d3">
  <?php
 include 'lib/bdd.php';
 if(isset($_POST['send'])){
@@ -67,17 +68,17 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
         $uploadOk = 0;
     }
     if($FileType != "pdf") {
-    echo '<p align="center" class="err">le fichier doit être un pdf</p>', '<br><a href="joindre.php">retour a la page de telechargement</a>';
+    echo '<p align="center" class="err">Le fichier doit être un pdf</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
     $uploadOk = 0;
     }
     if ($uploadOk){
         if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
             $sql="INSERT INTO `depot_cou`(`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES (NULL,'$cod','$el_mod','$uploadfile','$type')";
             $result=mysqli_query($conn, $sql);
-            echo '<p align="center" class="info">votre fichier a ete enregistre avec succes<p>';
+            echo '<p align="center" class="info">Votre fichier a ete enregistre avec succes<p>';
         } else {
             $msg="Votre fichier n'a pas pu être telecharger";
-            echo '<p align="center" class="err">'.$msg.'</p>', '<br><a href="joindre.php">retour a la page de telechargement</a>';
+            echo '<p align="center" class="err">'.$msg.'</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
         }
     }
 }
@@ -134,15 +135,7 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
 				<hr class="footerstress">
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
-					
-					
-					
-					
-					
-					
-					
-					
-					
+
 				</ul>
 			</div>
 			<!-- end 4th column -->
