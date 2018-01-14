@@ -7,12 +7,12 @@
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
-<link rel="stylesheet" type="text/css" href="css/icons.css"/>
-<link rel="stylesheet" type="text/css" href="css/slider.css"/>
-<link rel="stylesheet" type="text/css" href="css/skinblue.css"/><!-- change skin color -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-<script src="js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
+<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+<link rel="stylesheet" type="text/css" href="../css/icons.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+<link rel="stylesheet" type="text/css" href="../css/skinblue.css"/><!-- change skin color -->
+<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+<script src="../js/jquery-1.9.0.min.js"></script><!-- the rest of the scripts at the bottom of the document -->
 </head>
 <body>
 <!-- TOP LOGO & MENU
@@ -21,12 +21,12 @@
 	<div class="row space-bot">
 		<!--Logo-->
 		<div class="c4">
-			<a href="index.php">
-				<img src="images/logo.png" class="logo" alt="">
+			<a href="../index.php">
+				<img src="../images/logo.png" class="logo" alt="">
 			</a>
 		</div>
 		<!--Menu-->
-		<?php	include("menu.php"); ?>
+		<?php	include("../menu.php"); ?>
 	</div>
 </div>
 <!-- HEADER
@@ -79,7 +79,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img class="foot-logo" src="images/logo.png" alt="">
+				<img class="foot-logo" src="../images/logo.png" alt="">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
@@ -149,16 +149,16 @@
 <!-- JAVASCRIPTS
 ================================================== -->
 <!-- all -->
-<script src="js/modernizr-latest.js"></script>
+<script src="../js/modernizr-latest.js"></script>
 
 <!-- menu & scroll to top -->
-<script src="js/common.js"></script>
+<script src="../js/common.js"></script>
 
 <!-- twitter -->
-<script src="js/jquery.tweet.js"></script>
+<script src="../js/jquery.tweet.js"></script>
 
 <!-- cycle -->
-<script src="js/jquery.cycle.js"></script>
+<script src="../js/jquery.cycle.js"></script>
 
 </body>
 </html>
