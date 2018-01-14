@@ -32,11 +32,7 @@
      else {if($_SESSION['type']=='etudiant') {  
          echo '<li class="last"><a href="#">Espace Etudiant</a>
         <ul>
-<<<<<<< HEAD
-        <li><a href="/ProjetS5/gallery.php">Telecharger des cours</a></li>
-=======
         <li><a href="/ProjetS5/Cours.php">Télécharger des cours</a></li>
->>>>>>> dbe1b4c5abea13f72a37e88cf3545ad44e1fbf24
         <li><a href="/ProjetS5/gestionetu.php">Gestion de compte</a></li>
        <li><a href="/ProjetS5/dec.php">Deconnexion</a></li>
         </ul>
