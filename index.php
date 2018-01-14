@@ -197,7 +197,7 @@
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
+							<a href="#"><img src="./images/laboratory.jpg" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
 							<h1><a href="#">LAB. </a></h1>
