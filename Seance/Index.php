@@ -66,28 +66,12 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
     <div style="padding-left: 15%;">
         <h4>Je souhaite:</h4>
         <br>
-        <form mothod="GET">
+        <form mothod="GET" action="send.php">
             <p class="d1"> <input type="radio" name="action" value="report" required>  Reporter une seance </p>
             <p class="d1"> <input type="radio" style="margin-top: 20px;margin-bottom: 20px;" name="action" value="modif"> Modifier le creneau une seance <i class="icon-exclamation-sign" style="font-size: 11px;" title="d'une maniere permanante"></i> </p>
             <p class="d1"> <input type="radio" name="action" value="ajout" style="margin-bottom: 30px;">  Ajouter une seance de rattrapage </p>
           <input name="send" value="Continuer" class="actionbutton"  type="submit">
         </form>
-        
-        <?php
-        if (isset($_GET['send'])){
-            switch ($_GET['action'])
-            {
-                case 'report' :
-                header('location: report.php');
-                break;
-                case 'modif' :
-                header('location: modifier.php');
-                break;
-                case 'ajout' :
-                header('location: Ajoute.php');
-            }
-        }
-        ?>
 </div>
 <!-- FOOTER
 ================================================== -->
