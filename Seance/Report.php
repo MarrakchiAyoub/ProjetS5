@@ -50,7 +50,7 @@
 	<div class="grid">
 		<div class="row">
 			<div class="c8">
-				<h1 class="titlehead">Reporter une séance</h1>
+				<h1 class="titlehead">Reporter une seance</h1>
 			</div>
 			<div class="c4">				<h1 class="titlehead rightareaheader"><?php if(isset($_SESSION['nom'])) echo '<i class="icon-user"></i>'; echo " ".$nom." ".$pre ?></h1>
 </div>
@@ -62,60 +62,65 @@
 <div class="grid">
  <div class="shadowundertop"></div>
 	<div class="row">
-	<div class="c6">
-	<script>
-	function checkgroup() {
-		var fil = document.forms["seance"]["fil"].value;
-	var nve = document.forms["seance"]["nve"].value;
-	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
-		 return false;
-	}
-	}
-	</script>
-				<form mothod="POST" name="seance" onsubmit="return checkgroup()">
-				<?php include 'Validate.php' ?>
-				selectionner le group
-				filière:* <select name="fil" required>
-    <option value="GI">Génie informatique</option>
-    <option value="LSI">Logiciels et systèmes informatiques</option>
-    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
-    <option value="SIR">Systèmes informatiques et réseaux</option>
-  </select>
-				Niveau d'étude:* <select name="nve" required>
-    <option value="L3">3éme année licence</option>
-    <option value="M1">1ére année Master</option>
-    <option value="M2">2éme année Master</option>
-    <option value="C1">1ére année cycle</option>
-    <option value="C2">2éme année cycle</option>
-    <option value="C3">3éme année cycle</option>
-	</select><p id="nve" class="err"></p>
-					<span>la scéance que vous voulez reporter:</span>
-					le :<input type="date" name="date1" ></input>
-					à
-					<select name="cren1">
-					<option value=1>8:30 - 10:15</option>
-					<option value=2>10:30 - 12:15</option>
-					<option value=3>13:30 - 15:15</option>
-					<option value=4>15:30 - 17:15</option>
-					</select>
-					<span>Quand voulez la reporter:</span>
-					le :<input type="date" name="date2"></input>
-					à
-					<select name="cren2">
-					<option value=1>8:30 - 10:15</option>
-					<option value=2>10:30 - 12:15</option>
-					<option value=3>13:30 - 15:15</option>
-					<option value=4>15:30 - 17:15</option>
-					</select>	<input type="checkbox" name="want" value="no"> je ne souhaite pas choisir quand maintenant<br>
-					la salle:
-					<input type="text" name="sal" placeholder="Ex: E23">
-					<button type="submit" name="valid-rep" formmethod="post" class="blue">Validé</button>
-	 			</form>
+	   <div class="c6">
+            <script>
+                function checkgroup() {
+                var fil = document.forms["seance"]["fil"].value;
+                var nve = document.forms["seance"]["nve"].value;
+                if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
+                     document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filière choisie";
+                     return false;
+                }
+                }
+            </script>
+    <!-- Formulaire -->
+        <form mothod="POST" name="seance" onsubmit="return checkgroup()">
+            <?php include 'Validate.php' ?>
+                    Selectionner la filière:* 
+                <select name="fil" required>
+                    <option value="GI">Génie informatique</option>
+                    <option value="LSI">Logiciels et systèmes informatiques</option>
+                    <option value="SIAD">Systèmes Informatiques et Aide à la décision</option>
+                    <option value="SIR">Systèmes informatiques et réseaux</option>
+                </select>
+                    Niveau d'étude :* 
+                <select name="nve" required>
+                    <option value="L3">3éme année licence</option>
+                    <option value="M1">1ére année Master</option>
+                    <option value="M2">2éme année Master</option>
+                    <option value="C1">1ére année cycle</option>
+                    <option value="C2">2éme année cycle</option>
+                    <option value="C3">3éme année cycle</option>
+                </select>
+                <p id="nve" class="err"></p>
+                <span>La scéance que vous voulez reporter le :</span>
+                    <input type="date" name="date1" >
+                        à :
+                    <select name="cren1">
+                        <option value=1>8:30 - 10:15</option>
+                        <option value=2>10:30 - 12:15</option>
+                        <option value=3>13:30 - 15:15</option>
+                        <option value=4>15:30 - 17:15</option>
+                    </select>
+                <span>Quand voulez-vous la reporter ?</span>
+                    <input type="date" name="date2">
+                    à :
+                    <select name="cren2">
+                        <option value=1>8:30 - 10:15</option>
+                        <option value=2>10:30 - 12:15</option>
+                        <option value=3>13:30 - 15:15</option>
+                        <option value=4>15:30 - 17:15</option>
+                    </select>	
+            <p><input type="checkbox" name="want" value="no"> Je ne souhaite pas choisir quand maintenant</p>
+                
+                    La salle:
+                    <input type="text" name="sal" placeholder="Ex: E23">
+                    <button type="submit" name="valid-rep" formmethod="post" class="blue">Validé</button>
+                    </form>
 			</div>
 			<div class="c6">
-				"some cool image"
-			</div>
+				
+		</div>
 	 
 	</div>
 </div>
@@ -130,7 +135,7 @@
 			</p>
 			<!-- 1st column -->
 			<div class="c3">
-				<img src="../images/logo.png" alt="" width="160" height="180" style="padding-top: 70px;">
+				<img class="foot-logo" src="../images/logo.png" alt="">
 			</div>
 			<!-- 2nd column -->
 			<div class="c3">
