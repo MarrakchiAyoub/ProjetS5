@@ -53,7 +53,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="etudiant") header('location: 
 		<div class="row">
 		<div class="c12">
 			<h1 class="maintitle space-top">
-			<span>Choisisez la matiére</span>
+			<span>Choisisez la matiere</span>
 			</h1>
 		</div>
 		</div>
@@ -62,7 +62,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="etudiant") header('location: 
 			<div class="c12">
 				<div id="nav">
 					<ul>
-						<li><a href="" data-filter="*" style="margin-top: 10px;" class="selected">tous les cours</a></li>
+						<li><a href="" data-filter="*" style="margin-top: 10px;" class="selected">Tous les cours</a></li>
 						<?php $fil=$_SESSION['fil']; modulesfiltre($fil); ?>
 					</ul>
 				</div>

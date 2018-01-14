@@ -232,7 +232,7 @@
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
+							<a href="#"><img src="./images/conf.jpg" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
 							<h1><a href="#">SALLE DE CONFERENCES</a></h1>
@@ -244,7 +244,7 @@
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
+							<a href="#"><img src="./images/fst.png" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
 							<h1><a href="#">UNIVERSITE</a></h1>
@@ -256,7 +256,7 @@
 					<li>
 					<div class="featured-projects">
 						<div class="featured-projects-image">
-							<a href="#"><img src="http://placehold.it/275x180" class="imgOpa" alt=""></a>
+							<a href="#"><img src="./images/amphi.jpg" class="imgOpa" alt=""></a>
 						</div>
 						<div class="featured-projects-content">
 							<h1><a href="#">AMPHI</a></h1>
