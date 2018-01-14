@@ -8,19 +8,10 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
-<style>
-        table { border-collapse: collapse; }
-    tr {
-        height: 50px;
-        }
-    td {
-        border: solid 2px;
-        width: 180px;
-    }
-    .first {
-        width: 80px;
-    }
-    </style>
+
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <link rel="stylesheet" type="text/css" href="../css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="../css/slider.css"/>
@@ -63,35 +54,52 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <div class="grid">
  <div class="shadowundertop"></div>
 	<div class="row">
-	<div class="c6">
-	<script>
-	function checkgroup() {
-		var fil = document.forms["seance"]["fil"].value;
-	var nve = document.forms["seance"]["nve"].value;
-	if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
-		 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filiere choisie";
-		 return false;
-	}
-	}
-	</script>
-				<form mothod="POST" name="seance" onsubmit="return checkgroup()">
+	   <script>
+            function checkgroup() {
+                var fil = document.forms["seance"]["fil"].value;
+            var nve = document.forms["seance"]["nve"].value;
+            if ((fil == 'GI' && nve != 'L3') || ((fil == 'SIAD' || fil=='SIR') && (nve!='M1' || nve!='M2')) || (fil=='LSI' && (nve!='C1' || nve!='C2' || nve!='C3')) ){
+                 document.getElementById("nve").innerHTML="ce niveau ne correspond pas la filiere choisie";
+                 return false;
+            }
+            }
+        </script>
+        <div class="d3">
+            <form mothod="POST" name="seance" onsubmit="return checkgroup()">
 				<?php include 'Validate.php'; ?>
-				selectionner le group
-				filiere:* <select name="fil" required>
-    <option value="GI">Genie informatique</option>
-    <option value="LSI">Logiciels et systemes informatiques</option>
-    <option value="SIAD">Systemes Informatiques et Aide a la decision</option>
-    <option value="SIR">Systemes informatiques et reseaux</option>
-  </select>
-				Niveau d'etude:* <select name="nve" required>
-    <option value="L3">3eme annee licence</option>
-    <option value="M1">1ere annee Master</option>
-    <option value="M2">2eme annee Master</option>
-    <option value="C1">1ere annee cycle</option>
-    <option value="C2">2eme annee cycle</option>
-    <option value="C3">3eme annee cycle</option>
-	</select><p id="nve" class="err"></p>
-					votre module:
+                
+                <p class="d1">
+				Selectionner la filiere :* </p>
+                
+                <div class="sel sel--black-panther ">
+                <select name="fil" required>
+                <option value="GI">Genie informatique</option>
+                <option value="LSI">Logiciels et systemes informatiques</option>
+                <option value="SIAD">Systemes Informatiques et Aide a la decision</option>
+                <option value="SIR">Systemes informatiques et reseaux</option>
+                </select>
+                </div>
+                
+                <hr class="rule">
+                
+                <p class="d1">Niveau d'etude:*</p> 
+                <div class="sel sel--superman">
+                <select name="nve" required>
+                <option value="L3">3eme annee licence</option>
+                <option value="M1">1ere annee Master</option>
+                <option value="M2">2eme annee Master</option>
+                <option value="C1">1ere annee cycle</option>
+                <option value="C2">2eme annee cycle</option>
+                <option value="C3">3eme annee cycle</option>
+                </select>
+                </div>
+                
+                <hr class="rule">
+                
+                    <p id="nve" class="err"></p>
+					<p class="d1">Votre module:</p>
+                
+                <div class="sel sel--superman1">
 					<select name="mod">
 					<option value="GIACS">Architecture C/S et Developpement Web Dynamique</option>
 					<option value="GIBDD">Bases de Donnees</option>
@@ -100,22 +108,33 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 					<option value="GISEL">Systeme d’exploitation UNIX/Linux</option>
 					<option value="GITEA">TEC et Anglais</option>
 					</select>
-					<span>Quand voulez la programmer:</span>
-					le :<input type="date" name="date"></input>
-					a
-					<select name="cren">
+                </div>
+                
+                <hr class="rule">
+                
+                <div class="d2">
+					<p class="d1">
+                        Quand voulez-vous la programmer ?
+                        <input type="date" name="date"> </p>
+                </div>
+                    <hr class="rule">
+					<div class="sel sel--superman1">
+                    <select name="cren">
 					<option value=1>8:30 - 10:15</option>
 					<option value=2>10:30 - 12:15</option>
 					<option value=3>13:30 - 15:15</option>
 					<option value=4>15:30 - 17:15</option>
 					</select>
-					la salle:
-					<input type="text" name="sal" placeholder="Ex: E23">
+                    </div>
+                
+                <hr class="rule">
+                
+                <div class="d2">
+					<p class="d1">La salle:
+                        <input type="text" name="sal" placeholder="Ex: E23"></p> 
+                </div>
 					<button type="submit" name="valid-aj" formmethod="post" class="blue">Valide</button>
 	 			</form>
-			</div>
-			<div class="c6">
-				"some cool image"
 			</div>
 	 
 	</div>
@@ -217,6 +236,8 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /Pro
 <script src="../js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');
