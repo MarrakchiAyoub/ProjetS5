@@ -47,7 +47,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="etudiant") header('location: 
 </div>
 <!-- CONTENT
 ================================================== -->
-<?php include 'lib/courlib.php'; ?>
+<?php include 'lib/courlib.php'; //les fonction ce trouvent ici ?>
 <div class="grid">
 		<div class="shadowundertop"></div>
 		<div class="row">
@@ -63,7 +63,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="etudiant") header('location: 
 				<div id="nav">
 					<ul>
 						<li><a href="" data-filter="*" style="margin-top: 10px;" class="selected">Tous les cours</a></li>
-						<?php $fil=$_SESSION['fil']; modulesfiltre($fil); ?>
+						<?php $fil=$_SESSION['fil']; modulesfiltre($fil); //affiche les matiere ?>
 					</ul>
 				</div>
 			</div>
@@ -73,7 +73,7 @@ if(!isset($_SESSION['nom']) || $_SESSION['type']!="etudiant") header('location: 
 			<div id="content">
 				<!-- courses display -->
 				<?php
-				showcours($fil);
+				showcours($fil); // affiches les fichies depuis la BDD
 				?>
 			</div>
 		</div>

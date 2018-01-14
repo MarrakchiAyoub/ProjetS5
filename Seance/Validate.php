@@ -1,6 +1,7 @@
 <?php
 include '../lib/bdd.php';
 include '../lib/timetable.php';
+//--------------cas 1 de repporté------------------------
 if(isset($_POST['valid-rep'])){ //validation de "reporter"
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
@@ -25,14 +26,14 @@ if(isset($_POST['valid-rep'])){ //validation de "reporter"
     if(!mysqli_num_rows($result)) $s_free= true; //voir la disponibilite de la salle
     else {$s_free= false; $msg="cette salle n'est pas disponible a ce moment" ; echo '<p align="center" class="err">'.$msg.'</p>'; }
 }
- if($s_exist){
-     if(!empty($_POST['want'])){
+ if($s_exist){//il faut que la seance exite 
+     if(!empty($_POST['want'])){//**cas ou il y a juste annulation**
          $sql="delete from seances where num_sem='$sem1' and num_cren='$cren1' and cod_grp='$grp' ";
          $result=mysqli_query($conn, $sql);
          if($result) echo '<p align="center" class="info">seance bien supprime<p>';
          else echo '<p align="center" class="err">On a rencontre des erreurs lors de la supression</p>';
      }
-     else{if($s_free){
+     else{if($s_free){//------------------- et que la salle est libre pour permetre la modification
         $sql1="delete from seances where num_sem='$sem1' and num_cren='$cren1' and cod_grp='$grp' ";
         $result1=mysqli_query($conn, $sql1);
         $sql2="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$sem2', '$cren2', '$sal', '$mod', '$fil', '$grp')";
@@ -42,6 +43,7 @@ if(isset($_POST['valid-rep'])){ //validation de "reporter"
      }}
  }
 }
+ //----------------- cas 2 de la modification permanante ------------------
 if(isset($_POST['valid-mod'])){ // validation de "modifie"
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";
@@ -69,15 +71,15 @@ if(isset($_POST['valid-mod'])){ // validation de "modifie"
     $sem_f=idate('W' ,$f_s);
     if($s_exist && $s_free){
      $success=1;
-     if(idate('m', $date1)<=12 && idate('m', $date1)>=9 ){ 
-     for($s=$sem; $s<=52; $s++){
+     if(idate('m', $date1)<=12 && idate('m', $date1)>=9 ){//si on est avant decembre
+     for($s=$sem; $s<=52; $s++){// on fait deux boucles
         $sql1="delete from seances where num_sem='$s' and num_cren='$cren1' and cod_grp='$grp' ";
         $result1=mysqli_query($conn, $sql1);
         $sql2="INSERT INTO seances (`num_sem`, `num_cren`, `num_sal`, `cod_mod`, `cod_fil`, `cod_grp`) VALUES ('$s', '$cren2', '$sal', '$mod', '$fil', '$grp')";
         $result2=mysqli_query($conn, $sql2);
         if ($result1 && $result2) $res=1; else $res=0;
         $success*=$res;
-    }
+    }// *** chaque boucle modifie la seance pour chaque semaine ***
     for($s=1; $s<=$sem_f; $s++){
         $sql1="delete from seances where num_sem='$s' and num_cren='$cren1' and cod_grp='$grp' ";
         $result1=mysqli_query($conn, $sql1);
@@ -86,7 +88,7 @@ if(isset($_POST['valid-mod'])){ // validation de "modifie"
         if ($result1 && $result2) $res=1; else $res=0;
         $success*=$res;
     }}
-    else {
+    else {// sinon une seul
         for($s=$sem; $s<=$sem_f; $s++){
             $sql1="delete from seances where num_sem='$s' and num_cren='$cren1' and cod_grp='$grp' ";
             $result1=mysqli_query($conn, $sql1);
@@ -100,6 +102,7 @@ if(isset($_POST['valid-mod'])){ // validation de "modifie"
 }
  }
 }
+//-------------- cas 3 sceance de rattrapage ------------ (meme chose pour la 1er mais pas d'annulation)
 if(isset($_POST['valid-aj'])){ // validation d'ajout
     $fil=$_POST['fil'];
     $grp=$_POST['fil']."-".$_POST['nve']."-1";

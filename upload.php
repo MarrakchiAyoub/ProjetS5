@@ -55,26 +55,26 @@ if(isset($_POST['send'])){
     $el_mod=$_POST['ele-mod'];
     $cod=$_SESSION['code'];
     $type=$_POST['type'];
-$uploaddir = "Files/".$el_mod."/";
-$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+$uploaddir = "Files/".$el_mod."/"; //selection du chemain vers le quel le fichier seras telecharger (chaque matiere a son propre dossier)
+$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);//chemain complet du fichier
 $uploadOk = 1;
-$FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
     if (file_exists($uploadfile)) {
         $uploadOk = 0;
          echo '<p align="center" class="err">fichier deja existant</p>';
     }
-    if ($_FILES["userfile"]["size"] > 20971520) {
+    if ($_FILES["userfile"]["size"] > 20971520) { //le fichier ne doit pas depasser 20MB
         echo '<p align="center" class="err">le fichier ne doit pas deppaser 20MB</p>';
         $uploadOk = 0;
     }
-    if($FileType != "pdf") {
+$FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
+    if($FileType != "pdf") { //doit être un pdf
     echo '<p align="center" class="err">Le fichier doit être un pdf</p>', '<br><a href="joindre.php">Retour a la page de telechargement</a>';
     $uploadOk = 0;
     }
-    if ($uploadOk){
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
+    if ($uploadOk){//s'assure que toute les condition s'ont ok
+        if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {//on le deplace du dossier temporaire vers le chemain qu'on à choisis
             $sql="INSERT INTO `depot_cou`(`num_dep`, `cod_porf`, `cod_ele_mod`, `lien_cou`, `type_cou`) VALUES (NULL,'$cod','$el_mod','$uploadfile','$type')";
-            $result=mysqli_query($conn, $sql);
+            $result=mysqli_query($conn, $sql);//et on l'insert dans la BDD
             echo '<p align="center" class="info">Votre fichier a ete enregistre avec succes<p>';
         } else {
             $msg="Votre fichier n'a pas pu être telecharger";
@@ -82,7 +82,7 @@ $FileType = strtolower(pathinfo($uploadfile,PATHINFO_EXTENSION));
         }
     }
 }
-
+else header('location: /ProjetS5/Error/404.php');
 ?>
 	</div>
 </div>
