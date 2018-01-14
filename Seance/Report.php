@@ -69,9 +69,8 @@
             <?php include 'Validate.php' ?>
             
         <p class="d1">Selectionner la filiere:* </p> 
-        
-        <div class="sel sel--black-panther">
-          <select name="fil" id="select-profession">
+        <div class="sel sel--black-panther ">
+          <select name="fil" required>
             <option value="GI">Genie informatique</option>
             <option value="LSI">Logiciels et systemes informatiques</option>
             <option value="SIAD">Systemes Informatiques et Aide a la decision</option>
@@ -81,9 +80,9 @@
 
         <hr class="rule">
 
-        <p class="d1"> <strong>Niveau d'etude :* </strong> </p> 
+        <p class="d1"> Niveau d'etude :* </p> 
         <div class="sel sel--superman">
-          <select name="nve" id="select-superpower" required>
+          <select name="nve" required>
                     <option value="L3">3eme annee licence</option>
                     <option value="M1">1ere annee Master</option>
                     <option value="M2">2eme annee Master</option>
@@ -97,10 +96,10 @@
             <p id="nve" class="err"></p>
         <p class="d1">La sceance que vous voulez reporter le :</p>
             <div class="d2">
-                    <input type="date" name="date1" class="sel">
+                    <input type="date" name="date1">
             </div>
-                <div class="sel sel--superman">
-                    <select name="cren1" id="select-superpower" >
+            <div class="sel sel--superman1">
+                    <select name="cren1" requierd>
                         <option value=1>8:30 - 10:15</option>
                         <option value=2>10:30 - 12:15</option>
                         <option value=3>13:30 - 15:15</option>
@@ -112,8 +111,8 @@
                 <div class="d2">    
                     <input type="date" name="date2" class="sel"> 
                 </div>
-            <div class="sel sel--superman">
-                    <select name="cren2"  id="select-superpower">
+            <div class="sel sel--superman2" >
+                    <select name="cren2" required>
                         <option value=1>8:30 - 10:15</option>
                         <option value=2>10:30 - 12:15</option>
                         <option value=3>13:30 - 15:15</option>
