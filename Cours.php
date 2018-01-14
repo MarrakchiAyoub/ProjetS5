@@ -46,12 +46,13 @@
 </div>
 <!-- CONTENT
 ================================================== -->
+<?php include 'lib/courlib.php'; ?>
 <div class="grid">
 		<div class="shadowundertop"></div>
 		<div class="row">
 		<div class="c12">
 			<h1 class="maintitle space-top">
-			<span>Choisisez votre fillieres</span>
+			<span>Choisisez la matiére</span>
 			</h1>
 		</div>
 		</div>
@@ -60,10 +61,8 @@
 			<div class="c12">
 				<div id="nav">
 					<ul>
-						<li><a href="" data-filter="*" class="selected">tous les cours</a></li>
-						<li><a href="" data-filter=".cat1">Lisence</a></li>
-						<li><a href="" data-filter=".cat2">Master</a></li>
-						<li><a href="" data-filter=".cat3">cycle</a></li>
+						<li><a href="" data-filter="*" style="margin-top: 10px;" class="selected">tous les cours</a></li>
+						<?php $fil=$_SESSION['fil']; modulesfiltre($fil); ?>
 					</ul>
 				</div>
 			</div>
@@ -71,128 +70,10 @@
 		<!-- end filter -->		
 		<div class="row space-top">
 			<div id="content">
-				<!-- image 1 -->
-				<div class="boxfourcolumns cat1 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="http://www.youtube.com/watch?v=QX2yt95Yu90"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Dalya</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 2 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Veluria</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 3 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Warm Living</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 4 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Classy Sofa</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 5 -->
-				<div class="boxfourcolumns cat2">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Corner Settee</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 6 -->
-				<div class="boxfourcolumns cat2">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="http://www.youtube.com/watch?v=QX2yt95Yu90"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Nostalgic</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 7 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Clean Style</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 8 -->
-				<div class="boxfourcolumns cat1">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Simple & White</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 9 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Holiday Look</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 10 -->
-				<div class="boxfourcolumns cat2 cat3">
-					<div class="boxcontainer">
-						<span class="gallery">
-						<a data-gal="prettyPhoto[gallery1]" href="images/yourimage.jpg"><img src="http://placehold.it/350x150&text=any.size.you+wish" alt="Add Title" class="imgOpa"/></a>
-						</span>
-						<h1><a href="#">Space Mov</a></h1>
-						<p>
-							 porta acean pulvinar
-						</p>
-					</div>
-				</div>
-				<!-- image 11 etc -->
-				
+				<!-- courses display -->
+				<?php
+				showcours($fil);
+				?>
 			</div>
 		</div>
 </div><!-- end grid -->
