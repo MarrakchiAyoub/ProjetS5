@@ -1,4 +1,5 @@
-<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  ?>
+<?php session_start(); include('lib/bdd.php'); $nom = isset($_SESSION['nom']) ? $_SESSION['nom'] : NULL; $pre = isset($_SESSION['pre']) ? $_SESSION['pre'] : NULL;  
+if(!isset($_SESSION['nom']) || $_SESSION['type']!="prof") header('location: /ProjetS5/Error/404.php'); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,6 +8,9 @@
 <title>Genie Informatique</title>
 <!-- STYLES & JQUERY 
 ================================================== -->
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato|Quicksand'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel="stylesheet" href="Seance/css/style.css">
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/icons.css"/>
 <link rel="stylesheet" type="text/css" href="css/slider.css"/>
@@ -135,7 +139,15 @@ else header('location: /ProjetS5/Error/404.php');
 				<hr class="footerstress">
 				<ul>
 					<li><a href="http://www.fstt.ac.ma">www.fstt.ac.ma</a></li>
-
+					
+					
+					
+					
+					
+					
+					
+					
+					
 				</ul>
 			</div>
 			<!-- end 4th column -->
@@ -175,6 +187,8 @@ else header('location: /ProjetS5/Error/404.php');
 <script src="js/jquery.isotope.min.js"></script>
 
 <!-- CALL filtering & masonry-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src="Seance/js/index.js"></script>
 <script>
 $(document).ready(function(){
 var $container = $('#content');
