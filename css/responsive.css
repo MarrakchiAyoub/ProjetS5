@@ -19,7 +19,9 @@ nav {float:none;}
 .introboxfirst, .introboxmiddle, .introboxlast {border:0px;}
 .list_carousel li {min-width:320px !important;max-width:100%;}
 .list_carousel .carousel_nav {top:-72px;}
-.actionbutton {display:block;}
+.actionbutton {
+    display:block;
+    }
 
 .wrapaction {background:none;border:0px;}
 #nav ul li a {margin-bottom:20px;}

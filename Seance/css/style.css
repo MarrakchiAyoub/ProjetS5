@@ -12,7 +12,7 @@
   margin: 10px 0;
   border: none;
   height: 1.5px;
-    width: 40%;
+  width: 60%;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
   background-image: linear-gradient(left, #f0f0f0, #c9bbae, #f0f0f0);
 }
@@ -21,7 +21,7 @@
 .sel {
 font-size: 0.8em;
 display: inline-block;
-width: 50%;
+width: 60%;
 background-color: #FFF;
 position: relative;
 cursor: pointer;
@@ -33,7 +33,7 @@ margin-bottom: 10px;
   content: '\f063';
   font-family: 'FontAwesome';
   font-size: 1.3em;
-  color: #FFF;
+  color: cadetblue;
   right: 10px;
   top: calc(50% - 0.5em);
 }
@@ -48,13 +48,12 @@ margin-bottom: 10px;
   background-color: #e2e2e2;
   display: block;
   font-family: 'Quicksand';
-  font-size: 2em;
+  font-size: 1.8em;
   color: cadetblue;
   padding: 0.2em 0.5em;
   text-align: left;
   pointer-events: none;
   visibility: visible;
-    opacity: 100%;
 }
 
 .sel.active .sel__placeholder {
@@ -81,23 +80,21 @@ margin-bottom: 10px;
   top: calc(100% + 4px);
   left: -4px;
   display: none;
-  list-style-type: none;
+  list-style-type:none;
   text-align: left;
   font-size: 1.3em;
-  background-color: #e2e2e2;
+  background-color: #d6d6d6;
   width: calc(100% + 8px);
-  box-sizing: border-box;
 }
 
-
 .sel.active .sel__box {
-  display: block;
+  display:block;
   -webkit-animation: fadeInUp 600ms;
           animation: fadeInUp 600ms;
 }
 
 .sel__box__options {
-  display: list-item;
+  display: block;
   font-family: 'Quicksand';
   font-size: 1.3em;
   color: #29617a;
@@ -132,14 +129,20 @@ margin-bottom: 10px;
 }
 
 .sel--black-panther {
-  z-index: 3;
+  z-index: 6;
 }
 
 /* ----- Select Box Superman ----- */
 .sel--superman {
 /*   display: none; */
-  z-index: 2;
+  z-index: 5;
 }
+
+.sel--superman2 {
+/*   display: none; */
+  z-index: 3;
+}
+
 
 /* ===== Keyframes ===== */
 @-webkit-keyframes fadeInUp {
@@ -190,7 +193,7 @@ margin-bottom: 10px;
 }
 
 .d2 {
-    width: 50%;
+    width: 60%;
     text-align: left;
 }
 
@@ -200,5 +203,21 @@ margin-bottom: 10px;
 }
 
 .d3 {
-    padding-left: 30%;
+    padding-left: 25%;
+    margin-top: 2%;
+}
+
+
+
+.sel--superman1 {
+    /*   display: none; */
+  z-index: 4;
+}
+
+.sel--black-panther3 {
+     z-index: 2;
+}
+
+.sel--superman4 {
+     z-index: 1;
 }

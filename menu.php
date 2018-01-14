@@ -41,7 +41,7 @@
         echo '<li class="last"><a href="#">Espace Professeurs</a>
        <ul>
        <li><a href="/ProjetS5/joindre.php">Joindre des cours</a></li>
-       <li><a href="/ProjetS5/Seance/">Modifie une seance</a></li>
+       <li><a href="/ProjetS5/Seance/index.php">Modifie une seance</a></li>
        <li><a href="/ProjetS5/gestionpro.php">Gestion de compte</a></li>
        <li><a href="/ProjetS5/dec.php">Deconnexion</a></li>
        </ul>
